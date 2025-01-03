@@ -1,0 +1,62 @@
+.mainPage {
+  background-image: url('/GlatHall.webp');
+  background-size: 100% 140%;
+  background-position: top;
+  height: 100vh; /* Ensure the div takes up the full viewport */
+}
+
+/* The Logo design */
+.logo{
+    position: fixed;
+    left: 3vw;
+    top: 4vh; 
+}
+
+.logoText{
+    text-align: center;
+}
+
+.gc{
+    color: #3555A5;
+    font-size: 35px;
+    font-family: "Georgia", serif;
+}
+
+.rmc{
+    color: #D78930;
+    font-size: 25px;
+    font-family: "Georgia", serif;
+}
+
+/* Search Section  */
+.search{
+    position: fixed;
+    top: 40vh;
+    margin-left: 15vw;
+    width: 70vw;
+}
+
+.search-item {
+    background-color: white;
+    border-bottom: 2px solid;
+    margin-top: 2px;
+    padding-top: 6px;
+    padding-left: 5px
+}
+.search-item h1 {
+    font-size: 20px;
+}
+
+/* Authentication button */
+
+.authBtn{
+    position: fixed;
+    right: 40px;
+    top: 40px;
+}
+
+.authBtn button{
+    margin: 5px;
+    width: 100px;
+    font-family: 'Inter';
+}
