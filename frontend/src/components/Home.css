@@ -7,7 +7,7 @@
 
 /* The Logo design */
 .logo{
-    position: fixed;
+    position: absolute;
     left: 3vw;
     top: 4vh; 
 }
@@ -18,22 +18,19 @@
 
 .gc{
     color: #3555A5;
-    font-size: 35px;
+    font-size: 30px;
     font-family: "Georgia", serif;
 }
 
 .rmc{
     color: #D78930;
-    font-size: 25px;
+    font-size: 23px;
     font-family: "Georgia", serif;
 }
 
 /* Search Section  */
 .search{
-    position: fixed;
-    top: 40vh;
-    margin-left: 15vw;
-    width: 70vw;
+    position: absolute;
 }
 
 .search-item {
@@ -50,7 +47,7 @@
 /* Authentication button */
 
 .authBtn{
-    position: fixed;
+    position: absolute;
     right: 40px;
     top: 40px;
 }
