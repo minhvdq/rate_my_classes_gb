@@ -13,7 +13,7 @@ const reviewSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    workload: { // Fixed typo
+    workload: { 
         type: Number,
         required: true,
     },
@@ -32,6 +32,14 @@ const reviewSchema = new mongoose.Schema({
         type: mongoose.Types.ObjectId,
         ref: 'User',
     },
+    term: {
+        type: String,
+        required: true,
+    },
+    year: {
+        type: Number,
+        required: true,
+    }
 });
 
 mongoose.set('toJSON', {

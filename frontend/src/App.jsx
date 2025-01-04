@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './components/Home'
 import ReviewPage from './components/ReviewPage'
+import AuthenPage from './components/AuthenPage'
 import classService from './services/class'
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home classes={ classes } />} />
         <Route path='/review/:id' element={<ReviewPage classes={ classes }/>} />
+        <Route path='/authen' element={<AuthenPage />} />
       </Routes>
     </BrowserRouter>
   )

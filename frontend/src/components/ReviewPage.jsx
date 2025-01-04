@@ -7,7 +7,7 @@ import reviewService from '../services/review'
 export default function ReviewPage() {
     const [curClass, setCurClass] = useState(null)
     const [classes, setClasses] = useState( null )
-    // const [reviews, setReviews] = useState( [] )
+    const [reviews, setReviews] = useState( [] )
     const {id} = useParams();
     const [totalDifficulty, setTotalDifficulty] = useState(0)
     const [totalWorkload, setTotalWorkload] = useState(0)
@@ -24,6 +24,17 @@ export default function ReviewPage() {
                 throw new Error("NO PAGE FOUND")
             }
             setCurClass(foundClass)
+
+            foundClass.reviews.map( rvId => {
+                console.log('review ID is ' + rvId)
+                reviewService.getByID(rvId).then( data => {
+                    const foundReview = data.data
+                    console.log('review found is ' + JSON.stringify(foundReview))
+                    setReviews([...reviews, foundReview])
+                    // setTotalDifficulty(totalDifficulty + foundReview.difficulty)
+                    // setTotalWorkload(totalWorkload + foundReview.totalWorkload)
+                })
+            })
         })
     }, [])
 
@@ -33,8 +44,8 @@ export default function ReviewPage() {
 
             <div style={{marginTop: '30vh'}}>
                 <div style={{border: '1px solid'}}>
-                <h2>{curClass.name ? curClass.name : ""}</h2>
-                    {curClass.department ? curClass.department : ""}
+                <h2>{curClass && curClass.name ? curClass.name : ""}</h2>
+                    {curClass && curClass.department ? curClass.department : ""}
                     <p>Intructor</p>
                 </div>
                 <div  style={{border: '1px solid'}}>
@@ -47,6 +58,19 @@ export default function ReviewPage() {
                     <div>
                         Attendance: {attendance}
                     </div>
+                </div>
+
+                <div>
+                    {reviews.map( review => {
+                      console.log(reviews.length + " reviews left")
+                      return(
+                      <div>
+                        Professor: {review.professor}
+                        Comment:
+                        <p>{review.comment}</p>
+                      </div>
+                      )}
+                    )}
                 </div>
             </div>
         </div>

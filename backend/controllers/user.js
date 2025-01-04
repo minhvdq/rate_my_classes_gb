@@ -19,7 +19,7 @@ userRouter.get('/:id', async (request, response) => {
 
 userRouter.delete('/', async (request, response) => {
     await User.deleteMany({})
-    response.status(204).send("All users deleted")
+    response.status(204).send("All users deleted").end()
 })
 
 userRouter.post('/', async (request, response) => {
