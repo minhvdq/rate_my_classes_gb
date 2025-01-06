@@ -5,11 +5,11 @@ import SearchBar from './SearchBar'
 import { useEffect, useState } from "react"
 import classService from '../services/class'
 
-export default function Home({classes}) {
+export default function Home({classes, curUser, setCurUser}) {
 
     return (
       <div className="mainPage">
-        <Header />
+        <Header curUser={curUser} setCurUser={setCurUser} />
         <form>
           <SearchBar classes={ classes  } top="40vh" marginLeft="15vw" width="70vw" />
         </form>

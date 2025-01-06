@@ -1,6 +1,8 @@
 import {useState} from 'react'
 import './Home.css'
 
+const reviewURL = 'http://localhost:5173/review'
+
 export default function SearchBar({ classes, top, marginLeft, width }) {
     const [displayClasses, setDisplayClasses] = useState([])
 
@@ -23,7 +25,7 @@ export default function SearchBar({ classes, top, marginLeft, width }) {
         <div className="search" style={{top: top, marginLeft: marginLeft, width: width}}>
             <input onInput={handleOnInput} className='form-control' placeholder='Type in a class (i.e: CS 216 )' />
             {displayClasses.map(element => 
-                <div className='search-item' >
+                <div onClick={() => window.location.href = `${reviewURL}/${element.id}`} className='search-item' >
                     <h1>{element.name}</h1>
                     <p> {element.department} </p>
                 </div>

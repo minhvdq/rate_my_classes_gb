@@ -8,6 +8,8 @@ const middlewares = require('./utils/middlewares')
 const classRouter = require('./controllers/class')
 const userRouter = require('./controllers/user')
 const reviewRouter = require('./controllers/review')
+const loginRouter = require('./controllers/login')
+const newUserRouter = require( './controllers/newuser')
 
 const mongoose = require('mongoose')
 const path = require('path');
@@ -23,11 +25,20 @@ mongoose.connect(config.MONGODB_URI).then(result => {
 app.use(cors())
 app.use(express.json())
 app.use(express.static('dist'))
+app.use('/PasswordReset', (req, res) => {
+    res.sendFile(path.join(__dirname,'/ui_assets/index.html'))
+} )
+
+app.use('/PasswordResetRequest', (req, res) => {
+    res.sendFile(path.join(__dirname,'/ui_assets/request.html'))
+} )
+app.use(middlewares.requestLogger)
+app.use(middlewares.tokenExtractor)
 app.use('/api/user', userRouter)
 app.use('/api/review', reviewRouter)
 app.use('/api/class', classRouter)
-app.use(middlewares.requestLogger)
-app.use(middlewares.tokenExtractor)
+app.use('/api/login', loginRouter)
+app.use('/api/newUser', newUserRouter)
 app.use(middlewares.unknownEndpoint)
 app.use(middlewares.errorHandler)
 

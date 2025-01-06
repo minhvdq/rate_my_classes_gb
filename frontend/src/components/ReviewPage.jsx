@@ -4,7 +4,7 @@ import ReviewHeader from './ReviewHeader'
 import classService from '../services/class'
 import reviewService from '../services/review'
 
-export default function ReviewPage() {
+export default function ReviewPage({curUser, setCurUser}) {
     const [curClass, setCurClass] = useState(null)
     const [classes, setClasses] = useState( null )
     const [reviews, setReviews] = useState( [] )
@@ -31,6 +31,8 @@ export default function ReviewPage() {
                     const foundReview = data.data
                     console.log('review found is ' + JSON.stringify(foundReview))
                     setReviews([...reviews, foundReview])
+                    setTotalDifficulty( totalDifficulty + foundReview.difficulty)
+                    setTotalWorkload( totalWorkload + foundReview.workload)
                     // setTotalDifficulty(totalDifficulty + foundReview.difficulty)
                     // setTotalWorkload(totalWorkload + foundReview.totalWorkload)
                 })
@@ -38,9 +40,18 @@ export default function ReviewPage() {
         })
     }, [])
 
+    const handleComment = (e) => {
+        e.preventDefault()
+        if( !curUser ) {
+            window.location.href = 'http://localhost:5173/authen'
+        }
+
+        
+    }
+
     return(
         <div>
-            <ReviewHeader classes={classes}/>
+            <ReviewHeader classes={classes} curUser={curUser} setCurUser={setCurUser}/>
 
             <div style={{marginTop: '30vh'}}>
                 <div style={{border: '1px solid'}}>
@@ -50,16 +61,17 @@ export default function ReviewPage() {
                 </div>
                 <div  style={{border: '1px solid'}}>
                     <div>
-                        Difficulty: {totalDifficulty}
+                        Difficulty: {totalDifficulty / reviews.length}
                     </div>
                     <div>
-                        Workload: {totalWorkload}
+                        Workload: {totalWorkload / reviews.length}
                     </div>
                     <div>
                         Attendance: {attendance}
                     </div>
                 </div>
 
+                <input onClick={handleComment} class="btn btn-primary" type="button" value="Leave a comment" />
                 <div>
                     {reviews.map( review => {
                       console.log(reviews.length + " reviews left")

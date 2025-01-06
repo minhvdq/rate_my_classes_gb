@@ -3,6 +3,7 @@ const User = require('../models/User')
 const bcrypt = require('bcrypt')
 const mongoose = require('mongoose')
 const saltRounds = 10
+const authService = require('../services/auth.service')
 // const sendEmail = require('../utils/email/sendEmail')
 
 userRouter.get('/', async (request, response) => {
@@ -30,19 +31,11 @@ userRouter.post('/', async (request, response) => {
         throw new Error( "User already existed" )
     }
     const salt = await bcrypt.genSalt(saltRounds)
-    const passwordHash = await bcrypt.hash(body.password, salt)
+    const hashPassword = await bcrypt.hash(body.password, salt)
 
-    const newUser = new User({
-        name: body.name,
-        email: body.email,
-        // phoneNumber: body.phoneNumber,
-        passwordHash: passwordHash,
-        reviews: [],
-    })
+    authService.requestNewUser({name:body.name, email: body.email, hashPassword})
 
-    const savedUser = await newUser.save()
-
-    response.status(201).json(savedUser)
+    response.status(201).json({message: "Verification link sent!"})
 })
 
 userRouter.delete('/:id', async(request, response) => {

@@ -1,20 +1,17 @@
+const bcrypt = require('bcrypt')
 const loginRouter = require('express').Router()
 const User = require('../models/User')
-const bcrypt = require('bcrypt')
 
-
-loginRouter.post( async ( req, res ) => {
-    const body = req.body
-    const password = body.password
-    const user = User.findOne({email: body.email})
-
-    const passwordCorrect = user === undefined ? false : await bcrypt.compare(body.password, user.passwordHash)
+loginRouter.post('/', async (request, response) => {
+    const body = request.body
+    const user = await User.findOne({email: body.email})
+    const passwordCorrect = !user ? false : await bcrypt.compare(body.password, user.passwordHash)
     if(!( user && passwordCorrect)){
         response.status(400).json({error: "invalid username or password"})
         return
     }
-    
-    response.status(200).json({ email: user.email, id: user.id, events: user.events })
+
+    response.status(200).json({ email: user.email, id: user.id, reviews: user.reviews })
 })
 
-module.exports =  loginRouter
+module.exports = loginRouter
