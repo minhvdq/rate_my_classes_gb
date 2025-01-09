@@ -33,8 +33,6 @@ export default function ReviewPage({curUser, setCurUser}) {
                     setReviews([...reviews, foundReview])
                     setTotalDifficulty( totalDifficulty + foundReview.difficulty)
                     setTotalWorkload( totalWorkload + foundReview.workload)
-                    // setTotalDifficulty(totalDifficulty + foundReview.difficulty)
-                    // setTotalWorkload(totalWorkload + foundReview.totalWorkload)
                 })
             })
         })

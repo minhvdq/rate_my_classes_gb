@@ -101,7 +101,7 @@ const resetPassword = async (userId, token, password) => {
     user.email,
     "Password Reset Successfully",
     {
-      name: user.email.split()[0],
+      name: user.name,
     },
     "./templates/resetPassword.handlebars"
   );

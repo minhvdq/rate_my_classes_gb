@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './components/Home'
 import ReviewPage from './components/ReviewPage'
 import AuthenPage from './components/AuthenPage'
+import Comment from './components/Comment'
 import classService from './services/class'
 import customStorage from './services/customStorage'
 
@@ -38,6 +39,7 @@ function App() {
         <Route path='/' element={<Home classes={ classes } curUser={ curUser } setCurUser={setCurUser}/>} />
         <Route path='/review/:id' element={<ReviewPage classes={ classes } curUser={curUser} setCurUser={setCurUser} />} />
         <Route path='/authen' element={<AuthenPage curUser={curUser} setCurUser={setCurUser} />} />
+        <Route path='/comment' element={<Comment />} />
       </Routes>
     </BrowserRouter>
   )
