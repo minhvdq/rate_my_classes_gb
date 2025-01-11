@@ -1,6 +1,6 @@
 import avaClasses from '../assets/profList.json'
 import { Select } from 'antd'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export default function Comment({userID, classID}) {
     const [selectedDep, setSelectedDep] = useState("Computer Science")
