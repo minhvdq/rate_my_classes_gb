@@ -39,7 +39,7 @@ function App() {
         <Route path='/' element={<Home classes={ classes } curUser={ curUser } setCurUser={setCurUser}/>} />
         <Route path='/review/:id' element={<ReviewPage classes={ classes } curUser={curUser} setCurUser={setCurUser} />} />
         <Route path='/authen' element={<AuthenPage curUser={curUser} setCurUser={setCurUser} />} />
-        <Route path='/comment' element={<Comment />} />
+        <Route path='/comment/:classID' element={<Comment curUser={curUser} />} />
       </Routes>
     </BrowserRouter>
   )

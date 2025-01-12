@@ -5,6 +5,10 @@ const getAll = async () => {
     return await axios.get(baseUrl)
 }
 
+const getByID = async (id) => {
+    return await axios.get(`${baseUrl}/${id}`)
+}
+
 // const getForUser = async (userId) => {
 //     const url = `${baseUrl}/user/${userId}`
 //     return await axios.get(url)
@@ -36,4 +40,4 @@ const getAll = async () => {
 
 
 
-export default {getAll}
+export default {getAll, getByID}

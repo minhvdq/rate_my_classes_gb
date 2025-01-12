@@ -11,7 +11,7 @@ classRouter.get( '/', async(req, res) => {
 
 classRouter.get( '/:id', async(req, res) => {
     const id = req.params.id
-    const cl = await Class.findByID(id)
+    const cl = await Class.findById(id)
     res.status(200).json(cl)
 })
 
