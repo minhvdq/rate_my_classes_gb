@@ -1,6 +1,6 @@
-import Logo from './Logo'
-import SearchBar from './SearchBar'
-import './Home.css'
+import Logo from '../Logo'
+import SearchBar from '../SearchBar'
+// import '../Home.css'
 
 export default function ReviewHeader({classes, curUser, setCurUser}) {
     const handleLogout = (event) => {
@@ -26,10 +26,17 @@ export default function ReviewHeader({classes, curUser, setCurUser}) {
         )
     }
     return (
-        <div className='header'>
-            <Logo />
-            <SearchBar classes={classes} top="6vh" marginLeft="28vw" width="50vw" />
-            {curUser ? <LogoutCombo /> : <LoginCombo /> }
+        <div className='container'>
+            <div className="col">
+                <Logo />
+            </div>
+            <div className='col'>
+                <SearchBar classes={classes} top="6vh" marginLeft="28vw" width="50vw" />
+            </div>
+            <div className='col'>
+                {curUser ? <LogoutCombo /> : <LoginCombo /> }
+            </div>
+            
         </div>
     )
 }

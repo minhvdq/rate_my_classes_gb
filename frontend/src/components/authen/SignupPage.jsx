@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import userService from '../services/user'
+import userService from '../../services/user'
 
 
 const SignupPage = ({togglePage}) => {

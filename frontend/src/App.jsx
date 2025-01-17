@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './components/Home'
-import ReviewPage from './components/ReviewPage'
-import AuthenPage from './components/AuthenPage'
-import Comment from './components/Comment'
+import ReviewPage from './components/review/ReviewPage'
+import AuthenPage from './components/authen/AuthenPage'
+import Comment from './components/review/Comment'
 import classService from './services/class'
 import customStorage from './services/customStorage'
 
@@ -39,7 +39,6 @@ function App() {
         <Route path='/' element={<Home classes={ classes } curUser={ curUser } setCurUser={setCurUser}/>} />
         <Route path='/review/:id' element={<ReviewPage classes={ classes } curUser={curUser} setCurUser={setCurUser} />} />
         <Route path='/authen' element={<AuthenPage curUser={curUser} setCurUser={setCurUser} />} />
-        <Route path='/comment/:classID' element={<Comment curUser={curUser} />} />
       </Routes>
     </BrowserRouter>
   )

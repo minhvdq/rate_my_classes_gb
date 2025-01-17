@@ -1,6 +1,6 @@
 import {useState} from 'react'
-import loginService from '../services/login'
-import customStorage from '../services/customStorage'
+import loginService from '../../services/login'
+import customStorage from '../../services/customStorage'
 
 export default function LoginPage ({togglePage, setCurUser} ) {
     const [email, setEmail] = useState("")

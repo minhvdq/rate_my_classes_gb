@@ -25,7 +25,7 @@ export default function SearchBar({ classes, top, marginLeft, width }) {
         <div className="search" style={{top: top, marginLeft: marginLeft, width: width}}>
             <input onInput={handleOnInput} className='form-control' placeholder='Type in a class (i.e: CS 216 )' />
             {displayClasses.map(element => 
-                <div onClick={() => window.location.href = `${reviewURL}/${element.id}`} className='search-item' >
+                <div key={element.id} onClick={() => window.location.href = `${reviewURL}/${element.id}`} className='search-item' >
                     <h1>{element.name}</h1>
                     <p> {element.department} </p>
                 </div>
