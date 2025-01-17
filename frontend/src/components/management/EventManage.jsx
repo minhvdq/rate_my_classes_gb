@@ -36,7 +36,9 @@ export default function EventManage({curUser}) {
 
     return(
         <div>
-            Welcome {name}
+            Welcome {curUser.name}
+
+            
         </div>
     )
 }
