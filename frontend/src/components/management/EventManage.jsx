@@ -1,15 +1,17 @@
 import {useState, useEffect} from 'react'
+import customStorage from '../../services/customStorage'
 const mainUrl = 'http://localhost:5173'
 
-export default function EventManage({curUser}) {
+export default function EventManage() {
+    const [user, setUser] = useState(null)
     const [reviews, setReviews] = useState([])
 
-    const fetchData = async() => {
+    const fetchData = async(curUser) => {
         try {
             if (!curUser) {
                 throw new Error("NO PAGE FOUND");
             }
-    
+
             const reviewPromises = curUser.reviews.map(async rvId => {
     
                 const data = await reviewService.getByID(rvId)
@@ -19,7 +21,7 @@ export default function EventManage({curUser}) {
                 return foundReview
             })
     
-            const fetchedReviews = await Promise.all(reviewPromises);
+            const fetchedReviews = await Promise.all(reviewPromises)
 
             setReviews(fetchedReviews)
         }catch(e){
@@ -27,16 +29,20 @@ export default function EventManage({curUser}) {
         }
     }
     useEffect(() => {
-        if( !curUser ) {
+        const loggedUser = customStorage.getItem('localUser')
+        if(!loggedUser){
             window.location.href = `${mainUrl}/authen`
         }
-        
-        fetchData()
+        const lUser = JSON.parse(loggedUser)
+
+        console.log('cur user is ' + JSON.stringify(lUser) )
+        setUser(lUser)
+        fetchData(lUser)
     }, [])
 
     return(
         <div>
-            Welcome {curUser.name}
+            Welcome {user ? user.name : ""}
 
             
         </div>

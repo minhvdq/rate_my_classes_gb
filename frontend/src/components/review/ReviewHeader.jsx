@@ -26,17 +26,18 @@ export default function ReviewHeader({classes, curUser, setCurUser}) {
         )
     }
     return (
-        <div className='container'>
-            <div className="col">
-                <Logo />
+        <div className="container">
+            <div className="row d-flex justify-content-between align-items-center">
+                <div className="col-auto">
+                    <Logo />
+                </div>
+                <div className="col-auto">
+                    {curUser ? <LogoutCombo /> : <LoginCombo />}
+                </div>
             </div>
-            <div className='col'>
-                <SearchBar classes={classes} top="6vh" marginLeft="28vw" width="50vw" />
+            <div className="row text-center" style={{justifyContent: "center"}}>
+                    <SearchBar classes={classes} top="17vh" width="clamp(4rem, 45vw, 100rem)" />                
             </div>
-            <div className='col'>
-                {curUser ? <LogoutCombo /> : <LoginCombo /> }
-            </div>
-            
         </div>
     )
 }

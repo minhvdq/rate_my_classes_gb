@@ -1,6 +1,7 @@
 .mainPage {
   background-image: url('/GlatHall.webp');
-  background-size: 100% 140%;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: top;
   height: 100vh; /* Ensure the div takes up the full viewport */
 }
@@ -18,13 +19,13 @@
 
 .gc{
     color: #3555A5;
-    font-size: 30px;
+    font-size: clamp(1.5rem, 2vw, 2rem);
     font-family: "Georgia", serif;
 }
 
 .rmc{
     color: #D78930;
-    font-size: 23px;
+    font-size: clamp(1rem, 1.5vw, 1.7rem);
     font-family: "Georgia", serif;
 }
 

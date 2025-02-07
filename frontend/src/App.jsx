@@ -6,6 +6,7 @@ import AuthenPage from './components/authen/AuthenPage'
 import Comment from './components/review/Comment'
 import classService from './services/class'
 import customStorage from './services/customStorage'
+import EventManage from './components/management/EventManage';
 
 function App() {
   const [classes, setClasses] = useState([])
@@ -39,6 +40,7 @@ function App() {
         <Route path='/' element={<Home classes={ classes } curUser={ curUser } setCurUser={setCurUser}/>} />
         <Route path='/review/:id' element={<ReviewPage classes={ classes } curUser={curUser} setCurUser={setCurUser} />} />
         <Route path='/authen' element={<AuthenPage curUser={curUser} setCurUser={setCurUser} />} />
+        <Route path='/manage' element={<EventManage curUser={curUser} />} />
       </Routes>
     </BrowserRouter>
   )

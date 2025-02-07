@@ -27,7 +27,7 @@ export default function Comment({curUser, curClass, togglePage}) {
         if(!curUser) window.location.href = `${homePageUrl}/authen`
 
         const requestBody = {
-            class: classID,
+            class: curClass.id,
             user: curUser.id,
             professor: selectedProf,
             comment: comment,
