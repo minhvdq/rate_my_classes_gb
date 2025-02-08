@@ -25,21 +25,25 @@ export default function ReviewPage({curUser, setCurUser, classes}) {
      */
     const fetchData = async () => {
         try {
+            // fetch the class Information from database using id - last endpoint
             const data = await classService.getByID(id)
-            // consolawait new Promise(r => setTimeout(r, 2000))e.log('class found: ' + JSON.stringify(foundClass) )
             const foundClass = data.data
+
+            // Throw error if there is no such class in the database
             if (!foundClass) {
-                throw new Error("NO PAGE FOUND");
+                throw new Error("NO PAGE FOUND")
             }
     
             setCurClass(foundClass);
     
+            // Set the hook state of professors - for the options
             const arr = foundClass.professors.map(prof => ({ value: prof, label: prof }));
             arr.push({ value: "All", label: "All" });
             setProfOptions(arr)
     
             let cnt = 0;
-    
+            
+            // fetch all the reviews belong to this class
             const reviewPromises = foundClass.reviews.map(async rvId => {
                 console.log('cnt: ' + cnt);
                 cnt++;
@@ -158,10 +162,10 @@ export default function ReviewPage({curUser, setCurUser, classes}) {
                         <div className='col border d-flex align-items-center'>
                             <div className='row w-100'>
                                 <div className='col'>
-                                    Difficulty: {totalDifficulty / presentReviews.length}
+                                    Difficulty: {Number(totalDifficulty / presentReviews.length).toFixed(2)}
                                 </div>
                                 <div className='col'>
-                                    Workload: {totalWorkload / presentReviews.length}
+                                    Workload: {Number(totalWorkload / presentReviews.length).toFixed(2)}
                                 </div>
                                 <div className='col'>
                                     Attendance: {attendance ? "Yes" : "No"}
