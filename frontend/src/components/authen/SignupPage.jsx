@@ -15,7 +15,7 @@ const SignupPage = ({togglePage}) => {
     }
     const handleSignup = async () => {
         if( password !== repPassword ){
-            cusThrowError("Confirming password unmatches!")
+            cusThrowError("Passwords unmatches!")
             return
         }  
         const submitUser = {
@@ -24,8 +24,8 @@ const SignupPage = ({togglePage}) => {
         try{
             const message = await userService.signup(submitUser).message
 
-            // window.prompt(message)
-            console.log(message)
+            window.alert("Verification email sent")
+            // console.log(message)
 
             setName('')
             setEmail('')

@@ -11,8 +11,8 @@ export default function SearchBar({ classes, top, marginLeft, width }) {
         if(txt == "" ){
             setDisplayClasses([])
         }else{
-            const filteredClasses = classes.filter(cl => cl.name.replace(/\s/g,'').toLowerCase().includes(txt.replace(/\s/g,'').toLowerCase()))
-
+            let filteredClasses = classes.filter(cl => cl.name.replace(/\s/g,'').toLowerCase().includes(txt.replace(/\s/g,'').toLowerCase()))
+            filteredClasses = filteredClasses.slice(0, Math.min( 5, filteredClasses.length )) 
             console.log(`class is ${classes[0].name.replace(/\s/g,'').toLowerCase()}`)
             setDisplayClasses(filteredClasses)
             console.log('found: ' + JSON.stringify(filteredClasses) )
@@ -22,14 +22,24 @@ export default function SearchBar({ classes, top, marginLeft, width }) {
     }
 
     return(
-        <div className="search" style={{top: top, marginLeft: marginLeft, width: width}}>
+        <div className="search" style={{top: top,
+                                        marginLeft: marginLeft, 
+                                        width: width}}>
             <input onInput={handleOnInput} className='form-control' placeholder='Type in a class (i.e: CS 216 )' />
-            {displayClasses.map(element => 
-                <div key={element.id} onClick={() => window.location.href = `${reviewURL}/${element.id}`} className='search-item' >
-                    <h1>{element.name}</h1>
-                    <p> {element.department} </p>
-                </div>
-            )}
+            <div className="border rounded shadow-sm " style={{ maxHeight: '300px', overflowY: 'auto' }}>
+                {displayClasses.map(element => (
+                    <div
+                        key={element.id}
+                        onClick={() => window.location.href = `${reviewURL}/${element.id}`}
+                        className="search-item border-bottom py-2 px-2 rounded hover-bg-light"
+                        style={{ cursor: 'pointer' }}
+                    >
+                        <h5>{element.name}</h5>
+                        <p className="text-muted mb-0">{element.department}</p>
+                    </div>
+                ))}
+            </div>
+
         </div>
     )
 }

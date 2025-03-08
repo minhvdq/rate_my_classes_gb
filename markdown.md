@@ -3,7 +3,8 @@
 3. [x] Show reviews for a specific class
 4. [x] Handle login, sign up backend
 5. [x] Implement the authentication page
-6. [ ] Implement the fully function review page
+6. [x] Implement the fully function review page
 7. [x] Design a panel for writing review
+8. [ ] Modify authentication to using Auth0
 8. [ ] Design a panel for user management
 9. [ ] Carefully style the pages
