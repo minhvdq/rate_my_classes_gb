@@ -21,7 +21,6 @@ newUserRouter.get('/:id', async (req, res) => {
     const savedUser = await newUser.save()
 
     res.status(201).json(savedUser)
-    window.location.href = "http://localhost:5714/authen"
 })
 
 module.exports = newUserRouter

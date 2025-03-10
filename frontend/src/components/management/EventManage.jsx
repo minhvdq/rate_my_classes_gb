@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react'
 import customStorage from '../../services/customStorage'
-const mainUrl = 'http://localhost:5173'
+import {frontendBase} from '../../utils/homeUrl'
+const mainUrl = frontendBase
 
 export default function EventManage() {
     const [user, setUser] = useState(null)

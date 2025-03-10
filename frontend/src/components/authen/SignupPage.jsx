@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import userService from '../../services/user'
+import {frontendBase} from '../../utils/homeUrl'
 
 
 const SignupPage = ({togglePage}) => {
@@ -25,13 +26,13 @@ const SignupPage = ({togglePage}) => {
             const message = await userService.signup(submitUser).message
 
             window.alert("Verification email sent")
-            // console.log(message)
 
             setName('')
             setEmail('')
             setPassword('')
             setRepPassword('')
             togglePage()
+            window.location.href = `${frontendBase}/authen`
         }catch(e) {
             console.log(e)
             cusThrowError("something wrong")

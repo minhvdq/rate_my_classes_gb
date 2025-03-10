@@ -27,7 +27,7 @@ export default function LoginPage ({togglePage, setCurUser}) {
             setPassword('');
             window.location.href = "..";
         } catch(e) {
-            setError('Wrong username or password')
+            setError('Wrong username or password ' + e)
             setTimeout(() => {
                 setError(null)
             }, 5000)

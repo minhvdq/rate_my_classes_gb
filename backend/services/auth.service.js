@@ -4,11 +4,12 @@ const NewUserToken= require("../models/NewUserToken")
 const mailService = require("../utils/email/sendEmail")
 const crypto = require("crypto");
 const bcrypt = require("bcrypt");
+const {backendBase} = require('../utils/homeUrl')
 
 const JWTSecret = process.env.JWT_SECRET;
 const bcryptSalt = process. env.BCRYPT_SALT;
-const clientURL = 'http://localhost:3000/PasswordReset/ui_assets/index.html';
-const newUserURL = 'http://localhost:3000/api/newUser/'
+const clientURL = `${backendBase}/PasswordReset/ui_assets/index.html`;
+const newUserURL = `${backendBase}/api/newUser/`
 
 const requestNewUser = async ({name, email, hashPassword}) => {
     let token = await NewUserToken.findOne({ email})

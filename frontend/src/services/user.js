@@ -1,6 +1,7 @@
 import axios from 'axios'
+import {backendBase, frontendBase} from '../utils/homeUrl'
 
-const baseUrl = 'http://localhost:3000/api/user'
+const baseUrl = `${backendBase}/api/user`
 
 const signup = async (signInfo) => {
     const response = await axios.post(baseUrl, signInfo)

@@ -1,6 +1,7 @@
 import axios from 'axios'
+import {backendBase} from '../utils/homeUrl'
 
-const baseUrl = 'http://localhost:3000/api/review'
+const baseUrl = `${backendBase}/api/review`
 const getAll = async () => {
     return await axios.get(baseUrl)
 }

@@ -7,6 +7,7 @@ import CommentPage from './Comment'
 import classService from '../../services/class'
 import reviewService from '../../services/review'
 import './Review.css'
+import { frontendBase } from '../../utils/homeUrl'
 
 export default function ReviewPage({curUser, setCurUser, classes}) {
     const [curClass, setCurClass] = useState(null)
@@ -40,15 +41,9 @@ export default function ReviewPage({curUser, setCurUser, classes}) {
             const arr = foundClass.professors.map(prof => ({ value: prof, label: prof }));
             arr.push({ value: "All", label: "All" });
             setProfOptions(arr)
-    
-            let cnt = 0;
-            
+                
             // fetch all the reviews belong to this class
             const reviewPromises = foundClass.reviews.map(async rvId => {
-                console.log('cnt: ' + cnt);
-                cnt++;
-                console.log('review ID is ' + rvId);
-    
                 const data = await reviewService.getByID(rvId);
                 const foundReview = data.data;
                 console.log('review found is ' + JSON.stringify(foundReview));
@@ -94,9 +89,8 @@ export default function ReviewPage({curUser, setCurUser, classes}) {
     const handleComment = (e) => {
         e.preventDefault()
         if( !curUser ) {
-            window.location.href = 'http://localhost:5173/authen'
+            window.location.href = `${frontendBase}/authen`
         }else{
-            // window.location.href = `http://localhost:5173/comment/${curClass.id}`
             togglePage()
         }
 

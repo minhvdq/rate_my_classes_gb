@@ -1,11 +1,12 @@
 import avaClasses from '../../assets/profList.json'
 import { Select } from 'antd'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 // import { useParams } from 'react-router-dom'
 import classService from '../../services/class'
 import reviewService from '../../services/review'
+import { backendBase, frontendBase } from '../../utils/homeUrl'
 
-const homePageUrl = 'http://localhost:5173'
+const homePageUrl = frontendBase
 
 export default function Comment({curUser, curClass, togglePage}) {
     const [professors, setProfessors] = useState([])

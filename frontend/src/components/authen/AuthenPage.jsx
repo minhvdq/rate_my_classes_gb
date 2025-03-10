@@ -1,13 +1,14 @@
 import {useState} from 'react'
 import LoginPage from './LoginPage'
 import SignupPage from './SignupPage'
+import {frontendBase} from '../../utils/homeUrl'
 
 export default function AuthenPage({curUser, setCurUser}) {
     const [inLogin, setInLogin] = useState(true)
 
     if(curUser) {
         console.log("Logged! Redirecting...")
-        window.location.href = "..";
+        window.location.href = frontendBase;
         return
     }
 

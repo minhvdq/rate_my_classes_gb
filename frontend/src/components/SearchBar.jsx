@@ -1,7 +1,8 @@
 import {useState} from 'react'
 import './Home.css'
+import {frontendBase} from '../utils/homeUrl'
 
-const reviewURL = 'http://localhost:5173/review'
+const reviewURL = `${frontendBase}/review`
 
 export default function SearchBar({ classes, top, marginLeft, width }) {
     const [displayClasses, setDisplayClasses] = useState([])
@@ -13,9 +14,7 @@ export default function SearchBar({ classes, top, marginLeft, width }) {
         }else{
             let filteredClasses = classes.filter(cl => cl.name.replace(/\s/g,'').toLowerCase().includes(txt.replace(/\s/g,'').toLowerCase()))
             filteredClasses = filteredClasses.slice(0, Math.min( 5, filteredClasses.length )) 
-            console.log(`class is ${classes[0].name.replace(/\s/g,'').toLowerCase()}`)
             setDisplayClasses(filteredClasses)
-            console.log('found: ' + JSON.stringify(filteredClasses) )
         }
         
 
