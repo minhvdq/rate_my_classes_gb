@@ -12,7 +12,7 @@ const clientURL = `${backendBase}/PasswordReset/ui_assets/index.html`;
 const newUserURL = `${backendBase}/api/newUser/`
 
 const requestNewUser = async ({name, email, hashPassword}) => {
-    let token = await NewUserToken.findOne({ email})
+    let token = await NewUserToken.findOne({ email })
     if( token ) await token.deleteOne()
     
     let resetToken = crypto.randomBytes(32).toString("hex");
@@ -75,7 +75,6 @@ const resetPassword = async (userId, token, password) => {
   let passwordResetToken = await Token.findOne({ userId });
 
   if (!passwordResetToken) {
-    console.log("in process 1")
     throw new Error("Invalid or expired password reset token");
   }
 
@@ -84,7 +83,6 @@ const resetPassword = async (userId, token, password) => {
   const isValid = await bcrypt.compare(token, passwordResetToken.token);
 
   if (!isValid) {
-    console.log("in process 2")
     throw new Error("Invalid or expired password reset token");
   }
 

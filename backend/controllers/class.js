@@ -35,7 +35,7 @@ classRouter.delete('/', async(request,response) => {
 })
 
 classRouter.delete('/:id', async (request, response) => {
-    await Class.findByIdAndRemove(request.params.id)
+    await Class.findByIdAndDelete(request.params.id)
     response.status(204).end()
 })
 

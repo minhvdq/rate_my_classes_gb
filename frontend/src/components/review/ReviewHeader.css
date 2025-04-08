@@ -1,0 +1,28 @@
+.container {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.authBtn button {
+    margin: 0 0.25rem;
+    white-space: nowrap;
+}
+
+.row {
+    flex-wrap: wrap;
+}
+
+.searchbar-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem 0;
+    box-sizing: border-box;
+}
+
+.clamped-searchbar {
+    width: clamp(200px, 45vw, 800px);
+}
