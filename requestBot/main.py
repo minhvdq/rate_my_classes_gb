@@ -9,7 +9,7 @@ def getJson( dir ):
     return data
 
 def postData( ):
-    csClasses = getJson('./classes/cs.json')
+    csClasses = getJson('./classes/math.json')
     profList = getJson('./profList.json')
     for cl in csClasses:
         dep = cl["department"]

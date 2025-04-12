@@ -1,89 +1,199 @@
-import {useState} from 'react'
+import { useState } from 'react'
 import userService from '../../services/user'
-import {frontendBase} from '../../utils/homeUrl'
+import { frontendBase } from '../../utils/homeUrl'
 
+export default function SignupPage({ togglePage }) {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [repPassword, setRepPassword] = useState('')
+  const [error, setError] = useState('')
+  const [loading, setLoading] = useState(false)
 
-const SignupPage = ({togglePage}) => {
-    const [error, setError] = useState('')
-    const [name, setName] = useState('')
-    const [email, setEmail] = useState('')
-    const [password, setPassword] = useState('')
-    const [repPassword, setRepPassword] = useState('')
+  const handleName = (event) => {
+    setName(event.target.value)
+  }
 
-    const cusThrowError = async (eMsg) => {
-        setError(eMsg)
-        setTimeout(() => {setError('')}, 2000)
+  const handleEmail = (event) => {
+    setEmail(event.target.value)
+  }
+
+  const handlePassword = (event) => {
+    setPassword(event.target.value)
+  }
+
+  const handleRepPassword = (event) => {
+    setRepPassword(event.target.value)
+  }
+
+  const handleSignup = async (event) => {
+    event.preventDefault()
+    setLoading(true)
+
+    if (password !== repPassword) {
+      setError("Passwords don't match!")
+      setTimeout(() => {
+        setError(null)
+      }, 5000)
+      setLoading(false)
+      return
     }
-    const handleSignup = async () => {
-        if( password !== repPassword ){
-            cusThrowError("Passwords unmatches!")
-            return
-        }  
-        const submitUser = {
-            name, email, password
-        }
-        try{
-            const message = await userService.signup(submitUser).message
 
-            window.alert("Verification email sent")
-
-            setName('')
-            setEmail('')
-            setPassword('')
-            setRepPassword('')
-            togglePage()
-            window.location.href = `${frontendBase}/authen`
-        }catch(e) {
-            console.log(e)
-            cusThrowError("something wrong")
-        }
+    const submitUser = {
+      name,
+      email,
+      password
     }
 
-    return (
-        <div className='col-md-6 right-box'>
-          <div className='row align-items-center'>
-            <div className='header-text mb-4 mt-4'>
-              <p className='h3 mb-0'style={{fontFamily: "Courier New, Courier, monospace", fontWeight: "600", textAlign: "center"}}>Welcome new user!</p></div>
-              <div className="d-flex flex-row-reverse">
-              <button type="button" onClick={togglePage} className="btn btn-link" style={{padding: "0"}}>Signin</button><div className="p-1" >Already had an account?</div>
-              </div>
-            <form onSubmit={handleSignup}>
-              <div className="row justify-content-center">
-                <label htmlFor="nameInput" className="form-label">Full Name</label>
-                <div className='input-group mb-1'>
-                  <input type="text" className="form-control form-control-lg bg-light fs-6" id="nameInput" placeholder="First-Name Last-Name" value={name} onChange={(e) => {e.preventDefault(); setName(e.target.value)}} required />
-                </div>
-              </div>
-              <div className="row justify-content-center">
-                <label htmlFor="emailInput" className="form-label">Email address</label>
-                <div className='input-group mb-1'>
-                  <input type="email" className="form-control form-control-lg bg-light fs-6" id="emailInput" placeholder="name@example.com" value={email} onChange={(e) => {e.preventDefault(); setEmail(e.target.value)}} required />
-                </div>
-              </div>
-              <div className="row justify-content-center">
-                <label htmlFor="inputPassword" className="col-form-label">Password</label>
-                <div className='input-group mb-1'>
-                  <input type="password" id="inputPassword" className="form-control form-control-lg bg-light fs-6" aria-describedby="passwordHelpInline" placeholder='Your Password' value={password} onChange={(e) => {e.preventDefault(); setPassword(e.target.value)}} required />
-                </div>
-              </div>
-              <div className="row justify-content-center">
-                <label htmlFor="inputPassword" className="col-form-label">Confirm Password</label>
-                <div className='input-group mb-1'>
-                  <input type="password" id="inputConfirmPassword" className="form-control form-control-lg bg-light fs-6" aria-describedby="passwordHelpInline" placeholder='Confirm Your Password' value={repPassword} onChange={(e) => {e.preventDefault(); setRepPassword(e.target.value)}} required />
-                </div>
-              </div>
-              <div className='input-group mb-0 mt-2'>
-                <button type='submit' className="btn btn-primary w-100 fs-6"> Signup </button>
-                <div className="d-flex flex-row-reverse mb-3">
-                  <div className='p-1 mb-3'>
-                      {error}
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
+    try {
+      await userService.signup(submitUser)
+      
+      window.alert("Verification email sent")
+      
+      setName('')
+      setEmail('')
+      setPassword('')
+      setRepPassword('')
+      togglePage()
+      window.location.href = `${frontendBase}/authen`
+    } catch (e) {
+      setError('Email already exists!')
+      setTimeout(() => {
+        setError(null)
+      }, 5000)
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  return (
+    <div className='col-md-6 right-box shadow'>
+      <div className='row align-items-center px-4 py-5'>
+        <div className='header-text mb-4'>
+          <h2 className='text-center mb-1' style={{ fontFamily: "Poppins, sans-serif", fontWeight: "700", color: "#333" }}>
+            Create Account
+          </h2>
+          <p className='text-center text-muted'>Join us and start your journey</p>
         </div>
-    )
-}
 
-export default SignupPage
+        {error && (
+          <div className="alert alert-danger alert-dismissible fade show" role="alert">
+            <i className="bi bi-exclamation-triangle-fill me-2"></i>
+            {error}
+            <button type="button" className="btn-close" onClick={() => setError(null)}></button>
+          </div>
+        )}
+
+        <form onSubmit={handleSignup} className="signup-form">
+          <div className="form-group mb-4">
+            <label htmlFor="nameInput" className="form-label fw-bold">Full Name</label>
+            <div className='input-group'>
+              <span className="input-group-text bg-light">
+                <i className="bi bi-person"></i>
+              </span>
+              <input 
+                type="text" 
+                className="form-control form-control-lg bg-light border-start-0" 
+                id="nameInput" 
+                placeholder="First-Name Last-Name" 
+                value={name} 
+                onChange={handleName} 
+                required 
+              />
+            </div>
+          </div>
+
+          <div className="form-group mb-4">
+            <label htmlFor="emailInput" className="form-label fw-bold">Email Address</label>
+            <div className='input-group'>
+              <span className="input-group-text bg-light">
+                <i className="bi bi-envelope"></i>
+              </span>
+              <input 
+                type="email" 
+                className="form-control form-control-lg bg-light border-start-0" 
+                id="emailInput" 
+                placeholder="name@example.com" 
+                value={email} 
+                onChange={handleEmail} 
+                required 
+              />
+            </div>
+          </div>
+
+          <div className="form-group mb-4">
+            <label htmlFor="passwordInput" className="form-label fw-bold">Password</label>
+            <div className='input-group'>
+              <span className="input-group-text bg-light">
+                <i className="bi bi-lock"></i>
+              </span>
+              <input 
+                type="password" 
+                id="passwordInput" 
+                className="form-control form-control-lg bg-light border-start-0" 
+                placeholder="Create a password" 
+                value={password} 
+                onChange={handlePassword} 
+                required 
+              />
+            </div>
+          </div>
+
+          <div className="form-group mb-4">
+            <label htmlFor="confirmPasswordInput" className="form-label fw-bold">Confirm Password</label>
+            <div className='input-group'>
+              <span className="input-group-text bg-light">
+                <i className="bi bi-lock-fill"></i>
+              </span>
+              <input 
+                type="password" 
+                id="confirmPasswordInput" 
+                className="form-control form-control-lg bg-light border-start-0" 
+                placeholder="Confirm your password" 
+                value={repPassword} 
+                onChange={handleRepPassword} 
+                required 
+              />
+            </div>
+          </div>
+
+          <div className="form-group mt-5">
+            <button 
+              type='submit' 
+              className="btn btn-primary w-100 py-3 fw-bold" 
+              style={{backgroundColor: "#6c63ff", borderColor: "#6c63ff", borderRadius: "8px"}}
+              disabled={loading}
+            >
+              {loading ? (
+                <span>
+                  <span className="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+                  Creating Account...
+                </span>
+              ) : "Sign Up"}
+            </button>
+          </div>
+
+          <div className="text-center mt-4">
+            <p className="mb-0">
+              Already have an account? 
+              <button 
+                type="button" 
+                onClick={togglePage} 
+                className="btn btn-link text-decoration-none fw-bold" 
+                style={{color: "#6c63ff"}}
+              >
+                Sign In
+              </button>
+            </p>
+          </div>
+        </form>
+
+        <div className="text-center mt-4">
+          <p className="text-muted small">
+            By signing up, you agree to our <a href="#" className="text-decoration-none">Terms of Service</a> and <a href="#" className="text-decoration-none">Privacy Policy</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  )
+}

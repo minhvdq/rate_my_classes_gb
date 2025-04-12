@@ -6,6 +6,7 @@ import ReviewHeader from './ReviewHeader';
 import CommentPage from './Comment';
 import classService from '../../services/class';
 import reviewService from '../../services/review';
+import Footer from '../items/Footer'
 import './Review.css';
 import { frontendBase } from '../../utils/homeUrl';
 
@@ -165,25 +166,24 @@ export default function ReviewPage({ curUser, setCurUser, classes }) {
 
     return (
       <div className="review-page-container">
-        {/* Fixed header that stays on top */}
+        {/* Fixed header that stays on top with 20vh height */}
         <div className="fixed-header" style={{
           position: 'absolute',
           top: 0,
           left: 0,
           right: 0,
+          height: '20vh',
           zIndex: 1000,
           backgroundColor: 'white',
-          boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+          // boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
         }}>
           <ReviewHeader classes={classes} curUser={curUser} setCurUser={setCurUser} />
         </div>
-
-        <br />
-        <br />
-        <br />
-        <br />
         
-        <div className="container py-5" style={{ marginTop: '80px', paddingTop: '2rem' }}>
+        <div className="container py-5" style={{ 
+          marginTop: '20vh', 
+          paddingTop: '2rem' 
+        }}>
           {/* Class Header Card */}
           <Card 
             className="shadow border-0 mb-4" 
@@ -261,7 +261,7 @@ export default function ReviewPage({ curUser, setCurUser, classes }) {
                 >
                   <div className="review-header mb-3 pb-2 border-bottom">
                     <Row gutter={[16, 16]} align="middle">
-                      <Col xs={24} sm={6}>
+                      <Col xs={24} md={8}>
                         <div className="d-flex align-items-center">
                           <Avatar size="large" icon={<UserOutlined />} className="me-2" />
                           <div>
@@ -270,7 +270,9 @@ export default function ReviewPage({ curUser, setCurUser, classes }) {
                           </div>
                         </div>
                       </Col>
-                      <Col xs={24} sm={6}>
+                      
+                      {/* This row will keep difficulty and workload side by side */}
+                      <Col xs={12} md={8}>
                         <div className="text-center">
                           <div className="text-muted small mb-1">Difficulty</div>
                           <div 
@@ -287,7 +289,7 @@ export default function ReviewPage({ curUser, setCurUser, classes }) {
                           </div>
                         </div>
                       </Col>
-                      <Col xs={24} sm={6}>
+                      <Col xs={12} md={4}>
                         <div className="text-center">
                           <div className="text-muted small mb-1">Workload</div>
                           <div 
@@ -304,7 +306,8 @@ export default function ReviewPage({ curUser, setCurUser, classes }) {
                           </div>
                         </div>
                       </Col>
-                      <Col xs={24} sm={6}>
+                      
+                      <Col xs={24} md={4}>
                         <div className="text-end">
                           <div className="text-muted small mb-1">
                             <CalendarOutlined className="me-1" />
@@ -339,11 +342,7 @@ export default function ReviewPage({ curUser, setCurUser, classes }) {
 
           <Divider />
 
-          <footer className="text-center mt-4">
-            <p className="small text-muted">
-              Copyright © 2025 <span className="text-primary fw-bold">Rate_My_Classes_GB</span>. All Rights Reserved.
-            </p>
-          </footer>
+          <Footer />
         </div>
       </div>
     );
