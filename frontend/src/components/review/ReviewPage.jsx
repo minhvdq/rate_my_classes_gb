@@ -6,6 +6,7 @@ import ReviewHeader from './ReviewHeader';
 import CommentPage from './Comment';
 import classService from '../../services/class';
 import reviewService from '../../services/review';
+import ReviewCard from './ReviewCard'
 import Footer from '../items/Footer'
 import './Review.css';
 import { frontendBase } from '../../utils/homeUrl';
@@ -138,6 +139,20 @@ export default function ReviewPage({ curUser, setCurUser, classes }) {
     return "red";
   };
 
+  const deleteReview = async (id) => {
+    const blog = reviews.find(blog => blog.id === id);
+    if (window.confirm(`Remove this review ?`)) {
+      try {
+        reviewService.setToken(curUser.token)
+        await reviewService.remove(id)
+        setReviews(reviews.filter(review => review.id !== id))
+        setPresentReviews(presentReviews.filter(review => review.id !== id))
+      } catch (error) {
+        console.error("Failed to delete review:", error);
+      }
+    }
+  }
+
   // Score box component
   const ScoreBox = ({ score, label }) => (
     <div className="text-center">
@@ -180,7 +195,7 @@ export default function ReviewPage({ curUser, setCurUser, classes }) {
           <ReviewHeader classes={classes} curUser={curUser} setCurUser={setCurUser} />
         </div>
         
-        <div className="container py-5" style={{ 
+        <div className="container py-5 pb-0" style={{ 
           marginTop: '20vh', 
           paddingTop: '2rem' 
         }}>
@@ -254,79 +269,7 @@ export default function ReviewPage({ curUser, setCurUser, classes }) {
             
             {presentReviews.length > 0 ? (
               presentReviews.map(review => (
-                <Card 
-                  key={review.id} 
-                  className="mb-4 shadow-sm hover-effect border-0"
-                  hoverable
-                >
-                  <div className="review-header mb-3 pb-2 border-bottom">
-                    <Row gutter={[16, 16]} align="middle">
-                      <Col xs={24} md={8}>
-                        <div className="d-flex align-items-center">
-                          <Avatar size="large" icon={<UserOutlined />} className="me-2" />
-                          <div>
-                            <div className="fw-bold">{review.professor}</div>
-                            <Tag color="blue">Grade: {review.grade}</Tag>
-                          </div>
-                        </div>
-                      </Col>
-                      
-                      {/* This row will keep difficulty and workload side by side */}
-                      <Col xs={12} md={8}>
-                        <div className="text-center">
-                          <div className="text-muted small mb-1">Difficulty</div>
-                          <div 
-                            style={{
-                              backgroundColor: getRatingColor(review.difficulty),
-                              color: 'white',
-                              padding: '4px 10px',
-                              borderRadius: '4px',
-                              fontWeight: 'bold',
-                              display: 'inline-block'
-                            }}
-                          >
-                            {review.difficulty}/5
-                          </div>
-                        </div>
-                      </Col>
-                      <Col xs={12} md={4}>
-                        <div className="text-center">
-                          <div className="text-muted small mb-1">Workload</div>
-                          <div 
-                            style={{
-                              backgroundColor: getRatingColor(review.workload),
-                              color: 'white',
-                              padding: '4px 10px',
-                              borderRadius: '4px',
-                              fontWeight: 'bold',
-                              display: 'inline-block'
-                            }}
-                          >
-                            {review.workload}/5
-                          </div>
-                        </div>
-                      </Col>
-                      
-                      <Col xs={24} md={4}>
-                        <div className="text-end">
-                          <div className="text-muted small mb-1">
-                            <CalendarOutlined className="me-1" />
-                            {review.term} {review.year}
-                          </div>
-                          <Tag color={review.attendance ? "red" : "green"}>
-                            Attendance: {review.attendance ? "Required" : "Optional"}
-                          </Tag>
-                        </div>
-                      </Col>
-                    </Row>
-                  </div>
-                  
-                  {review.comment && (
-                    <div className="review-comment">
-                      <p className="mb-0 fst-italic">{review.comment}</p>
-                    </div>
-                  )}
-                </Card>
+                <ReviewCard review={review} curUser={curUser} deleteReview={() => deleteReview(review.id)} getRatingColor={getRatingColor}/>
               ))
             ) : (
               <Empty

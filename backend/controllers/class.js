@@ -15,6 +15,22 @@ classRouter.get( '/:id', async(req, res) => {
     res.status(200).json(cl)
 })
 
+classRouter.put('/:id', async( req, res) => {
+    const id = req.params.id
+    const body = req.body
+    const curClass = await Class.findById(id)
+    const fixingClass = {
+        name: body.name ? body.name : curClass.name,
+        professors: body.professors ? body.professors : curClass.professors,
+        // phoneNumber: body.phoneNumber ? body.phoneNumber : currentUser.phoneNumber,
+        reviews : body.reviews ? body.reviews : curClass.reviews,
+        department: body.department ? body.department : curClass.department
+    }
+    const updateClass = await Class.findByIdAndUpdate(id, fixingClass, {new: true})
+
+    res.status(201).json(updateClass)
+})
+
 classRouter.post( '/', async( req, res) => { 
     const body = req.body
 

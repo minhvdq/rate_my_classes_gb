@@ -42,6 +42,7 @@ export default function Comment({ curUser, curClass, togglePage }) {
     };
 
     try {
+      reviewService.setToken(curUser.token)
       await reviewService.submitReview(requestBody);
       message.success("Review submitted successfully!");
       window.location.href = `${frontendBase}/review/${curClass.id}`;
