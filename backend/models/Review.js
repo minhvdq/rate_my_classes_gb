@@ -39,6 +39,10 @@ const reviewSchema = new mongoose.Schema({
     year: {
         type: Number,
         required: true,
+    },
+    postBy: {
+        type: Date,
+        default: Date.now
     }
 });
 

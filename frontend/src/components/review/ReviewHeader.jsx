@@ -8,11 +8,19 @@ export default function ReviewHeader({classes, curUser, setCurUser}) {
         window.localStorage.clear()
         setCurUser(null)
     }
-
+ 
     const LoginCombo = () => {
         return (
             <div className='authBtn'>
-                <button onClick={(e) =>{ e.preventDefault(); window.location.href='/authen'} } className='btn btn-light'><b>Sign in</b></button>
+                <button 
+                    onClick={(e) =>{ 
+                        e.preventDefault();
+                        window.localStorage.setItem('loginDirect', window.location.href)
+                        window.location.href='/authen'
+                    }} 
+                    className='btn btn-light'
+                
+                ><b>Sign in</b></button>
                 {/* <button className= 'btn btn-dark'><b>Sign up</b></button> */}
             </div>
         )

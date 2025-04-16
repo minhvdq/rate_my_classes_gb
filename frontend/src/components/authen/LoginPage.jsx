@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import loginService from '../../services/login'
 import customStorage from '../../services/customStorage'
+import { frontendBase } from '../../utils/homeUrl'
 
 export default function LoginPage({ togglePage, setCurUser }) {
   const [email, setEmail] = useState("")
@@ -16,27 +17,39 @@ export default function LoginPage({ togglePage, setCurUser }) {
     setPassword(event.target.value)
   }
 
-  const handleLogin = async (event) => {
-    event.preventDefault()
-    setLoading(true)
-
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setError(""); // Clear any previous error
+    console.log('Loging in')
+  
     try {
-      const logUser = await loginService.login({ email: email, password })
+      const logUser = await loginService.login({ email, password });
+  
       setCurUser(logUser);
       customStorage.setItem('localUser', JSON.stringify(logUser));
-      console.log(logUser)
+  
       setEmail('');
       setPassword('');
-      window.location.href = "..";
+  
+      const loginDirect = window.localStorage.getItem("loginDirect");
+      console.log('Login direction is:', loginDirect);
+  
+      if (loginDirect) {
+        window.localStorage.removeItem("loginDirect");
+        window.location.href = loginDirect; // Redirect only if present
+      }
+      else {
+        window.location.href = frontendBase;
+      }
+  
     } catch (e) {
-      setError('Wrong username or password')
-      setTimeout(() => {
-        setError(null)
-      }, 5000)
+      console.error("Login error:", e);
+      setError("Wrong username or password");
     } finally {
-      setLoading(false)
+      setLoading(false);
     }
-  }
+  };
 
   return (
     <div className='col-md-6 right-box shadow'>

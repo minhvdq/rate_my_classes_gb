@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './components/Home'
 import ReviewPage from './components/review/ReviewPage'
 import AuthenPage from './components/authen/AuthenPage'
-import Comment from './components/review/Comment'
 import classService from './services/class'
 import customStorage from './services/customStorage'
 import EventManage from './components/management/EventManage';
@@ -27,12 +26,6 @@ function App() {
       setCurUser(lUser)
     }
   }, [])
-
-  const handleLogout = (event) => {
-    event.preventDefault()
-    window.localStorage.clear()
-    setCurUser(null)
-  }
 
   return (
     <BrowserRouter>

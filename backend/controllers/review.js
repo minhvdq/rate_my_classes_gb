@@ -57,7 +57,7 @@ reviewRouter.post( '/', async( req, res) => {
         grade: body.grade ? body.grade : "N/A",
         user: user.id,
         term: body.term,
-        year: body.year
+        year: body.year,
     })
 
     const savedReview = await newReview.save()

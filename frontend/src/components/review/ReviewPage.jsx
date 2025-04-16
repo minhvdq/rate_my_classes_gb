@@ -92,6 +92,7 @@ export default function ReviewPage({ curUser, setCurUser, classes }) {
   const handleComment = (e) => {
     e.preventDefault();
     if (!curUser) {
+      window.localStorage.setItem("loginDirect", window.location.href)
       window.location.href = `${frontendBase}/authen`;
     } else {
       togglePage();
@@ -143,15 +144,31 @@ export default function ReviewPage({ curUser, setCurUser, classes }) {
     const blog = reviews.find(blog => blog.id === id);
     if (window.confirm(`Remove this review ?`)) {
       try {
-        reviewService.setToken(curUser.token)
-        await reviewService.remove(id)
-        setReviews(reviews.filter(review => review.id !== id))
-        setPresentReviews(presentReviews.filter(review => review.id !== id))
+        reviewService.setToken(curUser.token);
+        await reviewService.remove(id);
+  
+        // Filter out the deleted review
+        const updatedReviews = reviews.filter(review => review.id !== id);
+        const updatedPresentReviews = presentReviews.filter(review => review.id !== id);
+  
+        // Recalculate total difficulty and workload
+        const newTotalDifficulty = updatedPresentReviews.reduce((sum, review) => sum + review.difficulty, 0);
+        const newTotalWorkload = updatedPresentReviews.reduce((sum, review) => sum + review.workload, 0);
+  
+        // Recalculate attendance
+        const newAttendance = updatedPresentReviews.filter(r => r.attendance).length > (updatedPresentReviews.length / 2);
+  
+        setReviews(updatedReviews);
+        setPresentReviews(updatedPresentReviews);
+        setTotalDifficulty(newTotalDifficulty);
+        setTotalWorkload(newTotalWorkload);
+        setAttendance(newAttendance);
+  
       } catch (error) {
         console.error("Failed to delete review:", error);
       }
     }
-  }
+  };
 
   // Score box component
   const ScoreBox = ({ score, label }) => (

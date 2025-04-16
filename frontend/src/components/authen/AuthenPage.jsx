@@ -8,15 +8,13 @@ import rmcillutration from '/rmcillustration.svg'
 export default function AuthenPage({curUser, setCurUser}) {
     const [inLogin, setInLogin] = useState(true)
 
-    if(curUser) {
-        console.log("Logged! Redirecting...")
-        window.location.href = frontendBase;
-        return
-    }
-
     const togglePage = (e) => {
         e.preventDefault()
         setInLogin(!inLogin)
+    }
+
+    if (curUser) {
+        return <Navigate to={frontendBase} replace />;
     }
 
 
