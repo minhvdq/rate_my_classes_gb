@@ -41,7 +41,7 @@ classRouter.post( '/', async( req, res) => {
         reviews: [],
     })
 
-    const savedClass = await newClass.save()
+    const savedClass = await newClass.save() 
     res.status(200).json(savedClass)
 })
 
