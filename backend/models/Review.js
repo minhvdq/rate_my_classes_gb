@@ -6,8 +6,8 @@ const reviewSchema = new mongoose.Schema({
         ref: 'Class',
     }, 
     professor: {
-        type: String,
-        required: true,
+        type: mongoose.Types.ObjectId,
+        ref: 'Professor',
     },
     comment: {
         type: String,

@@ -15,5 +15,269 @@
         "Caitlin Hult",
         "Catherine Frost",
         "Nathan Shank"
+    ],
+    "Psychology":[
+        "Kathy R. Berenson",
+        "Kathleen M. Cain",
+        "Katherine W. Delaney",
+        "Nathalie Goubet",
+        "Daniel D. McCall",
+        "Brian P. Meier",
+        "Richard Russell",
+        "Stephen M. Siviy",
+        "Nina Tarner",
+        "Kevin D. Wilson"
+    ],
+    "Physics":[
+        "Sheakha Aldaihan",
+        "Kurt Andresen",
+        "Bret E. Crawford",
+        "Timothy N. Good",
+        "Amani Jayakody",
+        "Ryan Johnson",
+        "Jacquelynne B. Milingo",
+        "James Puckett",
+        "Yoshihiro Sato"
+    ],
+    "Economics": [
+        "Rimvydas Baltaduonis",
+        "Margaret Blume-Kohout",
+        "John J. Cadigan",
+        "Pedro Clavijo",
+        "Brendan Cushing-Daniels",
+        "Zhining Hu",
+        "Sondes Kahouli",
+        "Drew Murphy",
+        "Linus M. Nyiwul",
+        "James O’Brien",
+        "Gökcer Özgür",
+        "Charles L. Weise"
+    ],
+    "Management": [
+        "Duane A. Bernard",
+        "Alice Brawley-Newlin",
+        "Todd Breighner",
+        "Bennett T. Bruce",
+        "Karen J. Frey",
+        "Yuechan Lu Goldblatt",
+        "Amy C. Hooper",
+        "Marta Maras",
+        "Ranjeet Nambudiri",
+        "Heather N. Odle-Dusseau",
+        "Joseph R. Radzevick",
+        "Duane A. Bernard"
+    ],
+    "Chemistry": [
+        "Alecia Achimovich",
+        "Katherine Buettner",
+        "Shelli Frey",
+        "Timothy W. Funk",
+        "Donald L. Jameson",
+        "Jeremy J. Kuhar",
+        "Suvrajit Sengupta",
+        "Gregory Suryn",
+        "Lucas B. Thompson",
+        "Shana Wagner",
+        "Michael R. Wedlock"
+    ],
+    "Biology": [
+        "Michael Caldwell",
+        "Véronique A. Delesalle",
+        "Melanie Eshelman",
+        "Peter P. Fong",
+        "Shelli Frey",
+        "Kazuo Hiraizumi",
+        "Steven W. James",
+        "Ryan Kerney",
+        "Matthew Kittelberger",
+        "Angel Solis",
+        "Paula Trillo",
+        "Istvan A. Urcuyo"
+    ],
+    "Asian Studies": [
+        "Eleanor J. Hogan",
+        "Jing Li",
+        "Junjie Luo",
+        "Yoko Nishimura",
+        "Wei-Ling Kuo",
+        "Kotoha Mori",
+        "Kathy Ambrose"
+    ],
+    "Africana Studies":[
+        "Abou Bamba",
+        "Jennifer Collins Bloomquist",
+        "Scott Hancock",
+        "Linus Mabughi Nyiwul",
+        "Suzanne Gockowski",
+        "Florence Ramond Jurney",
+        "Hakim Mohandas Amani Williams",
+        "Larissa Irizarry"
+    ],
+    "Anthropology": [
+        "Donna Lynn Perry",
+        "Matthew H. Amster",
+        "Amy Young Evrard",
+        "Benjamin Peter Luley",
+        "Kirby Farah",
+        "Jonathan Amith",
+        "Christina McSherry",
+        "Andrea Switzer"
+    ],
+    "Arabic": [
+        "Abdulkareem Said Ramadan"
+    ],
+    "Art and Art History": [
+        "Felicia M. Else",
+        "Tina M. Gebhart",
+        "Nicholas Miller",
+        "John E. Ryan",
+        "Austin Stiegemeier",
+        "Yan Sun"
+    ],
+    "Astronomy": [
+        "Jacquelynne B. Milingo",
+        "Ryan E. Johnson",
+        "Ian R. Clarke"
+    ],
+    "Chinese": [
+        "Siyan Hou",
+        "Jing Li",
+        "Wei-Ling Kuo",
+        "Junjie Luo"
+    ],
+    "Cinema and Media Studies": [
+        "James Udden",
+        "Matthew Amster",
+        "Lidia Hwa Soon Anchisi",
+        "Salma Monani",
+        "Henning Wrage",
+        "Vern Cisney",
+        "Aisha Mershani",
+        "Jack Ryan",
+        "Carol Coon"
+    ],
+    "Civil War Era Studies": [
+        "Jill Ogline Titus",
+        "Jim Downs",
+        "Michael J. Birkner",
+        "Scott Hancock",
+        "Ian Andrew Isherwood",
+        "Jack Ryan",
+        "Thomas Pegram",
+        "Triada Chavis"
+    ],
+    "Classical Studies": [
+        "Rachel Lesser",
+        "Topher Kurfess",
+        "Kari Greenwalt",
+        "Benjamin Peter Luley"
+    ],
+    "Data Science": [
+
+    ],
+    "Education": [
+        "Lori Althoff",
+        "Anthony Angelini",
+        "Lawrence Sanders",
+        "Divonna Stebick",
+        "Kevin Thomas",
+        "Misti Wildasin"
+    ],
+    "English": [
+        "Christopher D'Addario",
+        "Aristides Dimitriou",
+        "Elizabeth M. Duquette",
+        "Christopher R. Fee",
+        "Melissa Forbes",
+        "Fred G. Leebron",
+        "McKinley E. Melton",
+        "Nadine Meyer",
+        "Joanne E. Myers",
+        "Kathryn Rhett",
+        "John E. Ryan",
+        "Rachele Salvini",
+        "Jesse Cordes Selbin",
+        "Sushmita Sircar",
+        "Stefanie E. Sobelle"
+    ],
+    "Environmental Studies": [
+        "Rebecca Eckert",
+        "Natasha Gownaris",
+        "Irene Bramley Beers Hawkins",
+        "Salma Monani",
+        "Monica Ogra",
+        "Rutherford V. Platt",
+        "Sarah M. Principato",
+        "Andrew M. Wilson",
+        "Randall K. Wilson"
+    ],
+    "French": [
+        "Caroline Ferraris-Besso",
+        "Florence Ramond Jurney",
+        "Emma Le Hecho",
+        "John (Jack) Murphy",
+        "Amgad Serour"
+    ],
+    "German Studies": [
+        "Richard Lambert",
+        "Kerry Wallach",
+        "Henning Wrage"
+    ],
+    "Health Sciences": [
+        "Megan Benka-Coker",
+        "Emily Besecker",
+        "Josef Brandauer",
+        "Amy B. Dailey",
+        "Daniel G. Drury",
+        "Kevin Kelly",
+        "Eric E. Noreen",
+        "Victoria Wolf"
+    ],
+    "History": [
+        "Abou Bamba",
+        "Michael J. Birkner",
+        "William D. Bowman"
+    ],
+    "Interdisciplinary Studies": [
+        
+    ],
+    "Italian Studies": [
+
+    ],
+    "Japanese": [
+
+    ],
+    "Latin": [
+
+    ],
+    "Latin American Studies": [
+
+    ],
+    "Law": [
+
+    ],
+    "Philosophy": [
+
+    ],
+    "Political Science": [
+
+    ],
+    "Public Policy": [
+
+    ],
+    "Religious Studies": [
+
+    ],
+    "Sociology": [
+
+    ],
+    "Spanish": [
+
+    ],
+    "Theatre Arts": [
+
+    ],
+    "Women, Gender, & Sexuality Studies": [
+
     ]
-}
+}   

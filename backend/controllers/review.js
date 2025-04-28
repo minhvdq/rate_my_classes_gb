@@ -6,6 +6,7 @@ const mongoose = require('mongoose')
 const axios = require('axios')
 const config = require('../utils/config')
 const jwt = require('jsonwebtoken')
+const Professor = require('../models/Professor')
 
 reviewRouter.get( '/', async(req, res) => {
     const reviews = await Review.find({})
@@ -22,21 +23,27 @@ reviewRouter.post( '/', async( req, res) => {
     const body = req.body
     const decodedToken = await jwt.verify(req.token, config.SECRET )
     let classID = body.class
+    let professorID = body.professor
 
     if(!decodedToken){
         return response.status(400).json({error: "Invalid Token"})
     }
 
-    if( !classID) {
-        res.status(400).json({error: "No class ID found !"})
+    if( !classID || !professorID) {
+        res.status(400).json({error: "No class ID or Professor ID found!"})
         return
     }
 
     if( typeof classID === "string" ) {
         classID = new mongoose.Types.ObjectId(classID)
     }
+    
+    if( typeof professorID === "string" ){
+        professorID = new mongoose.Types.ObjectId(professorID)
+    }
 
     const user = await User.findById(decodedToken.id)
+
 
     if( !user ) {
         throw new Error( "Invalid User ID")
@@ -46,10 +53,14 @@ reviewRouter.post( '/', async( req, res) => {
     if( !foundClass ){
         throw new Error( "Invalid Class ID")
     }
+    const foundProfessor = await Professor.findById(professorID)
+    if( !foundProfessor ){
+        throw new Error( "Invalid Professor ID")
+    }
 
     const newReview = new Review({
         class: classID,
-        professor: body.professor,
+        professor: professorID,
         comment: body.comment ? body.comment : "N/A",
         workload: body.workload,
         difficulty: body.difficulty,
@@ -70,6 +81,10 @@ reviewRouter.post( '/', async( req, res) => {
     foundClass.reviews.push(savedReview._id)
     await foundClass.save()
 
+    // Update the professor's reviews
+    foundProfessor.reviews.push(savedReview._id)
+    await foundProfessor.save()
+
     res.status(200).json(savedReview)
 })
 
@@ -87,10 +102,11 @@ reviewRouter.delete('/:id', async (request, response) => {
     const tokenUser = await User.findById(decodedToken.id)
     const review = await Review.findById(reviewId)
     const cl = await Class.findById(review.class)
+    const professor = await Professor.findById(review.professor)
 
-    if(!cl){
-        console.log("No class valid")
-        return response.status(400).json({error: "invalid class"})
+    if(!cl || !professor){
+        console.log("No class or professor valid")
+        return response.status(400).json({error: "invalid class or professor"})
     }
 
     if(review.user.toString() === tokenUser._id.toString()){
@@ -98,15 +114,23 @@ reviewRouter.delete('/:id', async (request, response) => {
         tokenUser.reviews = tokenUser.reviews.filter(
             id => id.toString() !== reviewId
         )
-        cl.reviews = tokenUser.reviews.filter(
+
+        cl.reviews = cl.reviews.filter(
             id => id.toString() !== reviewId
         )
+
+        professor.reviews = professor.reviews.filter(
+            id => id.toString() !== reviewId
+        )
+        
         await tokenUser.save()
         await cl.save()
+        await professor.save()
+
         response.status(204).json(newReview)
     }
     else{
-        response.status(400).json({error: `invalid User ${review.user} and ${tokenUser._id}`})
+        response.status(400).json({error: `invalid User`})
     }
 })
 

@@ -21,8 +21,6 @@ classRouter.put('/:id', async( req, res) => {
     const curClass = await Class.findById(id)
     const fixingClass = {
         name: body.name ? body.name : curClass.name,
-        professors: body.professors ? body.professors : curClass.professors,
-        // phoneNumber: body.phoneNumber ? body.phoneNumber : currentUser.phoneNumber,
         reviews : body.reviews ? body.reviews : curClass.reviews,
         department: body.department ? body.department : curClass.department
     }
@@ -37,7 +35,6 @@ classRouter.post( '/', async( req, res) => {
     const newClass = new Class({
         name: body.name,
         department: body.department,
-        professors: body.professors,
         reviews: [],
     })
 

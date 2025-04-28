@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const classSchema = new mongoose.Schema({
+const professorSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true,
@@ -25,4 +25,4 @@ mongoose.set('toJSON', {
     },
 });
 
-module.exports = mongoose.model('Class', classSchema);
+module.exports = mongoose.model('Professor', professorSchema);

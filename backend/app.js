@@ -14,6 +14,7 @@ const newUserRouter = require( './controllers/newuser')
 
 const mongoose = require('mongoose')
 const path = require('path');
+const professorRouter = require('./controllers/professor')
 
 mongoose.set('strictQuery', false)
 
@@ -26,16 +27,6 @@ mongoose.connect(config.MONGODB_URI).then(result => {
 
 // TO-DO: restricted the database access to certain origins, secure data
 // const allowedOrigins = ["0.0.0.0"]
-
-// app.use(cors({
-//     origin:( origin, callback) => { 
-//         if( !origin || allowedOrigins.includes(origin) ){
-//             callback(null, true)
-//         }else{
-//             callback(new Error("Not allowed by CORS"))
-//         }
-//     }
-// }))
 
 const allowedOrigins = [
     'http://0.0.0.0:5173',     // main frontend domain
@@ -76,6 +67,7 @@ app.use('/api/class', classRouter)
 app.use('/api/login', loginRouter)
 app.use('/api/newUser', newUserRouter)
 app.use('/api/auth', authRouter)
+app.use('/api/professor', professorRouter)
 app.use(middlewares.unknownEndpoint)
 app.use(middlewares.errorHandler)
 
