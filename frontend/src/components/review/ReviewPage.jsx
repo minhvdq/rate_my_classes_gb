@@ -6,6 +6,7 @@ import ReviewHeader from './ReviewHeader';
 import CommentPage from './Comment';
 import classService from '../../services/class';
 import reviewService from '../../services/review';
+import professorService from '../../services/professor';
 import ReviewCard from './ReviewCard'
 import Footer from '../items/Footer'
 import './Review.css';
@@ -16,6 +17,7 @@ export default function ReviewPage({ curUser, setCurUser, classes }) {
   const [reviews, setReviews] = useState([]);
   const [presentReviews, setPresentReviews] = useState([]);
   const [profOptions, setProfOptions] = useState([]);
+  const [professors, setProfessors] = useState([]);
   const [totalDifficulty, setTotalDifficulty] = useState(0);
   const [totalWorkload, setTotalWorkload] = useState(0);
   const [attendance, setAttendance] = useState(false);
@@ -40,9 +42,21 @@ export default function ReviewPage({ curUser, setCurUser, classes }) {
       }
 
       setCurClass(foundClass);
+      let department = foundClass.department;
+      const professorsData = await professorService.getByDepartment(department);
+      const professors = professorsData.data;
+      if(!professors) {
+        throw new Error("NO PROFESSORS FOUND");
+      }
+
+      console.log('Professors data:', professors);
+      setProfessors(professors);
 
       // Set the hook state of professors - for the options
-      const arr = foundClass.professors.map(prof => ({ value: prof, label: prof }));
+      const arr = professors.map(prof => {
+        console.log('Professor data:', prof);
+        return { value: prof._id || prof.id, label: prof.name };
+      });
       arr.unshift({ value: "All", label: "All Professors" });
       setProfOptions(arr);
 
@@ -50,6 +64,7 @@ export default function ReviewPage({ curUser, setCurUser, classes }) {
       const reviewPromises = foundClass.reviews.map(async rvId => {
         const data = await reviewService.getByID(rvId);
         const foundReview = data.data;
+        console.log('Review data:', foundReview);
         return foundReview;
       });
 
@@ -118,7 +133,11 @@ export default function ReviewPage({ curUser, setCurUser, classes }) {
       setTotalDifficulty(totalD);
       setTotalWorkload(totalW);
     } else {
-      const sortedReviews = [...reviews].filter(review => review.professor === value);
+      console.log('Selected professor value:', value);
+      const sortedReviews = [...reviews].filter(review => {
+        console.log('Comparing:', review.professor, value);
+        return review.professor === value;
+      });
       setPresentReviews(sortedReviews);
 
       let totalD = 0;
@@ -286,7 +305,7 @@ export default function ReviewPage({ curUser, setCurUser, classes }) {
             
             {presentReviews.length > 0 ? (
               presentReviews.map(review => (
-                <ReviewCard review={review} curUser={curUser} deleteReview={() => deleteReview(review.id)} getRatingColor={getRatingColor}/>
+                <ReviewCard professors={professors} review={review} curUser={curUser} deleteReview={() => deleteReview(review.id)} getRatingColor={getRatingColor}/>
               ))
             ) : (
               <Empty
@@ -310,7 +329,7 @@ export default function ReviewPage({ curUser, setCurUser, classes }) {
 
   return (
     <>
-      {inComment ? <CommentPage curUser={curUser} curClass={curClass} togglePage={togglePage} /> : <MainReviewPage />}
+      {inComment ? <CommentPage curUser={curUser} curClass={curClass} togglePage={togglePage} professors={professors} /> : <MainReviewPage />}
     </>
   );
 }

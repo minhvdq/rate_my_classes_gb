@@ -15,6 +15,12 @@ professorRouter.get( '/:id', async(req, res) => {
     res.status(200).json(cl)
 })
 
+professorRouter.get('/byDepartment/:department', async(req, res) => {
+    const department = req.params.department
+    const professors = await Professor.find({department: department})
+    res.status(200).json(professors)
+})
+
 professorRouter.put('/:id', async( req, res) => {
     const id = req.params.id
     const body = req.body

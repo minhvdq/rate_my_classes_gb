@@ -1,7 +1,7 @@
 import { Tag, Avatar, Card, Row, Col, Button } from 'antd';
 import { UserOutlined, CalendarOutlined, DeleteOutlined } from '@ant-design/icons';
 
-export default function ReviewCard({ review, curUser, deleteReview, getRatingColor }) {
+export default function ReviewCard({ review, curUser, deleteReview, getRatingColor, professors }) {
   const check = (curUser?.id === review.user);
 
   return (
@@ -17,7 +17,7 @@ export default function ReviewCard({ review, curUser, deleteReview, getRatingCol
             <div className="d-flex align-items-center">
               <Avatar size="large" icon={<UserOutlined />} className="me-2" />
               <div>
-                <div className="fw-bold">{review.professor}</div>
+                <div className="fw-bold">{professors.find(prof => (prof._id === review.professor || prof.id === review.professor))?.name || 'Unknown Professor'}</div>
                 <Tag color="blue">Grade: {review.grade}</Tag>
               </div>
             </div>

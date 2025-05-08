@@ -9,7 +9,7 @@ import { frontendBase } from '../../utils/homeUrl';
 const { TextArea } = Input;
 const { Option } = Select;
 
-export default function Comment({ curUser, curClass, togglePage }) {
+export default function Comment({ curUser, curClass, togglePage, professors }) {
   const [form] = Form.useForm();
   const [loading, setLoading] = useState(false);
   
@@ -86,8 +86,8 @@ export default function Comment({ curUser, curClass, togglePage }) {
                   rules={[{ required: true, message: 'Please select a professor' }]}
                 >
                   <Select placeholder="Select your professor">
-                    {curClass?.professors?.map(professor => (
-                      <Option key={professor} value={professor}>{professor}</Option>
+                    {professors?.map(professor => (
+                      <Option key={professor._id || professor.id} value={professor._id || professor.id}>{professor.name}</Option>
                     ))}
                   </Select>
                 </Form.Item>
