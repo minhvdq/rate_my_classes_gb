@@ -28,6 +28,9 @@
             </div>
             </form>
             <script>
+                const frontendBase = 'http://localhost:5173';
+                const backendBase = 'http://localhost:3000';
+
                 $(document).ready(function() {
                 var resetForm = document.getElementById('reset-form')
                 var resetButton = document.getElementById('submit-button')
@@ -35,7 +38,7 @@
                 var params = new URLSearchParams(queryString)
                 var token = params.get('token')
                 var userId = params.get('id')
-                var baseUrl = 'http://localhost:3000/api/auth/resetPassword'
+                var baseUrl = `${backendBase}/api/auth/resetPassword`
                 var password = document.getElementById("new-password")
                 var newPassword = document.getElementById('confirm-password')
                 var error = document.getElementById('err')
@@ -74,7 +77,7 @@
                         }),
                         success: function(data, status){
                             if( status === 'success'){
-                                window.location.href = "/";
+                                window.location.href = `${frontendBase}/authen`;
                             }else{
                                 setError('Token expired or something might happened, try again later!')
                                 alert("Error connecting to server " + status);

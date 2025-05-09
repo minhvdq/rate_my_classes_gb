@@ -30,24 +30,27 @@ mongoose.connect(config.MONGODB_URI).then(result => {
 
 const allowedOrigins = [
     'http://0.0.0.0:5173',     // main frontend domain
-    'http://localhost:5173' // optional admin subdomain
+    'http://localhost:5173',   // local development
+    'http://127.0.0.1:5173',   // local development alternative
+    'http://localhost:3000',   // alternative port
+    'http://127.0.0.1:3000'    // alternative port alternative
 ];
 
 const corsOptions = {
-origin: function (origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
-    callback(null, true);
-    } else {
-    callback(new Error('Not allowed by CORS'));
-    }
-},
-methods: ['GET', 'POST', 'PUT', 'DELETE'], // restrict methods
-credentials: true, // allow cookies if needed
-optionsSuccessStatus: 204
+    origin: function (origin, callback) {
+        if (!origin || allowedOrigins.includes(origin)) {
+            callback(null, true);
+        } else {
+            callback(new Error('Not allowed by CORS'));
+        }
+    },
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Added OPTIONS
+    credentials: true,
+    optionsSuccessStatus: 204
 };
 
-// Apply CORS only to API routes
-app.use('/api', cors(corsOptions));
+// Apply CORS to all routes
+app.use(cors(corsOptions));
 
 
 app.use(express.json())

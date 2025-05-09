@@ -25,10 +25,14 @@
             </div>
             </form>
             <script>
+                // Define base URLs directly
+                const frontendBase = 'http://localhost:5173';
+                const backendBase = 'http://localhost:3000';
+
                 $(document).ready(function() {
                 var resetForm = document.getElementById('reset-form')
                 var resetButton = document.getElementById('submit-button')
-                var baseUrl = 'http://localhost:3000/api/auth/requestResetPassword'
+                var baseUrl = `${backendBase}/api/auth/requestResetPassword`
                 var emailAdd = document.getElementById('email')
                 var error = document.getElementById('err')
 
@@ -39,7 +43,6 @@
                     }, 3000)
                     throw new Error(es)
                 }
-
 
                 $("#reset-form").submit(function(e) {
                     e.preventDefault()
@@ -55,7 +58,7 @@
                             if( status === 'success'){
                                 resetForm.disabled = true
                                 alert("Reset link sent to email, pleas check!")
-                                window.location.href = "/";
+                                window.location.href = `${frontendBase}/authen`;
                                 
                             }else{
                                 setError('Token expired or something might happened, try again later!')
@@ -68,14 +71,6 @@
                         },
                         dataType: "json"
                     })
-                    // $.post(`${baseUrl}`, sendData)
-                    // .done(function(data, status) {
-                    //     window.location.href = "http://localhost:5173/";
-                    // })
-                    // .fail(function(a, b, error){
-                    //     console.log("error appear")
-                    //     setError('Failed to reset password: ' + error)
-                    // })
                 })
             })
             </script>
