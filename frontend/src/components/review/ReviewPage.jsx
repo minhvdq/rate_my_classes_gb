@@ -160,7 +160,6 @@ export default function ReviewPage({ curUser, setCurUser, classes }) {
   };
 
   const deleteReview = async (id) => {
-    const blog = reviews.find(blog => blog.id === id);
     if (window.confirm(`Remove this review ?`)) {
       try {
         reviewService.setToken(curUser.token);
@@ -305,13 +304,13 @@ export default function ReviewPage({ curUser, setCurUser, classes }) {
             
             {presentReviews.length > 0 ? (
               presentReviews.map(review => (
-                <ReviewCard professors={professors} review={review} curUser={curUser} deleteReview={() => deleteReview(review.id)} getRatingColor={getRatingColor}/>
+                <ReviewCard key={review.id} professors={professors} review={review} curUser={curUser} deleteReview={() => deleteReview(review.id)} getRatingColor={getRatingColor}/>
               ))
             ) : (
               <Empty
                 description={
                   <span>
-                    No reviews for {selectedValue !== "All" ? selectedValue : "this class"} yet.
+                    No reviews for {selectedValue !== "All" ? professors.find(prof => prof.id === selectedValue).name : "this class"} yet.
                     Be the first to add one!
                   </span>
                 }
