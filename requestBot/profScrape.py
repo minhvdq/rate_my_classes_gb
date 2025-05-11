@@ -10,9 +10,13 @@ from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from dotenv import load_dotenv, dotenv_values 
 
+keys = ["Professor of", "Chair of", "Lecturer in", "Professor in", "Assistant in", "Chair in"]
+
 def afind( array, str ):
     for val in array:
-        if(val in str):
+        altVal = val.replace("&", "and")
+        altVal_2 = val.replace(" &", ", and")
+        if(val in str or altVal in str or altVal_2 in str):
             return val
     return "Not found"
 
@@ -60,6 +64,41 @@ def get_raw_html(url):
     finally:
         driver.quit()
 
+subjects = import_json("resources/subjects.json")
+subjects = subjects["departments"]
+
+# 
+def arrInStr(arr, str):
+    for val in arr:
+        altVal = val.replace("&", "and")
+        altVal_2 = val.replace(" &", ", and")
+        if(val in str or altVal in str or altVal_2 in str):
+            return val
+    return "Not found"
+
+def findDep(line):
+    chunks = line.split(";")
+    res = ""
+    for chunk in chunks:
+        if(arrInStr(keys, chunk) != "Not found"):
+            res = chunk
+            break
+    dep = afind(subjects, res)
+    if dep == "Not found":
+        dep = afind(subjects, line)
+    return dep
+
+def fixProfName(name):
+    words = name.split(" ")
+    fixName = ""
+    for word in words:
+        if("(" in word or ")" in word):
+            continue
+        fixName += word + " "
+    return fixName.strip()
+
+professors = []
+
 def main(url):
     print("Starting main")
     soup = get_raw_html(url)
@@ -73,26 +112,37 @@ def main(url):
             # print(prof)
             continue
         profName = prof.strong.text
+        profName = fixProfName(profName)
         # print(profName)
         line = prof.text
         line = line.replace(profName, "")
         line = line.replace("<strong>", "")
         line = line.replace("<strong/>", "")
-        title = line.split(";")[1]
-        subjects = import_json("resources/subjects.json")
-        subjects = subjects["departments"]
-        dep = afind(subjects, title)
+        
+        dep = findDep(line)
+        # print(profName)
+        # print(line)
+        # print(dep)
+        # print("--------------------------------")
+        profCount += 1
         if(dep == "Not found"):
             print(profName)
-            print("Not Found")
             print(line)
-            dep = afind(subjects, line)
             print(dep)
             nfCnt += 1
-        # print(dep)
-        profCount += 1
+            print("--------------------------------")
+            continue
+
+        professors.append({
+            "name": profName,
+            "department": dep,
+        })
+
     print(profCount)
     print(nfCnt)
+    filename = "resources/professors.json"
+    with open(filename, "w") as f:
+        json.dump(professors, f, indent=4)
 
 # subjects = import_json("resources/subjects.json")
 # subjects = subjects["departments"]

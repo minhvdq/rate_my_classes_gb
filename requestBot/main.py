@@ -1,7 +1,7 @@
 import requests
 import json
 
-baseUrl = "http://localhost:3000/api/class"
+baseUrl = "http://localhost:3000/"
 
 urls = ["asianStudies", "biology", "chemistry", "economics", "management", "physics", "psychology"]
 
@@ -48,8 +48,14 @@ def updateData():
         else:
             print(f"Failed to post {cl['name']}: {rp.status_code} - {rp.text}")
 
-classes = getData(baseUrl)
-print(len(classes))
-updateData()
-# print( classes[0]['id'])
+def pushProfs():
+    url = baseUrl + "api/professor"
+    profs = getJson('./resources/professors.json')
+    for prof in profs:
+        response = requests.post(url, json=prof)
+        if response.status_code == 201:
+            print(f"Posted: {prof['name']}")
+        else:
+            print(f"Failed to post {prof['name']}: {response.status_code} - {response.text}")
 
+pushProfs()

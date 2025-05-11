@@ -1,0 +1,854 @@
+[
+    {
+        "name": "Alecia Achimovich",
+        "department": "Chemistry"
+    },
+    {
+        "name": "Sheakha Aldaihan",
+        "department": "Physics"
+    },
+    {
+        "name": "Yasemin Akbaba",
+        "department": "Political Science"
+    },
+    {
+        "name": "Matthew H. Amster",
+        "department": "Anthropology"
+    },
+    {
+        "name": "Kurt Andresen",
+        "department": "Physics"
+    },
+    {
+        "name": "Bela Bajnok",
+        "department": "Mathematics"
+    },
+    {
+        "name": "Rimvydas Baltaduonis",
+        "department": "Economics"
+    },
+    {
+        "name": "Abou Bamba",
+        "department": "Africana Studies"
+    },
+    {
+        "name": "Megan Benka-Coker",
+        "department": "Health Sciences"
+    },
+    {
+        "name": "Kathy R. Berenson",
+        "department": "Psychology"
+    },
+    {
+        "name": "Duane A. Bernard",
+        "department": "Management"
+    },
+    {
+        "name": "Eric Berninghausen",
+        "department": "Theatre Arts"
+    },
+    {
+        "name": "Emily Besecker",
+        "department": "Health Sciences"
+    },
+    {
+        "name": "Emelio R. Betances",
+        "department": "Latin"
+    },
+    {
+        "name": "Michael J. Birkner",
+        "department": "History"
+    },
+    {
+        "name": "Jennifer Collins Bloomquist",
+        "department": "Africana Studies"
+    },
+    {
+        "name": "Margaret Blume-Kohout",
+        "department": "Economics"
+    },
+    {
+        "name": "Scott Boddery",
+        "department": "Political Science"
+    },
+    {
+        "name": "William D. Bowman",
+        "department": "History"
+    },
+    {
+        "name": "Josef Brandauer",
+        "department": "Health Sciences"
+    },
+    {
+        "name": "Alice Brawley-Newlin",
+        "department": "Management"
+    },
+    {
+        "name": "Todd Breighner",
+        "department": "Management"
+    },
+    {
+        "name": "Lucy Britt",
+        "department": "Political Science"
+    },
+    {
+        "name": "Bennett T. Bruce",
+        "department": "Management"
+    },
+    {
+        "name": "Katherine Buettner",
+        "department": "Chemistry"
+    },
+    {
+        "name": "John J. Cadigan",
+        "department": "Economics"
+    },
+    {
+        "name": "Kathleen M. Cain",
+        "department": "Psychology"
+    },
+    {
+        "name": "Michael Caldwell",
+        "department": "Biology"
+    },
+    {
+        "name": "Veronica Calvillo",
+        "department": "Spanish"
+    },
+    {
+        "name": "Vernon Cisney",
+        "department": "Interdisciplinary Studies"
+    },
+    {
+        "name": "Ricardo Conceicao",
+        "department": "Mathematics"
+    },
+    {
+        "name": "Pedro Clavijo",
+        "department": "Economics"
+    },
+    {
+        "name": "Bret E. Crawford",
+        "department": "Physics"
+    },
+    {
+        "name": "Brendan Cushing-Daniels",
+        "department": "Economics"
+    },
+    {
+        "name": "Christopher D\u2019Addario",
+        "department": "English"
+    },
+    {
+        "name": "Amy B. Dailey",
+        "department": "Health Sciences"
+    },
+    {
+        "name": "Roy A. Dawes",
+        "department": "Political Science"
+    },
+    {
+        "name": "Katherine W. Delaney",
+        "department": "Psychology"
+    },
+    {
+        "name": "V\u00e9ronique A. Delesalle",
+        "department": "Biology"
+    },
+    {
+        "name": "Aristides Dimitriou",
+        "department": "English"
+    },
+    {
+        "name": "Avner Dorman",
+        "department": "Music"
+    },
+    {
+        "name": "Anne Douds",
+        "department": "Public Policy"
+    },
+    {
+        "name": "James Downs",
+        "department": "Civil War Era Studies"
+    },
+    {
+        "name": "Daniel G. Drury",
+        "department": "Health Sciences"
+    },
+    {
+        "name": "Jennifer K. Dumont",
+        "department": "Spanish"
+    },
+    {
+        "name": "Elizabeth M. Duquette",
+        "department": "English"
+    },
+    {
+        "name": "Rebecca Eckert",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "Felicia M. Else",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "Melanie Eshelman",
+        "department": "Biology"
+    },
+    {
+        "name": "Amy E. Young Evrard",
+        "department": "Anthropology"
+    },
+    {
+        "name": "Kirby Farah",
+        "department": "Anthropology"
+    },
+    {
+        "name": "Christopher R. Fee",
+        "department": "English"
+    },
+    {
+        "name": "Caroline Ferraris-Besso",
+        "department": "French"
+    },
+    {
+        "name": "Peter P. Fong",
+        "department": "Biology"
+    },
+    {
+        "name": "Melissa Forbes",
+        "department": "English"
+    },
+    {
+        "name": "Karen J. Frey",
+        "department": "Management"
+    },
+    {
+        "name": "Shelli Frey",
+        "department": "Biology"
+    },
+    {
+        "name": "Timothy W. Funk",
+        "department": "Chemistry"
+    },
+    {
+        "name": "Tina M. Gebhart",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "Steven J. Gimbel",
+        "department": "Philosophy"
+    },
+    {
+        "name": "Darren B. Glass",
+        "department": "Mathematics"
+    },
+    {
+        "name": "Yuechan Lu Goldblatt",
+        "department": "Management"
+    },
+    {
+        "name": "Timothy N. Good",
+        "department": "Physics"
+    },
+    {
+        "name": "Liza Gordon",
+        "department": "Political Science"
+    },
+    {
+        "name": "Nathalie Goubet",
+        "department": "Psychology"
+    },
+    {
+        "name": "Natasha Gownaris",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "Nathifa Greene",
+        "department": "Philosophy"
+    },
+    {
+        "name": "Hannah Greenwald",
+        "department": "History"
+    },
+    {
+        "name": "Scott Hancock",
+        "department": "Africana Studies"
+    },
+    {
+        "name": "Brent Harger",
+        "department": "Sociology"
+    },
+    {
+        "name": "Caroline A. Hartzell",
+        "department": "Political Science"
+    },
+    {
+        "name": "Irene Bramley Beers Hawkins",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "Cassie M. Hays",
+        "department": "Sociology"
+    },
+    {
+        "name": "Amanda Heim;",
+        "department": "Music"
+    },
+    {
+        "name": "Beth M. Campbell Hetrick",
+        "department": "Mathematics"
+    },
+    {
+        "name": "Kazuo Hiraizumi",
+        "department": "Biology"
+    },
+    {
+        "name": "Susan Hochmiller",
+        "department": "Music"
+    },
+    {
+        "name": "Eleanor J. Hogan",
+        "department": "Asian Studies"
+    },
+    {
+        "name": "Amy C. Hooper",
+        "department": "Management"
+    },
+    {
+        "name": "Siyan Hou",
+        "department": "Asian Studies"
+    },
+    {
+        "name": "Zhining Hu",
+        "department": "Economics"
+    },
+    {
+        "name": "Caitlin Hult",
+        "department": "Mathematics"
+    },
+    {
+        "name": "Ivaylo Ilinkin",
+        "department": "Computer Science"
+    },
+    {
+        "name": "Larissa Irizarry",
+        "department": "Music"
+    },
+    {
+        "name": "Ian Isherwood",
+        "department": "Interdisciplinary Studies"
+    },
+    {
+        "name": "Steven W. James",
+        "department": "Biology"
+    },
+    {
+        "name": "Donald L. Jameson",
+        "department": "Chemistry"
+    },
+    {
+        "name": "Amani Jayakody",
+        "department": "Physics"
+    },
+    {
+        "name": "Ryan Johnson",
+        "department": "Physics"
+    },
+    {
+        "name": "Florence Ramond Jurney",
+        "department": "French"
+    },
+    {
+        "name": "Alvaro Kaempfer",
+        "department": "Spanish"
+    },
+    {
+        "name": "Sondes Kahouli",
+        "department": "Economics"
+    },
+    {
+        "name": "Christopher J. Kauffman",
+        "department": "Theatre Arts"
+    },
+    {
+        "name": "Kevin Kelly",
+        "department": "Health Sciences"
+    },
+    {
+        "name": "Benjamin B. Kennedy",
+        "department": "Mathematics"
+    },
+    {
+        "name": "Ryan Kerney",
+        "department": "Biology"
+    },
+    {
+        "name": "Sunghee Kim",
+        "department": "Computer Science"
+    },
+    {
+        "name": "Matthew Kittelberger",
+        "department": "Biology"
+    },
+    {
+        "name": "Christopher Kovats-Ber-nat;",
+        "department": "Africana Studies"
+    },
+    {
+        "name": "Jeremy J. Kuhar",
+        "department": "Chemistry"
+    },
+    {
+        "name": "Aaron Lacayo",
+        "department": "Spanish"
+    },
+    {
+        "name": "Craig D. Lair",
+        "department": "Sociology"
+    },
+    {
+        "name": "Richard Lambert",
+        "department": "German Studies"
+    },
+    {
+        "name": "Bruce A. Larson",
+        "department": "Political Science"
+    },
+    {
+        "name": "Cesar Leal",
+        "department": "Music"
+    },
+    {
+        "name": "Nathalie Lebon",
+        "department": "Women, Gender & Sexuality Studies"
+    },
+    {
+        "name": "Jae-In Lee",
+        "department": "Sociology"
+    },
+    {
+        "name": "Fred G. Leebron",
+        "department": "English"
+    },
+    {
+        "name": "Emma Le Hecho",
+        "department": "French"
+    },
+    {
+        "name": "Jing Li",
+        "department": "Asian Studies"
+    },
+    {
+        "name": "Keir H. Lockridge",
+        "department": "Mathematics"
+    },
+    {
+        "name": "Dina Lowy",
+        "department": "History"
+    },
+    {
+        "name": "Benjamin Luley",
+        "department": "Anthropology"
+    },
+    {
+        "name": "Junjie Luo",
+        "department": "Asian Studies"
+    },
+    {
+        "name": "Marta Maras",
+        "department": "Management"
+    },
+    {
+        "name": "Amy Marvin",
+        "department": "Philosophy"
+    },
+    {
+        "name": "Daniel D. McCall",
+        "department": "Psychology"
+    },
+    {
+        "name": "Russell G. McCutcheon",
+        "department": "Music"
+    },
+    {
+        "name": "Margaret McWeeney",
+        "department": "Political Science"
+    },
+    {
+        "name": "Brian P. Meier",
+        "department": "Psychology"
+    },
+    {
+        "name": "McKinley E. Melton",
+        "department": "English"
+    },
+    {
+        "name": "Aisha Mershani;",
+        "department": "Interdisciplinary Studies"
+    },
+    {
+        "name": "Nadine Meyer",
+        "department": "English"
+    },
+    {
+        "name": "Jacquelynne B. Milingo",
+        "department": "Physics"
+    },
+    {
+        "name": "Nicholas Miller",
+        "department": "History"
+    },
+    {
+        "name": "Nanami Miyake",
+        "department": "Asian Studies"
+    },
+    {
+        "name": "Salma Monani",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "Gary A. Mullen",
+        "department": "Philosophy"
+    },
+    {
+        "name": "Drew Murphy",
+        "department": "Economics"
+    },
+    {
+        "name": "John Murphy, III",
+        "department": "French"
+    },
+    {
+        "name": "Joanne E. Myers",
+        "department": "English"
+    },
+    {
+        "name": "Ranjeet Nambudiri",
+        "department": "Management"
+    },
+    {
+        "name": "Robert Natter",
+        "department": "Music"
+    },
+    {
+        "name": "Todd W. Neller",
+        "department": "Computer Science"
+    },
+    {
+        "name": "Yoko Nishimura",
+        "department": "Asian Studies"
+    },
+    {
+        "name": "Eric E. Noreen",
+        "department": "Health Sciences"
+    },
+    {
+        "name": "Linus M. Nyiwul",
+        "department": "Economics"
+    },
+    {
+        "name": "James O\u2019Brien",
+        "department": "Economics"
+    },
+    {
+        "name": "Heather N. Odle-Dusseau",
+        "department": "Management"
+    },
+    {
+        "name": "Christopher Oechler",
+        "department": "Spanish"
+    },
+    {
+        "name": "Monica Ogra",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "William O\u2019Hara",
+        "department": "Music"
+    },
+    {
+        "name": "G\u00f6kcer \u00d6zg\u00fcr",
+        "department": "Economics"
+    },
+    {
+        "name": "Douglas Page -",
+        "department": "Political Science"
+    },
+    {
+        "name": "Alan R. Perry",
+        "department": "Italian Studies"
+    },
+    {
+        "name": "Donna L. Perry",
+        "department": "Anthropology"
+    },
+    {
+        "name": "Kevin Pham",
+        "department": "Political Science"
+    },
+    {
+        "name": "VoonChin Phua",
+        "department": "Sociology"
+    },
+    {
+        "name": "Rutherford V. Platt",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "David J. Powell",
+        "department": "Education"
+    },
+    {
+        "name": "Clifford Presser",
+        "department": "Computer Science"
+    },
+    {
+        "name": "Sarah M. Principato",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "James Puckett",
+        "department": "Physics"
+    },
+    {
+        "name": "Xingyi Puckett",
+        "department": "Economics"
+    },
+    {
+        "name": "Joseph R. Radzevick",
+        "department": "Management"
+    },
+    {
+        "name": "Radost Rangelova",
+        "department": "Spanish"
+    },
+    {
+        "name": "Anurad Rankoth",
+        "department": "Economics"
+    },
+    {
+        "name": "Tyeshia Redden",
+        "department": "Africana Studies"
+    },
+    {
+        "name": "Lindsay Reid",
+        "department": "Political Science"
+    },
+    {
+        "name": "Kathryn Rhett",
+        "department": "English"
+    },
+    {
+        "name": "Gabriela Escobar Rodriguez",
+        "department": "Spanish"
+    },
+    {
+        "name": "Alicia Rol\u00f3n",
+        "department": "Spanish"
+    },
+    {
+        "name": "Richard Russell",
+        "department": "Psychology"
+    },
+    {
+        "name": "Susan Russell",
+        "department": "Theatre Arts"
+    },
+    {
+        "name": "John E. Ryan",
+        "department": "English"
+    },
+    {
+        "name": "Abdulkareem Said Ramadan",
+        "department": "Arabic"
+    },
+    {
+        "name": "Rachele Salvini",
+        "department": "English"
+    },
+    {
+        "name": "Karim Samji",
+        "department": "History"
+    },
+    {
+        "name": "Magdalena S. S\u00e1nchez",
+        "department": "History"
+    },
+    {
+        "name": "Yoshihiro Sato",
+        "department": "Physics"
+    },
+    {
+        "name": "Jesse Cordes Selbin",
+        "department": "English"
+    },
+    {
+        "name": "Patturaja Selvaraj",
+        "department": "Management"
+    },
+    {
+        "name": "Suvrajit Sengupta",
+        "department": "Chemistry"
+    },
+    {
+        "name": "Amgad Serour",
+        "department": "French"
+    },
+    {
+        "name": "Timothy J. Shannon",
+        "department": "History"
+    },
+    {
+        "name": "Megan Adamson Sijapati",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "Sushmita Sircar",
+        "department": "English"
+    },
+    {
+        "name": "Stephen M. Siviy",
+        "department": "Psychology"
+    },
+    {
+        "name": "Stefanie E. Sobelle",
+        "department": "English"
+    },
+    {
+        "name": "Angel Solis",
+        "department": "Biology"
+    },
+    {
+        "name": "Deborah A. Sommer",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "Kimberly R. Spayd",
+        "department": "Mathematics"
+    },
+    {
+        "name": "Scott St Pierre",
+        "department": "Women, Gender & Sexuality Studies"
+    },
+    {
+        "name": "Alecea Standlee",
+        "department": "Sociology"
+    },
+    {
+        "name": "Divonna M. Stebick",
+        "department": "Education"
+    },
+    {
+        "name": "Stephen Jay Stern",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "Austin Stiegemeier",
+        "department": "History"
+    },
+    {
+        "name": "Yan Sun",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "Gregory Suryn",
+        "department": "Chemistry"
+    },
+    {
+        "name": "Jocelyn Swigger",
+        "department": "Music"
+    },
+    {
+        "name": "Nina Tarner",
+        "department": "Psychology"
+    },
+    {
+        "name": "Nobin Thomas",
+        "department": "Management"
+    },
+    {
+        "name": "Lucas B. Thompson",
+        "department": "Chemistry"
+    },
+    {
+        "name": "Elly Toyoda",
+        "department": "Music"
+    },
+    {
+        "name": "Beatriz M. Trigo",
+        "department": "Spanish"
+    },
+    {
+        "name": "Paula Trillo",
+        "department": "Biology"
+    },
+    {
+        "name": "James Udden",
+        "department": "Cinema & Media Studies"
+    },
+    {
+        "name": "Istvan A. Urcuyo",
+        "department": "Biology"
+    },
+    {
+        "name": "Mercedes Valmisa",
+        "department": "Philosophy"
+    },
+    {
+        "name": "Shana Wagner",
+        "department": "Chemistry"
+    },
+    {
+        "name": "Kerry Wallach",
+        "department": "German Studies"
+    },
+    {
+        "name": "David Walsh",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "Kyle Weary",
+        "department": "Education"
+    },
+    {
+        "name": "Michael R. Wedlock",
+        "department": "Chemistry"
+    },
+    {
+        "name": "Charles L. Weise",
+        "department": "Economics"
+    },
+    {
+        "name": "Daniel White",
+        "department": "Computer Science"
+    },
+    {
+        "name": "Hakim Williams",
+        "department": "Africana Studies"
+    },
+    {
+        "name": "Andrew M. Wilson",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "Kevin D. Wilson",
+        "department": "Psychology"
+    },
+    {
+        "name": "Randall K. Wilson",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "Victoria Wolf",
+        "department": "Health Sciences"
+    },
+    {
+        "name": "Ae Sil Woo",
+        "department": "Political Science"
+    },
+    {
+        "name": "Henning Wrage",
+        "department": "German Studies"
+    }
+]

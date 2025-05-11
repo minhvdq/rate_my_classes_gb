@@ -45,7 +45,7 @@ professorRouter.post( '/', async( req, res) => {
     })
 
     const savedProfessor = await newProfessor.save() 
-    res.status(200).json(savedProfessor)
+    res.status(201).json(savedProfessor)
 })
 
 professorRouter.delete('/', async(request,response) => {
