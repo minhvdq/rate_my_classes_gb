@@ -1,0 +1,238 @@
+[
+    {
+        "name": "ES 121: Environmental Issues",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 122: Climate Change and Disasters",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 123: The Biodiversity Crisis",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 125: Marine Megafauna",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 126: Climatology",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 127: Plants, People and the Environment",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 128: Oceanography",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 129: Environmental Health",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 130: The Chesapeake Bay Ecosystem",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 146: Animals in Society, Culture, and Literature",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 161: Human Geography",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 162: World Regional Geography",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 165: Native American Environmental Issues",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 196: Environmental Science and Society",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 211: Principles of Ecology",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 223: Earth System Science",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 225: Environmental Humanities",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 230: Introduction to  Geographic Information Systems",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 240: Energy: Production and Use",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 241: Environmental Journalism",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 242: Environmental Issues in Global Literature",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 242: Writing Sustainability for Citizen Advocates",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 251: The Rocky Mountain West: Physical Geography",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 252: The Rocky Mountain West: Cultural Geography",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 256: Conservation Biology",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 270: Food and Environmental Sustainability",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 290: Topics in Environmental Humanities",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 291: Topics in Environmental Natural Sciences",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 292: Topics in Environmental Social Sciences",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 302: Wildlife Ecology",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 304: Race and Environment",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 306: Marine Ecology",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 309: Marine and Freshwater Fisheries",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 312: Environmental Applications of Geographic Information Systems",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 317: Chesapeake Bay: Science, Policy and Environmental  Issues",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 318: Glaciers and Record of Climate Change",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 319: Environmental Film",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 323: Geologic Disasters and Global Change",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 333: Environmental Policy",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 334: Global Environment and Development",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 335: Gender and Environment",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 363: Remote Sensing",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 390: Topics in Environmental Humanities",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 391: Topics in Environmental Science",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 392: Topics in Environmental Social Sciences",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 400: Seminar",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 450: Individualized Study",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 451: Individualized Study-Tutorial",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 452: Individualized Study-Tutorial",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 453: Individualized Study-Tutorial",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 460: Individualized Study-Research",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 461: Individualized Study-Research",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 462: Individualized Study-Research",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 463: Individualized Study-Research",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 472: Individualized Study-Internship",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 473: Individualized Study-Intern",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 474: Summer Internship",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 475: Summer Internship",
+        "department": "Environmental Studies"
+    },
+    {
+        "name": "ES 477: Half Credit Internship",
+        "department": "Environmental Studies"
+    }
+]

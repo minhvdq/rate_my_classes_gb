@@ -1,0 +1,338 @@
+[
+    {
+        "name": "MUS_CLAS 101: Introduction to Music Listening",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 102: World Music",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 103: American Roots Music and Dance",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 105: Intro to Contemporary Music",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 110: Jazz: The Evolution of America's Music",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 111: Fundamentals of Music",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 115: The Music of Musicals",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 120: Introductory Piano",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 121: Teaching Classroom Piano",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 135: Musical Theatre & Identity: You Will Be Found",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 136: The Eras of Taylor...Taylor's Version",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 141: Test Credit in Music Theory",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 141: Theory I",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 142: Theory II",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 149: Social Foundations of Music Education",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 150: Teaching and Learning Woodwinds",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 152: Teaching and Learning Brass",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 154: Teaching and Learning Strings",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 156: Teaching and Learning Percussion",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 159: Teaching and Learning Voice",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 170: Video Game Music: Style, Technology, and Culture",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 203: Film Music",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 205: Conducting I",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 207: Vocal Diction 1",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 208: Vocal Diction 2",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 210: Musicology I: Western Music in the Medieval through Romantic Eras",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 211: Musicology II: Western Music in the Twentieth and Twenty-first Centuries",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 212: Introduction to Ethnomusicology",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 213: Vocal Literature 1",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 214: Vocal Literature 2",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 220: Performance and Analysis in Music",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 241: Theory III",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 242: Theory IV",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 244: Jazz: African American Classical Music",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 247: History of African American Music",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 249: Social Foundations of Music Education",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 250: Opera Workshop",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 251: Topics in Musicology",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 262: Music Technology and Media Production",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 304: Counterpoint and Composition",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 305: Conducting II",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 317: Topics in String Music Literature",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 318: Africana Music: Juju to Hip Hop",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 320: Teaching Children Music",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 321: Teaching Adolescents Music",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 332: Literature of the Applied Instrument",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 334: Pedagogy of Applied Music",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 341: Theory V: Orchestration",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 342: Theory VI: Form and Analysis",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 410: Teaching and Conducting Choral Ensembles",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 412: Teaching and Conducting Instrumental Ensembles",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 440: Music Student Teaching Seminar",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 442: Topics Seminar",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 450: Individualized Study-Tutorial",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 451: Individualized Study-Tutorial",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 452: Individualized Study-Tutorial",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 453: Individualized Study-Tutorial",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 460: Individualized Study-Research",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 461: Individualized Study-Research",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 462: Individualized Study-Research",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 463: Individualized Study-Research",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 470: Individualized Study-Internship",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 471: Individualized Study-Internship",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 472: Individualized Study-Internship",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 473: Individualized Study-Internship",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 474: Summer Internship",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 475: Summer Internship",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 476: Music Student Teaching",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_CLAS 477: Half Credit Internship",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_ENS 161: Wind Symphony",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_ENS 162: Marching Band",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_ENS 163: Symphony Band",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_ENS 165: Orchestra",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_ENS 171: Jazz Ensemble",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_ENS 181: College Choir",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_ENS 182: Concert Choir",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_ENS 183: Audeamus",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_ENS 191: Chamber Music",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_ENS 192: Sunderman Strings",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_ENS 193: Percussion Ensemble",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_ENS 194: Jazz Combo",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_ENS 195: Camerata",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_ENS 196: Afro-Latin Percussion Group",
+        "department": "Music"
+    },
+    {
+        "name": "MUS_ENS 197: Gamelan Gita Semara",
+        "department": "Music"
+    }
+]

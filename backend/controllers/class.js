@@ -39,7 +39,7 @@ classRouter.post( '/', async( req, res) => {
     })
 
     const savedClass = await newClass.save() 
-    res.status(200).json(savedClass)
+    res.status(201).json(savedClass)
 })
 
 classRouter.delete('/', async(request,response) => {

@@ -1,163 +1,226 @@
 [
     {
-      "name": "BIO 101: Basic Biological Concepts",
-      "department": "Biology"
+        "name": "BIO 101: Basic Biological Concepts",
+        "department": "Biology"
     },
     {
-      "name": "BIO 102: Contemporary Topics in Biology: Biological Basis of Disease",
-      "department": "Biology"
+        "name": "BIO 102: Contemporary Topics in Biology: Biological Basis of Disease",
+        "department": "Biology"
     },
     {
-      "name": "BIO 103: Contemporary Topics in Biology",
-      "department": "Biology"
+        "name": "BIO 103: Contemporary Topics in Biology",
+        "department": "Biology"
     },
     {
-      "name": "BIO 110: Introductory Biology: Molecules, Genes & Cells",
-      "department": "Biology"
+        "name": "BIO 110: Introductory Biology: Molecules, Genes & Cells",
+        "department": "Biology"
     },
     {
-      "name": "BIO 111: Introductory Biology for Life Sciences",
-      "department": "Biology"
+        "name": "BIO 111: Introductory Biology for Life Sciences",
+        "department": "Biology"
     },
     {
-      "name": "BIO 112: Form and Function in Living Organisms",
-      "department": "Biology"
+        "name": "BIO 112: Form and Function in Living Organisms",
+        "department": "Biology"
     },
     {
-      "name": "BIO 115: First Year Research",
-      "department": "Biology"
+        "name": "BIO 115: First Year Research",
+        "department": "Biology"
     },
     {
-      "name": "BIO 204: Biology of Flowering Plants",
-      "department": "Biology"
+        "name": "BIO 204: Biology of Flowering Plants",
+        "department": "Biology"
     },
     {
-      "name": "BIO 206: Physiological Ecology",
-      "department": "Biology"
+        "name": "BIO 206: Physiological Ecology",
+        "department": "Biology"
     },
     {
-      "name": "BIO 211: Genetics",
-      "department": "Biology"
+        "name": "BIO 211: Genetics",
+        "department": "Biology"
     },
     {
-      "name": "BIO 212: Cell Biology",
-      "department": "Biology"
+        "name": "BIO 212: Cell Biology",
+        "department": "Biology"
     },
     {
-      "name": "BIO 213: Evolutionary Ecology",
-      "department": "Biology"
+        "name": "BIO 213: Evolutionary Ecology",
+        "department": "Biology"
     },
     {
-      "name": "BIO 214: Phage Genomics",
-      "department": "Biology"
+        "name": "BIO 214: Phage Genomics",
+        "department": "Biology"
     },
     {
-      "name": "BIO 221: Symbiosis",
-      "department": "Biology"
+        "name": "BIO 221: Symbiosis",
+        "department": "Biology"
     },
     {
-      "name": "BIO 223: Entomology",
-      "department": "Biology"
+        "name": "BIO 223: Entomology",
+        "department": "Biology"
     },
     {
-      "name": "BIO 224: Vertebrate Zoology",
-      "department": "Biology"
+        "name": "BIO 224: Vertebrate Zoology",
+        "department": "Biology"
     },
     {
-      "name": "BIO 225: Animal Behavior",
-      "department": "Biology"
+        "name": "BIO 225: Animal Behavior",
+        "department": "Biology"
     },
     {
-      "name": "BIO 227: Invertebrate Zoology",
-      "department": "Biology"
+        "name": "BIO 227: Invertebrate Zoology",
+        "department": "Biology"
     },
     {
-      "name": "BIO 228: Tropical Marine Biology",
-      "department": "Biology"
+        "name": "BIO 228: Tropical Marine Biology",
+        "department": "Biology"
     },
     {
-      "name": "BIO 229: Tropical Terrestrial Biology",
-      "department": "Biology"
+        "name": "BIO 229: Tropical Terrestrial Biology",
+        "department": "Biology"
     },
     {
-      "name": "BIO 230: Microbiology",
-      "department": "Biology"
+        "name": "BIO 230: Microbiology",
+        "department": "Biology"
     },
     {
-      "name": "BIO 240: Paleobiology",
-      "department": "Biology"
+        "name": "BIO 240: Paleobiology",
+        "department": "Biology"
     },
     {
-      "name": "BIO 250: Topics in Biology",
-      "department": "Biology"
+        "name": "BIO 250: Topics in Biology",
+        "department": "Biology"
     },
     {
-      "name": "BIO 251: Introduction to Bioinformatics",
-      "department": "Biology"
+        "name": "BIO 251: Introduction to Bioinformatics",
+        "department": "Biology"
     },
     {
-      "name": "BIO 256: Conservation Biology",
-      "department": "Biology"
+        "name": "BIO 256: Conservation Biology",
+        "department": "Biology"
     },
     {
-      "name": "BIO 260: Biostatistics",
-      "department": "Biology"
+        "name": "BIO 260: Biostatistics",
+        "department": "Biology"
     },
     {
-      "name": "BIO 290: Mentored Research Internship",
-      "department": "Biology"
+        "name": "BIO 290: Mentored Research Internship",
+        "department": "Biology"
     },
     {
-      "name": "BIO 306: Marine Ecology",
-      "department": "Biology"
+        "name": "BIO 306: Marine Ecology",
+        "department": "Biology"
     },
     {
-      "name": "BIO 307: Freshwater Biology",
-      "department": "Biology"
+        "name": "BIO 307: Freshwater Biology",
+        "department": "Biology"
     },
     {
-      "name": "BIO 314: Evolution",
-      "department": "Biology"
+        "name": "BIO 314: Evolution",
+        "department": "Biology"
     },
     {
-      "name": "BIO 315: Molecular and Genome Evolution",
-      "department": "Biology"
+        "name": "BIO 315: Molecular and Genome Evolution",
+        "department": "Biology"
     },
     {
-      "name": "BIO 320: Developmental Biology",
-      "department": "Biology"
+        "name": "BIO 320: Developmental Biology",
+        "department": "Biology"
     },
     {
-      "name": "BIO 332: Immunobiology",
-      "department": "Biology"
+        "name": "BIO 332: Immunobiology",
+        "department": "Biology"
     },
     {
-      "name": "BIO 334: Biochemistry II",
-      "department": "Biology"
+        "name": "BIO 334: Biochemistry  II",
+        "department": "Biology"
     },
     {
-      "name": "BIO 335: Neurobiology",
-      "department": "Biology"
+        "name": "BIO 335: Neurobiology",
+        "department": "Biology"
     },
     {
-      "name": "BIO 336: Neurophysiology",
-      "department": "Biology"
+        "name": "BIO 336: Neurophysiology",
+        "department": "Biology"
     },
     {
-      "name": "BIO 340: Comparative Animal Physiology",
-      "department": "Biology"
+        "name": "BIO 340: Comparative Animal Physiology",
+        "department": "Biology"
     },
     {
-      "name": "BIO 351: Molecular Genetics",
-      "department": "Biology"
+        "name": "BIO 351: Molecular Genetics",
+        "department": "Biology"
     },
     {
-      "name": "BIO 359: X-Methods: Drugs and Cells",
-      "department": "Biology"
+        "name": "BIO 359: X-Methods: Drugs and Cells",
+        "department": "Biology"
     },
     {
-      "name": "BIO 361: Evolutionary Medicine",
-      "department": "Biology"
+        "name": "BIO 361: Evolutionary Medicine",
+        "department": "Biology"
+    },
+    {
+        "name": "BIO 450: Individualized Study-Tutorial",
+        "department": "Biology"
+    },
+    {
+        "name": "BIO 451: Individualized Study-Tutorial",
+        "department": "Biology"
+    },
+    {
+        "name": "BIO 452: Individualized Study-Tutorial",
+        "department": "Biology"
+    },
+    {
+        "name": "BIO 453: Individualized Study-Tutorial",
+        "department": "Biology"
+    },
+    {
+        "name": "BIO 460: Individualized Study-Research",
+        "department": "Biology"
+    },
+    {
+        "name": "BIO 461: Individualized Study-Research",
+        "department": "Biology"
+    },
+    {
+        "name": "BIO 462: Individualized Study-Research",
+        "department": "Biology"
+    },
+    {
+        "name": "BIO 463: Individualized Study-Research",
+        "department": "Biology"
+    },
+    {
+        "name": "BIO 470: Individualized Study-Internship",
+        "department": "Biology"
+    },
+    {
+        "name": "BIO 471: Individualized Study-Internship",
+        "department": "Biology"
+    },
+    {
+        "name": "BIO 472: Individualized Study-Intern",
+        "department": "Biology"
+    },
+    {
+        "name": "BIO 473: Individualized Study-Intern",
+        "department": "Biology"
+    },
+    {
+        "name": "BIO 474: Summer Internship",
+        "department": "Biology"
+    },
+    {
+        "name": "BIO 475: Summer Internship",
+        "department": "Biology"
+    },
+    {
+        "name": "BIO 477: Half Credit Internship",
+        "department": "Biology"
+    },
+    {
+        "name": "BIO 478: Quarter Credit Internship",
+        "department": "Biology"
     }
-  ]
-  
+]

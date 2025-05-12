@@ -1,0 +1,214 @@
+[
+    {
+        "name": "MATH 103: Mathematical Ideas",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 105: Calculus with Precalculus I",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 106: Calculus with Precalculus II",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 107: Applied Statistics",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 108: Quantitative Information and Public Life",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 110: Calculus I Companion",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 111: Calculus I",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 111: Calculus I (Honors)",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 112: Calculus II (Honors)",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 112: Calculus II",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 201: Introduction to Research in Mathematics",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 211: Multivariable Calculus",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 212: Linear Algebra",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 215: Abstract Mathematics I",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 225: Differential Equations",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 301: Intermediate Research in Mathematics",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 302: Applied Research in Mathematics",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 308: Introduction to Combinatorics",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 309: Introduction to Graph Theory",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 314: From Zero to Infinity: Philosophical Revolutions in Mathematics",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 315: Abstract Mathematics II",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 321: Real Analysis",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 325: Partial Differential Equations",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 331: Abstract Algebra",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 337: Number Theory",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 342: Applied Linear Algebra",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 343: Geometry",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 344: Topology",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 351: Mathematical Probability",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 352: Mathematical Statistics",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 353: Probability and Statistics",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 361: Chaos and Dynamical Systems",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 362: Operations Research",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 363: Wavelets and Their Applications",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 364: Complex Analysis",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 366: Numerical Analysis",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 381: Selected Topics",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 401: Advanced Research in Mathematics",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 450: Individualized Study-Tutorial",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 451: Individualized Study-Tutorial",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 452: Individualized Study-Tutorial",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 453: Individualized Study-Tutorial",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 460: Individualized Study-Research",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 461: Individualized Study-Research",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 462: Individualized Study-Research",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 463: Individualized Study-Research",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 470: Individualized Study-Internship",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 471: Individualized Study-Internship",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 472: Individualized Study-Internship",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 473: Individualized Study-Internship",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 474: Summer Internship",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 475: Summer Internship",
+        "department": "Mathematics"
+    },
+    {
+        "name": "MATH 477: Half Credit Internship",
+        "department": "Mathematics"
+    }
+]

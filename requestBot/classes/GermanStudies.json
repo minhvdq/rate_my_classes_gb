@@ -1,0 +1,246 @@
+[
+    {
+        "name": "GER 101: Elementary German",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 102: Elementary German",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 103: Fundamental German",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 104: Fundamental German",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 120: German Literature in Translation",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 201: Intermediate German",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 202: Intermediate German",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 225: Yiddish Literature in Translation",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 230: Glitter and Doom: Weimar German Culture",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 231: German Film, Gender, and Culture Before the Nazis",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 235: The Holocaust through Film",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 250: Grimms to Disney: European Fairy Tales in Comparative Context",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 259: Gaming. Why We Play",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 260: Media Violence: Violence in European and American Media",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 265: Antisemitism and Jewish Responses in Lit and Film",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 269: Colonialism as a European Project",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 270: Transnational Literature and Film in Germany",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 273: The Real World: Society & Nature in German Realist Literature",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 274: Nazi Cinema: Propaganda and Film",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 275: Science + Fiction = Science Fiction? German Science Fiction from the 19th C. to Present",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 276: Fermentation and Intoxication in German Studies",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 277: German Eco-Fiction from Fairy Tale to Fukushima",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 280: European Cinema in Global Context",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 285: European Jews: History, Holocaust, Future",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 299: German Culture and Conversation",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 300: German Studies Seminar",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 301: Advanced German",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 302: Advanced German",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 305: German Culture from 1945 to Today",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 306: Introduction to German Cinema",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 310: Introduction to German Studies: Methods and Theories",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 312: German Cultural History from Faust to Fascism",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 320: Generational Shifts in Postwar German Culture",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 325: German Lit Since 1945",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 329: German Television: History and Stories from East and West Germany",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 331: The Politics of Memory in German Media",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 333: German Intellectual History between Utopia and Catastrophe",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 335: Redefining German: Gender, Nation, Migration",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 337: A Year at the Edge of Time: Ruptures in German Cultural History",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 338: This Just In. 21st Century German Culture",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 340: Modernity and the Metropolis: Weimar to Berlin",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 341: Echoes of Vienna: Austrian Modernism in Lit & Film",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 345: German Visual Culture and Graphic Novels",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 351: The German-Jewish Experience",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 352: The Dream of Flying. Flights, Fears and Crashes in German Culture from Icarus to the V2",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 375: Talking and Silence: Language in Crisis, Taboos and Censorship in German Cultural History",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 400: Senior Seminar",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 450: Individualized Study-Tutorial",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 451: Individualized Study-Tutorial",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 452: Individualized Study-Tutorial",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 453: Individualized Study-Tutorial",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 460: Individualized Study-Research",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 461: Individualized Study-Research",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 462: Individualized Study-Research",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 463: Individualized Study-Research",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 470: Individualized Study-Internship",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 471: Individualized Study-Intern",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 472: Individualized Study-Internship",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 473: Individualized Study-Internship",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 474: Summer Internship",
+        "department": "German Studies"
+    },
+    {
+        "name": "GER 475: Summer Internship",
+        "department": "German Studies"
+    }
+]

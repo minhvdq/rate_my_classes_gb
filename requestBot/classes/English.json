@@ -1,0 +1,554 @@
+[
+    {
+        "name": "ENG 101: Introduction to College Writing",
+        "department": "English"
+    },
+    {
+        "name": "ENG 111: Writing through Literature",
+        "department": "English"
+    },
+    {
+        "name": "ENG 112: Writing the Classics",
+        "department": "English"
+    },
+    {
+        "name": "ENG 113: Writing In and About the Native American Tradition",
+        "department": "English"
+    },
+    {
+        "name": "ENG 201: Writing the Public Essay",
+        "department": "English"
+    },
+    {
+        "name": "ENG 203: Introduction to Journalistic Writing",
+        "department": "English"
+    },
+    {
+        "name": "ENG 205: Introduction to Creative Writing",
+        "department": "English"
+    },
+    {
+        "name": "ENG 210: Topics in Medieval and Renaissance Literature",
+        "department": "English"
+    },
+    {
+        "name": "ENG 211: Shakespeare: The Major Works",
+        "department": "English"
+    },
+    {
+        "name": "ENG 212: Survey of  English Literature: Medieval & Renaissance",
+        "department": "English"
+    },
+    {
+        "name": "ENG 213: Medieval Epic Literature",
+        "department": "English"
+    },
+    {
+        "name": "ENG 214: C17th English Drama",
+        "department": "English"
+    },
+    {
+        "name": "ENG 215: Literature and Politics in Early Modern England",
+        "department": "English"
+    },
+    {
+        "name": "ENG 216: The Thief with a Heart of Gold? The Fact & Fiction of Robin Hood and the Myth of the Outlaw Hero",
+        "department": "English"
+    },
+    {
+        "name": "ENG 217: Global and Radical Shakespeares",
+        "department": "English"
+    },
+    {
+        "name": "ENG 222: The Unreasonable Age of Reason",
+        "department": "English"
+    },
+    {
+        "name": "ENG 223: Milton and the Eighteenth Century",
+        "department": "English"
+    },
+    {
+        "name": "ENG 224: Gender and Sexuality in 18th Century British Literature",
+        "department": "English"
+    },
+    {
+        "name": "ENG 225: Imperial Fictions in 18th-C British Literature",
+        "department": "English"
+    },
+    {
+        "name": "ENG 231: Angels, Madwomen, Queens: Introduction to Nineteenth-Century Women Writers",
+        "department": "English"
+    },
+    {
+        "name": "ENG 232: Romanticism to Modernism",
+        "department": "English"
+    },
+    {
+        "name": "ENG 233: Survey of American Literature to 1865",
+        "department": "English"
+    },
+    {
+        "name": "ENG 235: Survey of African American Literature",
+        "department": "English"
+    },
+    {
+        "name": "ENG 237: Outliers, Captives and Rogues: American Realism and Naturalism",
+        "department": "English"
+    },
+    {
+        "name": "ENG 238: The Early American Novel",
+        "department": "English"
+    },
+    {
+        "name": "ENG 240: Antebellum American Literature",
+        "department": "English"
+    },
+    {
+        "name": "ENG 241: Literature of the Civil War Era",
+        "department": "English"
+    },
+    {
+        "name": "ENG 242: Curiouser and Curiouser: Children\u2019s Literature and the Invention of the Modern Child",
+        "department": "English"
+    },
+    {
+        "name": "ENG 243: Riot, Rebellion, Revolution: The Tradition of Protest in Nineteenth-Century US Literature",
+        "department": "English"
+    },
+    {
+        "name": "ENG 244: Introduction to Native American Literatures",
+        "department": "English"
+    },
+    {
+        "name": "ENG 245: Arcs of Injustice: Race and Power in\nAmerican Literature",
+        "department": "English"
+    },
+    {
+        "name": "ENG 250: Topics in 20th & 21st Century Literature",
+        "department": "English"
+    },
+    {
+        "name": "ENG 251: Survey of American Literature Since 1865",
+        "department": "English"
+    },
+    {
+        "name": "ENG 252: 20th Century African American Literature",
+        "department": "English"
+    },
+    {
+        "name": "ENG 253: The World in Translation: Intro to World Literature",
+        "department": "English"
+    },
+    {
+        "name": "ENG 254: American Poetry",
+        "department": "English"
+    },
+    {
+        "name": "ENG 255: Coming of Age: The Global Bildungsroman",
+        "department": "English"
+    },
+    {
+        "name": "ENG 256: Twentieth-Century Literature of the British Isles",
+        "department": "English"
+    },
+    {
+        "name": "ENG 257: Literature of the Civil Rights Movement",
+        "department": "English"
+    },
+    {
+        "name": "ENG 258: African American Women Writers",
+        "department": "English"
+    },
+    {
+        "name": "ENG 259: Amerika: Global Perspectives on the United States",
+        "department": "English"
+    },
+    {
+        "name": "ENG 261: After Auschwitz: Literature of Witness",
+        "department": "English"
+    },
+    {
+        "name": "ENG 262: Contemporary African American Literature",
+        "department": "English"
+    },
+    {
+        "name": "ENG 263: Voice and Visibility: African Americans and the Power of Spoken Word",
+        "department": "English"
+    },
+    {
+        "name": "ENG 265: U.S. Latino Voices",
+        "department": "English"
+    },
+    {
+        "name": "ENG 266: Latinx Literatures of the United States",
+        "department": "English"
+    },
+    {
+        "name": "ENG 267: Identity and Difference: Ethnic Literature of the United States",
+        "department": "English"
+    },
+    {
+        "name": "ENG 268: Empire",
+        "department": "English"
+    },
+    {
+        "name": "ENG 270: Topics in Genre",
+        "department": "English"
+    },
+    {
+        "name": "ENG 271: Transnational Writing in the Americas, 1850-1917",
+        "department": "English"
+    },
+    {
+        "name": "ENG 272: Nineteenth-Century Domestic Fictions in the U.S.",
+        "department": "English"
+    },
+    {
+        "name": "ENG 280: Topics in Intergrative Approaches",
+        "department": "English"
+    },
+    {
+        "name": "ENG 281: History of the English Language",
+        "department": "English"
+    },
+    {
+        "name": "ENG 282: Ecocriticism: Intro to Environmental Literature",
+        "department": "English"
+    },
+    {
+        "name": "ENG 297: Introduction to Book History",
+        "department": "English"
+    },
+    {
+        "name": "ENG 298: Critical Methods:  History of Literary Criticism",
+        "department": "English"
+    },
+    {
+        "name": "ENG 299: Critical Methods",
+        "department": "English"
+    },
+    {
+        "name": "ENG 300: Forms of Fiction Writing",
+        "department": "English"
+    },
+    {
+        "name": "ENG 301: Writing Short Fiction",
+        "department": "English"
+    },
+    {
+        "name": "ENG 302: The Writing of Poetry: New Poems, New Poets",
+        "department": "English"
+    },
+    {
+        "name": "ENG 304: Writing Non-Fiction",
+        "department": "English"
+    },
+    {
+        "name": "ENG 305: Free Verse & Form in Poetry",
+        "department": "English"
+    },
+    {
+        "name": "ENG 306: Writing the Memoir",
+        "department": "English"
+    },
+    {
+        "name": "ENG 307: Writing the Screenplay",
+        "department": "English"
+    },
+    {
+        "name": "ENG 308: Writing the Literary Review",
+        "department": "English"
+    },
+    {
+        "name": "ENG 309: Topics in Writing",
+        "department": "English"
+    },
+    {
+        "name": "ENG 312: Medieval Drama",
+        "department": "English"
+    },
+    {
+        "name": "ENG 313: In Search of Beowulf: Fact, Fiction, & Fantasy",
+        "department": "English"
+    },
+    {
+        "name": "ENG 314: Love in the Renaissance",
+        "department": "English"
+    },
+    {
+        "name": "ENG 315: Seventeenth-Century Poetry: Forms and Pressures",
+        "department": "English"
+    },
+    {
+        "name": "ENG 316: Medieval Romance",
+        "department": "English"
+    },
+    {
+        "name": "ENG 317: Shakespeare and the Early Modern Stage",
+        "department": "English"
+    },
+    {
+        "name": "ENG 318: Saga, Myth, and Orality from the Lost Gods of Britain to Contemporary Conspiracy Theories",
+        "department": "English"
+    },
+    {
+        "name": "ENG 321: Restoration & Early 18th Century Literature",
+        "department": "English"
+    },
+    {
+        "name": "ENG 322: Eighteenth-Century British Public Sphere",
+        "department": "English"
+    },
+    {
+        "name": "ENG 323: The Secret History of the Novel",
+        "department": "English"
+    },
+    {
+        "name": "ENG 324: The Eighteenth-Century City",
+        "department": "English"
+    },
+    {
+        "name": "ENG 325: Rise of the Novel",
+        "department": "English"
+    },
+    {
+        "name": "ENG 326: The Literature of Sentiment",
+        "department": "English"
+    },
+    {
+        "name": "ENG 332: Moving Through Nineteenth-Century American Narrative",
+        "department": "English"
+    },
+    {
+        "name": "ENG 333: Victorian Aesthetics",
+        "department": "English"
+    },
+    {
+        "name": "ENG 334: What is Life?: Literature and Reality",
+        "department": "English"
+    },
+    {
+        "name": "ENG 339: Birth of Modernism: 1880-1920",
+        "department": "English"
+    },
+    {
+        "name": "ENG 341: American Gothic",
+        "department": "English"
+    },
+    {
+        "name": "ENG 342: Early 19th Century Fiction in Britain",
+        "department": "English"
+    },
+    {
+        "name": "ENG 343: Romantic Poetry and Poetics",
+        "department": "English"
+    },
+    {
+        "name": "ENG 344: Victorians Abroad",
+        "department": "English"
+    },
+    {
+        "name": "ENG 345: Second Generation Romantics",
+        "department": "English"
+    },
+    {
+        "name": "ENG 346: Early Romantics:  Blake, Wordsworth, Coleridge, and Contemporaries",
+        "department": "English"
+    },
+    {
+        "name": "ENG 348: The Victorian Novel",
+        "department": "English"
+    },
+    {
+        "name": "ENG 349: The Bront\u00ebs",
+        "department": "English"
+    },
+    {
+        "name": "ENG 350: Topics in 20th & 21st Century Literature",
+        "department": "English"
+    },
+    {
+        "name": "ENG 352: Contemporary American Fiction",
+        "department": "English"
+    },
+    {
+        "name": "ENG 353: Fitzgerald Hemingway & Circle",
+        "department": "English"
+    },
+    {
+        "name": "ENG 354: Wharton, Dreiser, Cather",
+        "department": "English"
+    },
+    {
+        "name": "ENG 355: Radical American Women",
+        "department": "English"
+    },
+    {
+        "name": "ENG 356: The Beats and Beyond",
+        "department": "English"
+    },
+    {
+        "name": "ENG 357: Asian Internationalisms",
+        "department": "English"
+    },
+    {
+        "name": "ENG 358: Contemporary Women Writers",
+        "department": "English"
+    },
+    {
+        "name": "ENG 359: British Writers 1918-1939",
+        "department": "English"
+    },
+    {
+        "name": "ENG 361: The Worlds of William Faulkner",
+        "department": "English"
+    },
+    {
+        "name": "ENG 362: LGBTQ African American Literature",
+        "department": "English"
+    },
+    {
+        "name": "ENG 363: The Other America: Transnational and Hemispheric American Studies",
+        "department": "English"
+    },
+    {
+        "name": "ENG 364: Afrofuturism",
+        "department": "English"
+    },
+    {
+        "name": "ENG 365: Natural Supernaturalism: Marvel, Myth, and Magic in the Literature of the Americas",
+        "department": "English"
+    },
+    {
+        "name": "ENG 366: Human Rights and Literature",
+        "department": "English"
+    },
+    {
+        "name": "ENG 367: James Baldwin in Fiction and Essays",
+        "department": "English"
+    },
+    {
+        "name": "ENG 368: Fantasies of the Foreign and Other U.S. Founding Fictions",
+        "department": "English"
+    },
+    {
+        "name": "ENG 369: Making and Remaking Atlantic Worlds",
+        "department": "English"
+    },
+    {
+        "name": "ENG 378: Autobiography in African American Narrative",
+        "department": "English"
+    },
+    {
+        "name": "ENG 382: Civil War in American Imagination",
+        "department": "English"
+    },
+    {
+        "name": "ENG 383: Truth and the American Way",
+        "department": "English"
+    },
+    {
+        "name": "ENG 386: Rethinking Race & Nation",
+        "department": "English"
+    },
+    {
+        "name": "ENG 391: Feminine/Feminist Aesthetics",
+        "department": "English"
+    },
+    {
+        "name": "ENG 392: Speculation, American Style",
+        "department": "English"
+    },
+    {
+        "name": "ENG 400: Seminar: Special Seminar Themes",
+        "department": "English"
+    },
+    {
+        "name": "ENG 401: Seminar: Medieval & Renaissance Lit",
+        "department": "English"
+    },
+    {
+        "name": "ENG 402: Seminar: Seventeenth and Eighteenth Century Literature",
+        "department": "English"
+    },
+    {
+        "name": "ENG 403: Seminar: Nineteenth and Twentieth Century Literature",
+        "department": "English"
+    },
+    {
+        "name": "ENG 404: Seminar: American Literature",
+        "department": "English"
+    },
+    {
+        "name": "ENG 405: Seminar in Writing",
+        "department": "English"
+    },
+    {
+        "name": "ENG 450: Individualized Study-Tutorial",
+        "department": "English"
+    },
+    {
+        "name": "ENG 451: Individualized Study-Tutorial",
+        "department": "English"
+    },
+    {
+        "name": "ENG 452: Individualized Study-Tutorial",
+        "department": "English"
+    },
+    {
+        "name": "ENG 453: Individualized Study-Tutorial",
+        "department": "English"
+    },
+    {
+        "name": "ENG 460: Individualized Study-Research",
+        "department": "English"
+    },
+    {
+        "name": "ENG 461: Individualized Study-Research",
+        "department": "English"
+    },
+    {
+        "name": "ENG 462: Individualized Study-Research",
+        "department": "English"
+    },
+    {
+        "name": "ENG 463: Individualized Study-Research",
+        "department": "English"
+    },
+    {
+        "name": "ENG 464: Honors Thesis",
+        "department": "English"
+    },
+    {
+        "name": "ENG 466: Honors Thesis",
+        "department": "English"
+    },
+    {
+        "name": "ENG 470: Individualized Study-Intern",
+        "department": "English"
+    },
+    {
+        "name": "ENG 471: Individualized Study-Intern",
+        "department": "English"
+    },
+    {
+        "name": "ENG 472: Individualized Study-Intern",
+        "department": "English"
+    },
+    {
+        "name": "ENG 473: Individualized Study-Intern",
+        "department": "English"
+    },
+    {
+        "name": "ENG 474: Summer Internship",
+        "department": "English"
+    },
+    {
+        "name": "ENG 475: Summer Internship",
+        "department": "English"
+    },
+    {
+        "name": "ENG 477: Half Credit Internship",
+        "department": "English"
+    }
+]

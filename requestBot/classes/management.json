@@ -1,139 +1,142 @@
 [
     {
-      "name": "MGT 155: Accounting for Management Decisions",
-      "department": "Management"
+        "name": "MGT 155: Accounting for Management Decisions",
+        "department": "Management"
     },
     {
-      "name": "MGT 235: Statistical Methods",
-      "department": "Management"
+        "name": "MGT 235: Statistical Methods",
+        "department": "Management"
     },
     {
-      "name": "MGT 242: Sociology of Tourism",
-      "department": "Management"
+        "name": "MGT 242: Sociology of Tourism",
+        "department": "Management"
     },
     {
-      "name": "MGT 265: Financial Regulation Policy",
-      "department": "Management"
+        "name": "MGT 265: Financial Regulation Policy",
+        "department": "Management"
     },
     {
-      "name": "MGT 267: Finance",
-      "department": "Management"
+        "name": "MGT 267: Finance",
+        "department": "Management"
     },
     {
-      "name": "MGT 270: Organizational Behavior",
-      "department": "Management"
+        "name": "MGT 270: Organizational Behavior",
+        "department": "Management"
     },
     {
-      "name": "MGT 275: Organization Theory",
-      "department": "Management"
+        "name": "MGT 275: Organization Theory",
+        "department": "Management"
     },
     {
-      "name": "MGT 301: Research Methods",
-      "department": "Management"
+        "name": "MGT 301: Research Methods",
+        "department": "Management"
     },
     {
-      "name": "MGT 303: Systems Thinking",
-      "department": "Management"
+        "name": "MGT 303: Systems Thinking",
+        "department": "Management"
     },
     {
-      "name": "MGT 304: Decision Making",
-      "department": "Management"
+        "name": "MGT 304: Decision Making",
+        "department": "Management"
     },
     {
-      "name": "MGT 321: Topics in Operations Management",
-      "department": "Management"
+        "name": "MGT 306: Financial Modeling and Forecasting",
+        "department": "Management"
     },
     {
-      "name": "MGT 330: Organizational Culture",
-      "department": "Management"
+        "name": "MGT 321: Topics in Operations Management",
+        "department": "Management"
     },
     {
-      "name": "MGT 332: Organizations and Society",
-      "department": "Management"
+        "name": "MGT 330: Organizational Culture",
+        "department": "Management"
     },
     {
-      "name": "MGT 335: Negotiation and Conflict Management",
-      "department": "Management"
+        "name": "MGT 332: Organizations and Society",
+        "department": "Management"
     },
     {
-      "name": "MGT 338: The Bandits of Wall Street: White Collar Crime in the 21st Century",
-      "department": "Management"
+        "name": "MGT 335: Negotiation and Conflict Management",
+        "department": "Management"
     },
     {
-      "name": "MGT 350: Labor Relations",
-      "department": "Management"
+        "name": "MGT 338: The Bandits of Wall Street: White Collar Crime in the 21st Century",
+        "department": "Management"
     },
     {
-      "name": "MGT 361: Marketing Management",
-      "department": "Management"
+        "name": "MGT 350: Labor Relations",
+        "department": "Management"
     },
     {
-      "name": "MGT 363: Business Law",
-      "department": "Management"
+        "name": "MGT 361: Marketing Management",
+        "department": "Management"
     },
     {
-      "name": "MGT 364: Business Analytics",
-      "department": "Management"
+        "name": "MGT 363: Business Law",
+        "department": "Management"
     },
     {
-      "name": "MGT 365: Topics in HR Management",
-      "department": "Management"
+        "name": "MGT 364: Business Analytics",
+        "department": "Management"
     },
     {
-      "name": "MGT 366: Marketing Research",
-      "department": "Management"
+        "name": "MGT 365: Topics in HR Management",
+        "department": "Management"
     },
     {
-      "name": "MGT 367: Work, Family, and Life Balance",
-      "department": "Management"
+        "name": "MGT 366: Marketing Research",
+        "department": "Management"
     },
     {
-      "name": "MGT 368: Investment Management",
-      "department": "Management"
+        "name": "MGT 367: Work, Family, and Life Balance",
+        "department": "Management"
     },
     {
-      "name": "MGT 370: Workplace Motivation",
-      "department": "Management"
+        "name": "MGT 368: Investment Management",
+        "department": "Management"
     },
     {
-      "name": "MGT 375: Federal Taxation for Business Entities",
-      "department": "Management"
+        "name": "MGT 370: Workplace Motivation",
+        "department": "Management"
     },
     {
-      "name": "MGT 381: Entrepreneurship and Small Business Management",
-      "department": "Management"
+        "name": "MGT 375: Federal Taxation for Business Entities",
+        "department": "Management"
     },
     {
-      "name": "MGT 385: International Management",
-      "department": "Management"
+        "name": "MGT 381: Entrepreneurship and Small Business Management",
+        "department": "Management"
     },
     {
-      "name": "MGT 390: Leadership Theories",
-      "department": "Management"
+        "name": "MGT 385: International Management",
+        "department": "Management"
     },
     {
-      "name": "MGT 395: Organizational Ethics",
-      "department": "Management"
+        "name": "MGT 390: Leadership Theories",
+        "department": "Management"
     },
     {
-      "name": "MGT 396: Social Justice, Ethics, and Business",
-      "department": "Management"
+        "name": "MGT 395: Organizational Ethics",
+        "department": "Management"
     },
     {
-      "name": "MGT 399: Policy & Strategy",
-      "department": "Management"
+        "name": "MGT 396: Social Justice, Ethics, and Business",
+        "department": "Management"
     },
     {
-      "name": "MGT 400: Advanced Topics in Business",
-      "department": "Management"
+        "name": "MGT 399: Policy & Strategy",
+        "department": "Management"
     },
     {
-      "name": "MGT 405: Advanced Topics in BOM",
-      "department": "Management"
+        "name": "MGT 400: Advanced Topics in Business",
+        "department": "Management"
     },
     {
-      "name": "MGT 410: Advanced Topics in Management",
-      "department": "Management"
+        "name": "MGT 405: Advanced Topics in BOM",
+        "department": "Management"
+    },
+    {
+        "name": "MGT 410: Advanced Topics in Management",
+        "department": "Management"
     }
-  ]
-  
+]

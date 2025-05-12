@@ -1,0 +1,534 @@
+[
+    {
+        "name": "HIST 103: Europe Africa and Asia 1750-1900",
+        "department": "History"
+    },
+    {
+        "name": "HIST 105: The Age of Discovery",
+        "department": "History"
+    },
+    {
+        "name": "HIST 106: The Atlantic World 1600-1850",
+        "department": "History"
+    },
+    {
+        "name": "HIST 110: The Twentieth Century World",
+        "department": "History"
+    },
+    {
+        "name": "HIST 200: Topics in European History",
+        "department": "History"
+    },
+    {
+        "name": "HIST 201: Introduction to Public History",
+        "department": "History"
+    },
+    {
+        "name": "HIST 203: History of the British Isles",
+        "department": "History"
+    },
+    {
+        "name": "HIST 204: History of the British Isles",
+        "department": "History"
+    },
+    {
+        "name": "HIST 206: Spain and the New World",
+        "department": "History"
+    },
+    {
+        "name": "HIST 207: The Spanish Inquisition",
+        "department": "History"
+    },
+    {
+        "name": "HIST 208: Islamic History 600-1500",
+        "department": "History"
+    },
+    {
+        "name": "HIST 209: Women's History Since 1500",
+        "department": "History"
+    },
+    {
+        "name": "HIST 210: Hist of Early Modern France",
+        "department": "History"
+    },
+    {
+        "name": "HIST 211: Popular Culture in Early Modern Europe, 1500-1800",
+        "department": "History"
+    },
+    {
+        "name": "HIST 212: Narratives of Illness",
+        "department": "History"
+    },
+    {
+        "name": "HIST 215: History of Modern France",
+        "department": "History"
+    },
+    {
+        "name": "HIST 216: Modern Russia and the Soviet Union",
+        "department": "History"
+    },
+    {
+        "name": "HIST 218: Modern Germany",
+        "department": "History"
+    },
+    {
+        "name": "HIST 219: The Great War",
+        "department": "History"
+    },
+    {
+        "name": "HIST 220: Topics in Asian History",
+        "department": "History"
+    },
+    {
+        "name": "HIST 221: History of East Asia to 1800",
+        "department": "History"
+    },
+    {
+        "name": "HIST 222: History of East Asia:1800 to Present",
+        "department": "History"
+    },
+    {
+        "name": "HIST 223: Modern China",
+        "department": "History"
+    },
+    {
+        "name": "HIST 224: Modern Japan",
+        "department": "History"
+    },
+    {
+        "name": "HIST 226: The Birth of a Deadly \"Boy\": The History and Science of the Atomic Bombings of Japan",
+        "department": "History"
+    },
+    {
+        "name": "HIST 228: Modern Australia",
+        "department": "History"
+    },
+    {
+        "name": "HIST 230: The Native American-European Encounter in North America",
+        "department": "History"
+    },
+    {
+        "name": "HIST 231: United States to 1877",
+        "department": "History"
+    },
+    {
+        "name": "HIST 232: U.S. since 1865",
+        "department": "History"
+    },
+    {
+        "name": "HIST 236: Urbanism in American History",
+        "department": "History"
+    },
+    {
+        "name": "HIST 238: African American History: A Survey",
+        "department": "History"
+    },
+    {
+        "name": "HIST 240: Topics in United States History",
+        "department": "History"
+    },
+    {
+        "name": "HIST 241: History of Protest in the United States",
+        "department": "History"
+    },
+    {
+        "name": "HIST 242: Antebellum North",
+        "department": "History"
+    },
+    {
+        "name": "HIST 244: American Military History",
+        "department": "History"
+    },
+    {
+        "name": "HIST 246: Life and Times of Abraham Lincoln",
+        "department": "History"
+    },
+    {
+        "name": "HIST 247: Gettysburg in History and Memory",
+        "department": "History"
+    },
+    {
+        "name": "HIST 248: Poverty and Welfare in American History",
+        "department": "History"
+    },
+    {
+        "name": "HIST 249: American Intellectual History",
+        "department": "History"
+    },
+    {
+        "name": "HIST 251: Greek History",
+        "department": "History"
+    },
+    {
+        "name": "HIST 255: Modern Sports World History",
+        "department": "History"
+    },
+    {
+        "name": "HIST 260: Topics in Latin American History",
+        "department": "History"
+    },
+    {
+        "name": "HIST 261: Colonial Latin American History",
+        "department": "History"
+    },
+    {
+        "name": "HIST 262: Modern Latin American History",
+        "department": "History"
+    },
+    {
+        "name": "HIST 264: Brazil: Earthly Paradise to Industrial Giant",
+        "department": "History"
+    },
+    {
+        "name": "HIST 270: Topics in African History",
+        "department": "History"
+    },
+    {
+        "name": "HIST 271: African History and Society to 1880s",
+        "department": "History"
+    },
+    {
+        "name": "HIST 272: African History and Society From 1880s",
+        "department": "History"
+    },
+    {
+        "name": "HIST 273: Africa in Fiction, History, and Memory",
+        "department": "History"
+    },
+    {
+        "name": "HIST 274: Africana Intellectual History",
+        "department": "History"
+    },
+    {
+        "name": "HIST 278: History of Islamic Technology",
+        "department": "History"
+    },
+    {
+        "name": "HIST 279: Identity Construction in Islamic History & Culture",
+        "department": "History"
+    },
+    {
+        "name": "HIST 290: Topics in Comparative History",
+        "department": "History"
+    },
+    {
+        "name": "HIST 300: Historical Method",
+        "department": "History"
+    },
+    {
+        "name": "HIST 302: Historiography",
+        "department": "History"
+    },
+    {
+        "name": "HIST 303: Topics in European History",
+        "department": "History"
+    },
+    {
+        "name": "HIST 305: Global Epidemics: From Subjugation to Science",
+        "department": "History"
+    },
+    {
+        "name": "HIST 306: Italian City States",
+        "department": "History"
+    },
+    {
+        "name": "HIST 308: Women, Power, and Politics in Early Modern Europe",
+        "department": "History"
+    },
+    {
+        "name": "HIST 311: Medieval Europe",
+        "department": "History"
+    },
+    {
+        "name": "HIST 312: Britain, Nation and Empire, 1660-1900",
+        "department": "History"
+    },
+    {
+        "name": "HIST 313: Renaissance & Reformation",
+        "department": "History"
+    },
+    {
+        "name": "HIST 314: Early Modern Europe 1555-1750\t",
+        "department": "History"
+    },
+    {
+        "name": "HIST 315: Europe and the Age of Revolution",
+        "department": "History"
+    },
+    {
+        "name": "HIST 316: Transformations in Nineteenth Century Europe",
+        "department": "History"
+    },
+    {
+        "name": "HIST 317: Europe 1871-1919",
+        "department": "History"
+    },
+    {
+        "name": "HIST 318: Europe 1914 to 1945",
+        "department": "History"
+    },
+    {
+        "name": "HIST 319: Europe Since 1945",
+        "department": "History"
+    },
+    {
+        "name": "HIST 320: Topics in Asian History",
+        "department": "History"
+    },
+    {
+        "name": "HIST 323: Gender in Modern Japan",
+        "department": "History"
+    },
+    {
+        "name": "HIST 325: Tokugawa Japan: 16th-19th Century",
+        "department": "History"
+    },
+    {
+        "name": "HIST 326: Science and Technology in Modern Society: A U.S.-China-Japan Comparison",
+        "department": "History"
+    },
+    {
+        "name": "HIST 330: The Ottoman Empire: 1300-1923",
+        "department": "History"
+    },
+    {
+        "name": "HIST 331: The Austrian Empire",
+        "department": "History"
+    },
+    {
+        "name": "HIST 334: Law and Society in United States History",
+        "department": "History"
+    },
+    {
+        "name": "HIST 335: American Social and Cultural History",
+        "department": "History"
+    },
+    {
+        "name": "HIST 336: America Social and Cultural History",
+        "department": "History"
+    },
+    {
+        "name": "HIST 337: Borderlands of the Americas",
+        "department": "History"
+    },
+    {
+        "name": "HIST 339: From Slavery to Segregation",
+        "department": "History"
+    },
+    {
+        "name": "HIST 340: Topics in United States History",
+        "department": "History"
+    },
+    {
+        "name": "HIST 341: Colonial America",
+        "department": "History"
+    },
+    {
+        "name": "HIST 342: Revolutionary America",
+        "department": "History"
+    },
+    {
+        "name": "HIST 343: The Early Republic",
+        "department": "History"
+    },
+    {
+        "name": "HIST 345: Civil War",
+        "department": "History"
+    },
+    {
+        "name": "HIST 346: Slavery, Rebellion and Emancipation in the Atlantic World",
+        "department": "History"
+    },
+    {
+        "name": "HIST 348: Early Twentieth Century America",
+        "department": "History"
+    },
+    {
+        "name": "HIST 349: The United States since 1945",
+        "department": "History"
+    },
+    {
+        "name": "HIST 350: The Modern Black Freedom Struggle in America",
+        "department": "History"
+    },
+    {
+        "name": "HIST 352: Gender and Sexuality During the American Civil War",
+        "department": "History"
+    },
+    {
+        "name": "HIST 360: Topics in Latin American History",
+        "department": "History"
+    },
+    {
+        "name": "HIST 361: The Mexican Revolution",
+        "department": "History"
+    },
+    {
+        "name": "HIST 362: The U.S. & Latin America since 1898",
+        "department": "History"
+    },
+    {
+        "name": "HIST 364: Slavery and Society in Brazilian History",
+        "department": "History"
+    },
+    {
+        "name": "HIST 370: Topics in African History",
+        "department": "History"
+    },
+    {
+        "name": "HIST 371: Modern African Environments: History, Ecology, and People",
+        "department": "History"
+    },
+    {
+        "name": "HIST 373: History of Sub-Sahara Africa in the Twentieth Century",
+        "department": "History"
+    },
+    {
+        "name": "HIST 375: Aid and Volunteering in Africa: From Missionary Service to Peace Corps",
+        "department": "History"
+    },
+    {
+        "name": "HIST 376: France and Sub-Saharan Africa in Global Context",
+        "department": "History"
+    },
+    {
+        "name": "HIST 379: US-Middle East Interaction: 1776 - 1979",
+        "department": "History"
+    },
+    {
+        "name": "HIST 380: Conquest Narratives in Islamic History",
+        "department": "History"
+    },
+    {
+        "name": "HIST 390: Topics in Comparative History",
+        "department": "History"
+    },
+    {
+        "name": "HIST 410: Sem:Abraham Lincoln",
+        "department": "History"
+    },
+    {
+        "name": "HIST 412: Sem: Eisenhower & His Times",
+        "department": "History"
+    },
+    {
+        "name": "HIST 413: Sem: Decolonization in Africa",
+        "department": "History"
+    },
+    {
+        "name": "HIST 417: Sem:Meaning of Independence",
+        "department": "History"
+    },
+    {
+        "name": "HIST 418: Sem: Nazism",
+        "department": "History"
+    },
+    {
+        "name": "HIST 421: Sem: The U.S. and World War II",
+        "department": "History"
+    },
+    {
+        "name": "HIST 422: Sem: The Pacific War, 1931-1945",
+        "department": "History"
+    },
+    {
+        "name": "HIST 423: Sem: Comparative Frontiers of the Americas",
+        "department": "History"
+    },
+    {
+        "name": "HIST 424: Sem: Race on Trial",
+        "department": "History"
+    },
+    {
+        "name": "HIST 425: Seminar in the American Civil War",
+        "department": "History"
+    },
+    {
+        "name": "HIST 426: Sem: Pennsylvania's Indians",
+        "department": "History"
+    },
+    {
+        "name": "HIST 427: Sem: Mediterranean Encounters",
+        "department": "History"
+    },
+    {
+        "name": "HIST 428: Letters and Letter-Writing",
+        "department": "History"
+    },
+    {
+        "name": "HIST 429: Sem: History and Higher Criticism",
+        "department": "History"
+    },
+    {
+        "name": "HIST 430: Sem: Expedition Chronicles of the Americas",
+        "department": "History"
+    },
+    {
+        "name": "HIST 431: Sem: The Global South in the Age of Decolonization",
+        "department": "History"
+    },
+    {
+        "name": "HIST 432: Escaping Slavery",
+        "department": "History"
+    },
+    {
+        "name": "HIST 450: Individualized Study-Tutorial",
+        "department": "History"
+    },
+    {
+        "name": "HIST 451: Individualized Study-Tutorial",
+        "department": "History"
+    },
+    {
+        "name": "HIST 452: Individualized Study-Tutorial",
+        "department": "History"
+    },
+    {
+        "name": "HIST 453: Individualized Study-Tutorial",
+        "department": "History"
+    },
+    {
+        "name": "HIST 460: Individualized Study-Research",
+        "department": "History"
+    },
+    {
+        "name": "HIST 461: Individualized Study-Research",
+        "department": "History"
+    },
+    {
+        "name": "HIST 462: Individualized Study-Research",
+        "department": "History"
+    },
+    {
+        "name": "HIST 463: Individualized Study-Research",
+        "department": "History"
+    },
+    {
+        "name": "HIST 470: Individualized  Study-Internship",
+        "department": "History"
+    },
+    {
+        "name": "HIST 471: Individualized Study-Internship",
+        "department": "History"
+    },
+    {
+        "name": "HIST 472: Individualized Study-Intern",
+        "department": "History"
+    },
+    {
+        "name": "HIST 473: Individualized Study-Internship",
+        "department": "History"
+    },
+    {
+        "name": "HIST 474: Summer Internship",
+        "department": "History"
+    },
+    {
+        "name": "HIST 475: Summer Internship",
+        "department": "History"
+    },
+    {
+        "name": "HIST 477: Half Credit Internship",
+        "department": "History"
+    }
+]

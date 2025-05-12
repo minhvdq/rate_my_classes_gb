@@ -1,0 +1,278 @@
+[
+    {
+        "name": "ARTS 141: Introduction to Drawing",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTS 160: Introduction to Digital Media",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTS 251: Introduction to Painting",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTS 252: Intermediate Painting",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTS 255: Introduction to Printmaking",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTS 256: Intermediate Printmaking",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTS 261: Introduction to Sculpture",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTS 262: Intermediate Sculpture",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTS 263: Introduction to Ceramics",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTS 265: Introduction to Photography",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTS 266: Intermediate Photography",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTS 267: Special Topics in Studio",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTS 341: Advanced Drawing",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTS 351: Advanced Painting",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTS 361: Advanced Sculpture",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTS 401: Senior Portfolio",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTS 450: Individualized Study-Tutorial",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTS 451: Individualized Study-Tutorial",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTS 452: Individualized Study-Tutorial",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTS 453: Individualized Study-Tutorial",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTS 460: Individualized Study-Research",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTS 461: Individualized Study-Research",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTS 462: Individualized Study-Research",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTS 463: Individualized Study-Research",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTS 470: Individualized Study-Intern",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTS 471: Individualized Study-Intern",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTS 472: Individualized Study-Internship",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTS 473: Individualized Study-Internship",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTS 474: Summer Internship",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTS 475: Summer Internship",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 125: Survey of Western Art",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 126: Introduction to Modern and Contemporary Art",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 131: Introduction to Asian Art",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 201: Arts of Ancient Greece and Rome",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 202: Medieval Art",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 203: Northern Renaissance Art",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 206: European Painting 1700-1900",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 210: 20th Century European Painting",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 214: Putting on a Show: Exhibition Curation and Methods in Art History",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 215: Introduction to Museum Studies",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 221: 18th & 19th Cent Amer Painting",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 225: History and Theory of Photography",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 226: Cameras, Canvas & Cannons: Visual Culture of the Civil War Era",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 234: Arts of China",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 235: Chinese Painting and Aesthetics",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 240: Arts of the African Diaspora",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 245: Art of the Global Renaissance",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 250: Schmucker Art Gallery Practicum",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 267: Topics in Visual Arts History",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 270: The Lives of Objects: Understanding Material Culture",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 303: Art of the Italian Renaissance",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 307: Baroque Art in the Age of Caravaggio and Vermeer",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 318: Art After 1945",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 322: Painting in America, 1900 to 1960",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 400: Seminar in Art History",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 450: Individualized Study-Tutorial",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 451: Individualized Study-Tutorial",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 452: Individualized Study-Tutorial",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 453: Individualized Study-Tutorial",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 460: Individualized Study-Research",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 461: Individualized Study-Research",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 462: Individualized Study-Research",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 463: Individualized Study-Research",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 470: Individualized Study-Intern",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 471: Individualized Study-Intern",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 472: Individualized Study-Internship",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 473: Individualized Study-Internship",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 474: Summer Internship",
+        "department": "Art and Art History"
+    },
+    {
+        "name": "ARTH 475: Summer Internship",
+        "department": "Art and Art History"
+    }
+]

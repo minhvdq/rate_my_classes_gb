@@ -1,159 +1,198 @@
 [
     {
-      "name": "PSYCH 101: Introduction to Psychology",
-      "department": "Psychology"
+        "name": "PSYCH 101: Introduction to Psychology",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 205: Introduction to Statistics",
-      "department": "Psychology"
+        "name": "PSYCH 205: Introduction to Statistics",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 210: Cultural Psychology",
-      "department": "Psychology"
+        "name": "PSYCH 210: Cultural Psychology",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 214: Social Psychology",
-      "department": "Psychology"
+        "name": "PSYCH 214: Social Psychology",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 215: Human Cognition",
-      "department": "Psychology"
+        "name": "PSYCH 215: Human Cognition",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 216: Sensation and Perception",
-      "department": "Psychology"
+        "name": "PSYCH 216: Sensation and Perception",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 221: Personality Psychology",
-      "department": "Psychology"
+        "name": "PSYCH 221: Personality Psychology",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 222: Adult Psychopathology",
-      "department": "Psychology"
+        "name": "PSYCH 222: Adult Psychopathology",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 223: Child and Adolescent Psychopathology",
-      "department": "Psychology"
+        "name": "PSYCH 223: Child and Adolescent Psychopathology",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 225: Developmental Psychology: Infancy & Childhood",
-      "department": "Psychology"
+        "name": "PSYCH 225: Developmental Psychology: Infancy & Childhood",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 226: Developmental Psychology: Adolescence",
-      "department": "Psychology"
+        "name": "PSYCH 226: Developmental Psychology: Adolescence",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 229: Human Growth and Development through the Lifespan",
-      "department": "Psychology"
+        "name": "PSYCH 229: Human Growth and Development through the Lifespan",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 230: Health Psychology",
-      "department": "Psychology"
+        "name": "PSYCH 230: Health Psychology",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 232: Clinical and Counseling Psychology",
-      "department": "Psychology"
+        "name": "PSYCH 232: Clinical and Counseling Psychology",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 236: Introduction to Brain & Behavior",
-      "department": "Psychology"
+        "name": "PSYCH 236: Introduction to Brain & Behavior",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 237: Psychopharmacology",
-      "department": "Psychology"
+        "name": "PSYCH 237: Psychopharmacology",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 238: Cognitive Neuroscience",
-      "department": "Psychology"
+        "name": "PSYCH 238: Cognitive Neuroscience",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 290: Mentored Research Internship",
-      "department": "Psychology"
+        "name": "PSYCH 290: Mentored Research Internship",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 305: Experimental Methods",
-      "department": "Psychology"
+        "name": "PSYCH 305: Experimental Methods",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 310: Laboratory in Cultural Psychology",
-      "department": "Psychology"
+        "name": "PSYCH 310: Laboratory in Cultural Psychology",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 314: Laboratory in Social Psychology",
-      "department": "Psychology"
+        "name": "PSYCH 314: Laboratory in Social Psychology",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 315: Laboratory in Thinking and Cognition",
-      "department": "Psychology"
+        "name": "PSYCH 315: Laboratory in Thinking and Cognition",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 316: Laboratory in Perception",
-      "department": "Psychology"
+        "name": "PSYCH 316: Laboratory in Perception",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 317: Laboratory in Memory and Social Cognition",
-      "department": "Psychology"
+        "name": "PSYCH 317: Laboratory in Memory and Social Cognition",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 321: Laboratory in Personality and Psychopathology",
-      "department": "Psychology"
+        "name": "PSYCH 321: Laboratory in Personality and Psychopathology",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 327: Laboratory in Cognitive and Perceptual Development",
-      "department": "Psychology"
+        "name": "PSYCH 327: Laboratory in Cognitive and Perceptual Development",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 328: Laboratory in Social and Emotional Development",
-      "department": "Psychology"
+        "name": "PSYCH 328: Laboratory in Social and Emotional Development",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 336: Laboratory in Behavioral Neuroscience",
-      "department": "Psychology"
+        "name": "PSYCH 336: Laboratory in Behavioral Neuroscience",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 338: Laboratory in Cognitive Neuroscience",
-      "department": "Psychology"
+        "name": "PSYCH 338: Laboratory in Cognitive Neuroscience",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 341: History of Psychological Science",
-      "department": "Psychology"
+        "name": "PSYCH 341: History of Psychological Science",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 400: Seminar",
-      "department": "Psychology"
+        "name": "PSYCH 400: Seminar",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 405: Helping Skills",
-      "department": "Psychology"
+        "name": "PSYCH 405: Helping Skills",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 450: Individualized Reading",
-      "department": "Psychology"
+        "name": "PSYCH 450: Individualized Reading",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 451: Individualized Study-Tutorial",
-      "department": "Psychology"
+        "name": "PSYCH 451: Individualized Study-Tutorial",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 452: Individualized Reading",
-      "department": "Psychology"
+        "name": "PSYCH 452: Individualized Reading",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 453: Individualized Study-Tutorial",
-      "department": "Psychology"
+        "name": "PSYCH 453: Individualized Study-Tutorial",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 460: Individualized Study-Research",
-      "department": "Psychology"
+        "name": "PSYCH 460: Individualized Study-Research",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 464: Honors Research",
-      "department": "Psychology"
+        "name": "PSYCH 461: Individualized Study-Research",
+        "department": "Psychology"
     },
     {
-      "name": "PSYCH 466: Honors Thesis",
-      "department": "Psychology"
+        "name": "PSYCH 462: Individualized Study-Research",
+        "department": "Psychology"
+    },
+    {
+        "name": "PSYCH 463: Individualized Study-Research",
+        "department": "Psychology"
+    },
+    {
+        "name": "PSYCH 464: Honors Research",
+        "department": "Psychology"
+    },
+    {
+        "name": "PSYCH 466: Honors Thesis",
+        "department": "Psychology"
+    },
+    {
+        "name": "PSYCH 470: Individualized Study-Internship",
+        "department": "Psychology"
+    },
+    {
+        "name": "PSYCH 471: Individualized Study-Internship",
+        "department": "Psychology"
+    },
+    {
+        "name": "PSYCH 472: Individualized Study-Internship",
+        "department": "Psychology"
+    },
+    {
+        "name": "PSYCH 473: Individualized Study-Internship",
+        "department": "Psychology"
+    },
+    {
+        "name": "PSYCH 474: Summer Internship",
+        "department": "Psychology"
+    },
+    {
+        "name": "PSYCH 475: Summer Internship",
+        "department": "Psychology"
+    },
+    {
+        "name": "PSYCH 477: Half Credit Internship",
+        "department": "Psychology"
     }
-  ]
-  
+]

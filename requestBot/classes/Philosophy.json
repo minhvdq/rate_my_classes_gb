@@ -1,0 +1,362 @@
+[
+    {
+        "name": "PHIL 101: Introduction to Philosophy",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 102: [Title Censored]: An Introduction to Philosophy",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 103: Critical Thinking",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 105: Contemporary Moral Issues",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 107: Environmental Ethics",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 109: Wrong Science, Bad Science, Pseudoscience",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 110: Einstein and the Big Questions",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 114: Philosophy of Sport",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 115: Ethics of Tragedy and Disaster",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 125: Philosophy of Love and Sex",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 131: Bioethics",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 138: Philosophy of Monsters",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 140: How Should We Live? Introduction to African Ethics",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 150: Stand-up Philosophy: Humor, Art, and Ethics",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 153: Internet, Data, and Society",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 180: God, Death, and the Meaning of Life",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 205: Ancient Greek and Roman Philosophy",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 206: Islamic Philosophy and Mysticism",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 207: Early Modern European Philosophy",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 208: Kant & 19th Century European Philosophy",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 211: Logic",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 212: Deconstruction, Interpretation and Argument",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 214: Choice, Chance, Luck, and Fate",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 215: Latin American and Caribbean Philosophy",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 216: Warring States Philosophy",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 218: Gender and Identity",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 219: Philosophy of Peace and Nonviolence",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 221: Philosophy of Mind",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 222: Philosophical Perspectives on Justice",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 224: Philosophy and Human Rights",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 225: Existentialism",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 226: Philosophy of Resistance",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 227: Beyond Terrorism",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 228: Trans Theory: Identity, Community, and Politics",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 230: Ethics",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 232: Environmental Philosophy",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 233: Philosophy of Science",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 235: Philosophical Ideas in Literature",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 237: Philosophy of Religion",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 240: World Philosophy",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 243: American Philosophy",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 247: Philosophy of Race",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 251: Philosophy of Action",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 252: Social and Political Philosophy",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 253: Philosophy of Technology",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 260: Truth, Belief, and Knowledge",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 265: Jewish Humor: From Teyve to Seinfeld",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 303: Analytic Philosophy",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 312: History and Philosophy of Quantum Mechanics",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 314: From Zero to Infinity: Philosophical Revolutions in Mathematics",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 315: The Nature of Space: Philosophical Revolutions in Physics",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 316: Philosophical Revolutions in Geometry",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 318: Ethics and Economic Life",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 320: Social Epistemology",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 328: Deliberative Democracy",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 329: Shapes of Evil",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 330: Language, Truth & Reality",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 331: Emotion",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 332: Philosophy and Mysticism",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 334: Philosophy of Art",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 335: Philosophy of Film",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 338: Philosophy of Law",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 339: Philosophy of Music",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 341: Contemporary European Philosophy",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 342: Philosophy of Chemistry",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 343: From Babylonia to the Big Bang:  The History and Philosophy of Cosmology",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 344: Philosophy of Place",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 345: Philosophy & Christianity",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 346: The Philosophy of Color",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 351: Philosophy of Humor",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 355: Nothingness",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 366: Great Philosophers",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 368: Reading (A Non-Philosopher)",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 400: Senior Seminar",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 450: Individualized Study-Tutorial",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 451: Individualized Study-Tutorial",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 452: Individualized Study-Tutorial",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 453: Individualized Study-Tutorial",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 460: Individualized Study-Research",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 461: Individualized Study-Research",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 462: Individualized Study-Research",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 463: Individualized Study-Research",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 466: Senior Thesis",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 467: Advanced Research and Scholarly Communication in Philosophy",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 470: Individualized Study-Internship",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 471: Individualized Study-Internship",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 472: Individualized Study-Internship",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 473: Individualized Study-Internship",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 474: Summer Internship",
+        "department": "Philosophy"
+    },
+    {
+        "name": "PHIL 475: Summer Internship",
+        "department": "Philosophy"
+    }
+]

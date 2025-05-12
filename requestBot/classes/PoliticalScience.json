@@ -1,0 +1,274 @@
+[
+    {
+        "name": "POL 101: American Government",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 102: Intro to Political Thought",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 103: Intro International Relations",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 104: Intro to Comparative Politics",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 109: Using Data to Understand Global Trends in Violence and Democracy",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 201: Topics in American Government",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 202: Topics in Political Theory",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 203: Topics in International Politics",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 204: Topics in Comparative Politics",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 213: Women, War, and Peace",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 215: Statistical Methods of Political Science",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 223: U.S. Congress",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 224: The American Presidency",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 225: Constitutional Law I: Institutional Powers & Constraints",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 228: Race and Politics in the United States",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 242: United States Foreign Policy",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 252: North-South Dialogue",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 253: Nationalism and Ethnic Conflict",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 255: Film, Fiction and World Politics",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 256: Refugees and You",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 260: European Politics",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 262: European Union Politics",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 270: Government & Politics in China",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 273: The Two Koreas",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 275: The Mass Media & American Politics",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 299: Judicial Politics & Behavior",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 301: Topics in American Government",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 302: Topics in Political Theory",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 303: Topics in International Politics",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 304: Topics in Comparative Politics",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 305: Topics in Research Methods",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 320: Money, Power, and Political Representation in the U.S.",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 321: Gender in American Politics",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 322: Constitutional Law II: Civil Rights & Liberties",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 324: Executive Policy Making",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 327: State Politics and Policy",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 331: Political Parties in American Politics",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 332: Campaigns and Elections in the United States",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 333: Environmental Policy",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 334: Politics of Sexuality",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 343: Scientific Study of Civil War",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 344: U.S. National Security Policy",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 346: International Relations Theory",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 347: Global Conflict Management",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 348: Religion in International Relations",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 351: The Political Economy of Armed Conflict",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 354: Controversies in the Politics of Europe",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 363: Politics of Developing Areas",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 364: How To Be an Autocrat",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 370: Contemporary Issues in Turkish Politics",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 375: Constitutional Police Procedure",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 381: American Political Thought",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 382: Feminist Theory in American Politics",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 399: First Amendment Policy & Politics",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 401: Capstone-American Government",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 402: Capstone-Political Theory",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 403: Capstone-International Relations Seminar",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 404: Capstone-Comparative Politics",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 450: Individualized Study-Tutorial",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 456: Professional Development in Political Science",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 460: Individualized Study-Research",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 461: Individualized Study-Research",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 462: Individualized Study-Research",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 463: Individualized Study-Research",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 470: Individualized Study-Intern",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 473: Individualized Study-Intern",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 475: Summer Internship",
+        "department": "Political Science"
+    },
+    {
+        "name": "POL 499: Capstone-American Legal Studies",
+        "department": "Political Science"
+    }
+]

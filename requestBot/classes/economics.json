@@ -1,207 +1,266 @@
 [
     {
-      "name": "ECON 103: Principles of Microeconomics",
-      "department": "Economics"
+        "name": "ECON 103: Principles of Microeconomics",
+        "department": "Economics"
     },
     {
-      "name": "ECON 104: Principles of Macroeconomics",
-      "department": "Economics"
+        "name": "ECON 104: Principles of Macroeconomics",
+        "department": "Economics"
     },
     {
-      "name": "ECON 105: Economics of Public Issues",
-      "department": "Economics"
+        "name": "ECON 105: Economics of Public Issues",
+        "department": "Economics"
     },
     {
-      "name": "ECON 211: American Economic History",
-      "department": "Economics"
+        "name": "ECON 211: American Economic History",
+        "department": "Economics"
     },
     {
-      "name": "ECON 213: East Asian Economic History and Development",
-      "department": "Economics"
+        "name": "ECON 213: East Asian Economic History and Development",
+        "department": "Economics"
     },
     {
-      "name": "ECON 214: Latin American Economic History and Development",
-      "department": "Economics"
+        "name": "ECON 214: Latin American Economic History and Development",
+        "department": "Economics"
     },
     {
-      "name": "ECON 241: Introductory Economics and Business Statistics",
-      "department": "Economics"
+        "name": "ECON 241: Introductory Economics and Business Statistics",
+        "department": "Economics"
     },
     {
-      "name": "ECON 243: Intermediate Macroeconomic Theory",
-      "department": "Economics"
+        "name": "ECON 243: Intermediate Macroeconomic Theory",
+        "department": "Economics"
     },
     {
-      "name": "ECON 245: Intermediate Microeconomic Theory",
-      "department": "Economics"
+        "name": "ECON 245: Intermediate Microeconomic Theory",
+        "department": "Economics"
     },
     {
-      "name": "ECON 249: History of Economic Thought and Analysis",
-      "department": "Economics"
+        "name": "ECON 249: History  of Economic Thought and Analysis",
+        "department": "Economics"
     },
     {
-      "name": "ECON 250: Economic Development",
-      "department": "Economics"
+        "name": "ECON 250: Economic Development",
+        "department": "Economics"
     },
     {
-      "name": "ECON 251: International Economics",
-      "department": "Economics"
+        "name": "ECON 251: International Economics",
+        "department": "Economics"
     },
     {
-      "name": "ECON 252: Economics of Identity: Gender, Sexuality, & Policy",
-      "department": "Economics"
+        "name": "ECON 252: Economics of Identity: Gender, Sexuality, & Policy",
+        "department": "Economics"
     },
     {
-      "name": "ECON 253: Introduction to Political Economy and African Diaspora",
-      "department": "Economics"
+        "name": "ECON 253: Introduction to Political Economy and African Diaspora",
+        "department": "Economics"
     },
     {
-      "name": "ECON 254: The Economics of Sports",
-      "department": "Economics"
+        "name": "ECON 254: The Economics of Sports",
+        "department": "Economics"
     },
     {
-      "name": "ECON 255: Poverty, Disease, and Underdevelopment in Latin America",
-      "department": "Economics"
+        "name": "ECON 255: Poverty, Disease, and Underdevelopment in Latin America",
+        "department": "Economics"
     },
     {
-      "name": "ECON 256: African Economic History and Development",
-      "department": "Economics"
+        "name": "ECON 256: African Economic History and Development",
+        "department": "Economics"
     },
     {
-      "name": "ECON 258: Energy and Security",
-      "department": "Economics"
+        "name": "ECON 258: Energy and Security",
+        "department": "Economics"
     },
     {
-      "name": "ECON 262: Monetary Policy",
-      "department": "Economics"
+        "name": "ECON 262: Monetary Policy",
+        "department": "Economics"
     },
     {
-      "name": "ECON 265: Financial Regulation Policy",
-      "department": "Economics"
+        "name": "ECON 265: Financial Regulation Policy",
+        "department": "Economics"
     },
     {
-      "name": "ECON 267: Finance",
-      "department": "Economics"
+        "name": "ECON 267: Finance",
+        "department": "Economics"
     },
     {
-      "name": "ECON 270: Health Economics and Health Care Policy",
-      "department": "Economics"
+        "name": "ECON 270: Health Economics and Health Care Policy",
+        "department": "Economics"
     },
     {
-      "name": "ECON 301: Labor Economics",
-      "department": "Economics"
+        "name": "ECON 301: Labor Economics",
+        "department": "Economics"
     },
     {
-      "name": "ECON 302: Economics of Identity: Gender, Sexuality, & Policy",
-      "department": "Economics"
+        "name": "ECON 302: Economics of Identity: Gender, Sexuality, & Policy",
+        "department": "Economics"
     },
     {
-      "name": "ECON 303: Money and Financial Intermediaries",
-      "department": "Economics"
+        "name": "ECON 303: Money and Financial Intermediaries",
+        "department": "Economics"
     },
     {
-      "name": "ECON 304: The Economics of Sports",
-      "department": "Economics"
+        "name": "ECON 304: The Economics of Sports",
+        "department": "Economics"
     },
     {
-      "name": "ECON 305: Public Economics",
-      "department": "Economics"
+        "name": "ECON 305: Public Economics",
+        "department": "Economics"
     },
     {
-      "name": "ECON 307: The Economics of Growth and Technological Change",
-      "department": "Economics"
+        "name": "ECON 307: The Economics of Growth and Technological Change",
+        "department": "Economics"
     },
     {
-      "name": "ECON 308: Political Economy",
-      "department": "Economics"
+        "name": "ECON 308: Political Economy",
+        "department": "Economics"
     },
     {
-      "name": "ECON 309: International Finance and Open Economy Macroeconomics",
-      "department": "Economics"
+        "name": "ECON 309: International Finance and Open Economy Macroeconomics",
+        "department": "Economics"
     },
     {
-      "name": "ECON 312: Game Theory",
-      "department": "Economics"
+        "name": "ECON 312: Game Theory",
+        "department": "Economics"
     },
     {
-      "name": "ECON 314: Advanced Macroeconomic Theory",
-      "department": "Economics"
+        "name": "ECON 314: Advanced Macroeconomic Theory",
+        "department": "Economics"
     },
     {
-      "name": "ECON 315: Macroeconomic History and Policy",
-      "department": "Economics"
+        "name": "ECON 315: Macroeconomic History and Policy",
+        "department": "Economics"
     },
     {
-      "name": "ECON 338: Economic Development",
-      "department": "Economics"
+        "name": "ECON 338: Economic Development",
+        "department": "Economics"
     },
     {
-      "name": "ECON 341: Environmental Economics",
-      "department": "Economics"
+        "name": "ECON 341: Environmental Economics",
+        "department": "Economics"
     },
     {
-      "name": "ECON 342: Industrial Organization and Public Policy",
-      "department": "Economics"
+        "name": "ECON 342: Industrial Organization and Public Policy",
+        "department": "Economics"
     },
     {
-      "name": "ECON 344: Energy Economics & Public Policy",
-      "department": "Economics"
+        "name": "ECON 344: Energy Economics & Public Policy",
+        "department": "Economics"
     },
     {
-      "name": "ECON 346: Economics of Science and Innovation Policy",
-      "department": "Economics"
+        "name": "ECON 346: Economics of Science and Innovation Policy",
+        "department": "Economics"
     },
     {
-      "name": "ECON 348: The Economics of Spatial Environmental Analysis",
-      "department": "Economics"
+        "name": "ECON 348: The Economics of Spatial Environmental Analysis",
+        "department": "Economics"
     },
     {
-      "name": "ECON 350: Econometrics",
-      "department": "Economics"
+        "name": "ECON 350: Econometrics",
+        "department": "Economics"
     },
     {
-      "name": "ECON 351: Application of Mathematics to Economics and Business",
-      "department": "Economics"
+        "name": "ECON 351: Application of Mathematics to Economics and Business",
+        "department": "Economics"
     },
     {
-      "name": "ECON 352: Advanced Econometrics",
-      "department": "Economics"
+        "name": "ECON 352: Advanced Econometrics",
+        "department": "Economics"
     },
     {
-      "name": "ECON 360: Experimental Economics",
-      "department": "Economics"
+        "name": "ECON 360: Experimental Economics",
+        "department": "Economics"
     },
     {
-      "name": "ECON 362: Monetary Policy",
-      "department": "Economics"
+        "name": "ECON 362: Monetary Policy",
+        "department": "Economics"
     },
     {
-      "name": "ECON 367: Applied Finance: Advanced Financial Economics",
-      "department": "Economics"
+        "name": "ECON 367: Applied Finance:  Advanced Financial Economics",
+        "department": "Economics"
     },
     {
-      "name": "ECON 370: Health Economics",
-      "department": "Economics"
+        "name": "ECON 370: Health Economics",
+        "department": "Economics"
     },
     {
-      "name": "ECON 401: Advanced Topics:History of Economic Thought",
-      "department": "Economics"
+        "name": "ECON 401: Advanced Topics:History of Economic Thought",
+        "department": "Economics"
     },
     {
-      "name": "ECON 402: Advanced Topics in Theoretical and Applied Macro-and Monetary Economics",
-      "department": "Economics"
+        "name": "ECON 402: Advanced Topics in Theoretical and Applied Macro-and Monetary Economics",
+        "department": "Economics"
     },
     {
-      "name": "ECON 403: Advanced Topics in Theoretical and Applied Microeconomics",
-      "department": "Economics"
+        "name": "ECON 403: Advanced Topics in Theoretical and Applied Microeconomics",
+        "department": "Economics"
     },
     {
-      "name": "ECON 404: Capstone Seminar in Mathematical Economics",
-      "department": "Economics"
+        "name": "ECON 404: Capstone Seminar in Mathematical Economics",
+        "department": "Economics"
     },
     {
-      "name": "ECON 420: Honors Research Seminar",
-      "department": "Economics"
+        "name": "ECON 420: Honors Research Seminar",
+        "department": "Economics"
+    },
+    {
+        "name": "ECON 450: Individualized Study-Tutorial",
+        "department": "Economics"
+    },
+    {
+        "name": "ECON 451: Individualized Study-Tutorial",
+        "department": "Economics"
+    },
+    {
+        "name": "ECON 452: Individualized Study-Tutorial",
+        "department": "Economics"
+    },
+    {
+        "name": "ECON 453: Individualized Study-Tutorial",
+        "department": "Economics"
+    },
+    {
+        "name": "ECON 460: Individualized Study-Research",
+        "department": "Economics"
+    },
+    {
+        "name": "ECON 461: Individualized Study-Research",
+        "department": "Economics"
+    },
+    {
+        "name": "ECON 462: Individualized Study-Research",
+        "department": "Economics"
+    },
+    {
+        "name": "ECON 463: Individualized Study-Research",
+        "department": "Economics"
+    },
+    {
+        "name": "ECON 470: Individualized Study-Internship",
+        "department": "Economics"
+    },
+    {
+        "name": "ECON 471: Individualized Study-Internship",
+        "department": "Economics"
+    },
+    {
+        "name": "ECON 472: Individualized Study-Intern",
+        "department": "Economics"
+    },
+    {
+        "name": "ECON 473: Individualized Study-Internship",
+        "department": "Economics"
+    },
+    {
+        "name": "ECON 474: Summer Internship",
+        "department": "Economics"
+    },
+    {
+        "name": "ECON 475: Summer Internship",
+        "department": "Economics"
+    },
+    {
+        "name": "ECON 477: Half Credit Internship",
+        "department": "Economics"
     }
-  ]
-  
+]

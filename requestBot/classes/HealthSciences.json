@@ -1,0 +1,114 @@
+[
+    {
+        "name": "HS 120: Public Health",
+        "department": "Health Sciences"
+    },
+    {
+        "name": "HS 209: Human Anatomy and Physiology I",
+        "department": "Health Sciences"
+    },
+    {
+        "name": "HS 210: Human Anatomy and Physiology II",
+        "department": "Health Sciences"
+    },
+    {
+        "name": "HS 225: Medical Terminology",
+        "department": "Health Sciences"
+    },
+    {
+        "name": "HS 230: Nutrition",
+        "department": "Health Sciences"
+    },
+    {
+        "name": "HS 232: Statistics for the Health Sciences",
+        "department": "Health Sciences"
+    },
+    {
+        "name": "HS 240: Ethics in Health Sciences",
+        "department": "Health Sciences"
+    },
+    {
+        "name": "HS 290: Mentored Research Internship",
+        "department": "Health Sciences"
+    },
+    {
+        "name": "HS 309: Exercise is Medicine",
+        "department": "Health Sciences"
+    },
+    {
+        "name": "HS 310: Assessment in the Health Sciences",
+        "department": "Health Sciences"
+    },
+    {
+        "name": "HS 311: Neuromuscular Physiology",
+        "department": "Health Sciences"
+    },
+    {
+        "name": "HS 312: Cardiorespiratory Physiology",
+        "department": "Health Sciences"
+    },
+    {
+        "name": "HS 319: Environmental Physiology",
+        "department": "Health Sciences"
+    },
+    {
+        "name": "HS 322: Global Health",
+        "department": "Health Sciences"
+    },
+    {
+        "name": "HS 323: Social Determinants of Health",
+        "department": "Health Sciences"
+    },
+    {
+        "name": "HS 326: Epidemiology",
+        "department": "Health Sciences"
+    },
+    {
+        "name": "HS 328: Health Equity",
+        "department": "Health Sciences"
+    },
+    {
+        "name": "HS 330: Advanced Nutrition and Human Metabolism",
+        "department": "Health Sciences"
+    },
+    {
+        "name": "HS 340: Functional Anatomy and Biomechanics",
+        "department": "Health Sciences"
+    },
+    {
+        "name": "HS 350: Exposure Assessment",
+        "department": "Health Sciences"
+    },
+    {
+        "name": "HS 376: Pathophysiology of Chronic Disease",
+        "department": "Health Sciences"
+    },
+    {
+        "name": "HS 390: Special Topics in Health Sciences - Seminar",
+        "department": "Health Sciences"
+    },
+    {
+        "name": "HS 460: Individualized Study-Research",
+        "department": "Health Sciences"
+    },
+    {
+        "name": "HS 473: Individualized Study-Internship",
+        "department": "Health Sciences"
+    },
+    {
+        "name": "HS 475: Summer Internship",
+        "department": "Health Sciences"
+    },
+    {
+        "name": "HS 476: Individualized Study: Capstone Internship",
+        "department": "Health Sciences"
+    },
+    {
+        "name": "HS 478: Summer Capstone Internship",
+        "department": "Health Sciences"
+    },
+    {
+        "name": "HS 488: Capstone Seminar Course",
+        "department": "Health Sciences"
+    }
+]

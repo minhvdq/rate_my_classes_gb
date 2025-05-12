@@ -1,0 +1,126 @@
+[
+    {
+        "department": "Computer Science",
+        "url": "https://www.gettysburg.edu/academic-programs/computer-science/courses/"
+    },
+    {
+        "department": "Mathematics",
+        "url": "https://www.gettysburg.edu/academic-programs/mathematics/courses/"
+    },
+    {
+        "department": "Psychology",
+        "url": "https://www.gettysburg.edu/academic-programs/psychology/courses/"
+    },
+    {
+        "department": "Physics",
+        "url": "https://www.gettysburg.edu/academic-programs/physics/courses/"
+    },
+    {
+        "department": "Economics",
+        "url": "https://www.gettysburg.edu/academic-programs/economics/courses/"
+    },
+    {
+        "department": "Management",
+        "url": "https://www.gettysburg.edu/academic-programs/management/courses/"
+    },
+    {
+        "department": "Chemistry",
+        "url": "https://www.gettysburg.edu/academic-programs/chemistry/courses/"
+    },
+    {
+        "department": "Biology",
+        "url": "https://www.gettysburg.edu/academic-programs/biology/courses/"
+    },
+    {
+        "department": "Asian Studies",
+        "url": "https://www.gettysburg.edu/academic-programs/east-asian-studies/courses/"
+    },
+    {
+        "department": "Africana Studies",
+        "url": "https://www.gettysburg.edu/academic-programs/africana-studies/courses/"
+    },
+    {
+        "department": "Anthropology",
+        "url": "https://www.gettysburg.edu/academic-programs/anthropology/courses/"
+    },
+    {
+        "department": "Art and Art History",
+        "url": "https://www.gettysburg.edu/academic-programs/art-and-art-history/courses/"
+    },
+    {
+        "department": "Cinema & Media Studies",
+        "url": "https://www.gettysburg.edu/academic-programs/cinema-media-studies/courses/" 
+    },
+    {
+        "department": "Education",
+        "url": "https://www.gettysburg.edu/academic-programs/education/courses/"
+    },
+    {
+        "department": "English",
+        "url": "https://www.gettysburg.edu/academic-programs/english/courses/"
+    },
+    {
+        "department": "Environmental Studies",
+        "url": "https://www.gettysburg.edu/academic-programs/environmental-studies/courses/"
+    },
+    {
+        "department": "French",
+        "url": "https://www.gettysburg.edu/academic-programs/french/courses/"   
+    },
+    {
+        "department": "German Studies",
+        "url": "https://www.gettysburg.edu/academic-programs/german-studies/courses/"
+    },
+    {
+        "department": "Health Sciences",
+        "url": "https://www.gettysburg.edu/academic-programs/health-sciences/courses/"
+    },
+    {
+        "department": "History",
+        "url": "https://www.gettysburg.edu/academic-programs/history/courses/"
+    },
+    {
+        "department": "Interdisciplinary Studies",
+        "url": "https://www.gettysburg.edu/academic-programs/interdisciplinary-studies/courses/"
+    },
+    {
+        "department": "Italian Studies",
+        "url": "https://www.gettysburg.edu/academic-programs/italian-studies/courses/"
+    },
+    {
+        "department": "Music",
+        "url": "https://www.gettysburg.edu/academic-programs/sunderman-conservatory/programs/courses/"
+    },
+    {
+        "department": "Philosophy",
+        "url": "https://www.gettysburg.edu/academic-programs/philosophy/courses/"
+    },
+    {
+        "department": "Political Science",
+        "url": "https://www.gettysburg.edu/academic-programs/political-science/courses/"
+    },
+    {
+        "department": "Public Policy",
+        "url": "https://www.gettysburg.edu/academic-programs/public-policy/courses/"
+    },
+    {
+        "department": "Religious Studies",
+        "url": "https://www.gettysburg.edu/academic-programs/religious-studies/courses/"
+    },
+    {
+        "department": "Sociology",
+        "url": "https://www.gettysburg.edu/academic-programs/sociology/courses/"
+    },
+    {
+        "department": "Spanish",
+        "url": "https://www.gettysburg.edu/academic-programs/spanish/courses/"
+    },
+    {
+        "department": "Theatre Arts",
+        "url": "https://www.gettysburg.edu/academic-programs/theatre-arts/courses/"
+    },
+    {
+        "department": "Women, Gender & Sexuality Studies",
+        "url": "https://www.gettysburg.edu/academic-programs/women-gender-sexuality/courses/"
+    }
+]

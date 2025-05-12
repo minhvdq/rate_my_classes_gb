@@ -1,0 +1,262 @@
+[
+    {
+        "name": "REL 101: Introduction to Religion",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 105: The Bible and Modern Moral Issues",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 126: Native American Religious Traditions",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 127: Topics in History of Religions",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 134: Religion in America",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 135: Body in Religion",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 137: Topics in Religious Thought",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 138: Topics in Religious Thought",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 205: History, Literature, and Religion of the New Testament",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 206: Islamic Philosophy and Mysticism",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 209: Topics in Religion",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 210: Buddhist Autobiographies",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 216: Warring States Philosophy",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 220: Religion, Colonialism, and Resistance",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 222: The Reformation in Europe",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 224: African American Religions",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 225: Religion in the Civil Rights Movement",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 226: Native American Religious Traditions",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 227: Ethics, Religion and Society",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 232: Modern Prophets of Social Change: Martin Luther King Jr., Dietrich Bonhoeffer and Malcolm X",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 241: Introduction to Hinduism",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 244: Introduction to Buddhism",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 247: Religions of India, Tibet and Nepal",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 248: Religions of China",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 249: Religions of Japan",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 251: Intro to Chinese Classical Thought",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 252: Introduction to Daoist Healing",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 253: Japanese Religions, Myth, Folklore in Visual Media",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 254: Intro to Asian Religions",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 260: Theories of Religion",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 261: Buddhist Scriptures",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 264: Nature, Environment, Religion",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 265: Introduction to Christianity",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 267: Christian Saints and Popular Faith in the Medieval West",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 268: Queering/Querying Religion",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 270: Introduction to Islam",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 271: Sufism: The Mystic Path in Islam",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 272: Islam in the Modern World",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 280: Religion, Healing, and the Body",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 305: History, Literature, and Religion of the New Testament",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 310: Buddhist Autobiographies",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 311: Jesus in First Three Gospels",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 312: The Gospel of John",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 314: The Apostle Paul",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 320: Religion, Colonialism, and Resistance",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 327: Ethics, Religion and Society",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 337: Postmodern Jewish Philosophy",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 344: Introduction to Buddhism",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 351: Intro to Chinese Classical Thought",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 352: Introduction to Daoist Healing",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 353: Sex and Gender in Early Christianity",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 354: Intro to Asian Religions",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 358: Islam in South Asia",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 362: Violence/Non-Violence: Global Religious Perspectives",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 364: Nature, Environment, Religion",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 372: Islam in the Modern World",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 380: Religion, Healing, and the Body",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 400: Capstone Experience in Religious Studies",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 450: Individualized Study-Tutorial",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 452: Individualized Study-Tutorial",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 460: Individualized Study-Research",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 461: Individualized Study-Research",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 470: Individualized Study-Internship",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 474: Summer Internship",
+        "department": "Religious Studies"
+    },
+    {
+        "name": "REL 475: Summer Internship",
+        "department": "Religious Studies"
+    }
+]
