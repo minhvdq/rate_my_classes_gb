@@ -14,10 +14,11 @@ export default function AuthenPage({curUser, setCurUser}) {
     }
 
     if (curUser) {
+        
         return <Navigate to={frontendBase} replace />;
     }
 
-
+    console.log("inside authen page")
     return(
         <div className='container d-flex justify-content-center align-items-center min-vh-100 min-vw-100' >
 

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { Select, Tag, Avatar, Divider, Card, Statistic, Row, Col, Button, Empty } from 'antd';
-import { UserOutlined, CalendarOutlined, CommentOutlined } from '@ant-design/icons';
+import { Select, Tag, Divider, Card, Statistic, Row, Col, Button, Empty } from 'antd';
+import { UserOutlined, CommentOutlined } from '@ant-design/icons';
 import ReviewHeader from './ReviewHeader';
 import CommentPage from './Comment';
 import classService from '../../services/class';
@@ -68,7 +68,10 @@ export default function ReviewPage({ curUser, setCurUser, classes }) {
         return foundReview;
       });
 
-      const fetchedReviews = await Promise.all(reviewPromises);
+      let fetchedReviews = await Promise.all(reviewPromises);
+
+      fetchedReviews = fetchedReviews.sort((a, b) => new Date(b.postBy) - new Date(a.postBy));  
+      console.log('Fetched reviews:', fetchedReviews);
 
       // Update state after all reviews are fetched
       setReviews(fetchedReviews);

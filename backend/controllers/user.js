@@ -4,15 +4,15 @@ const bcrypt = require('bcrypt')
 const mongoose = require('mongoose')
 const saltRounds = 10
 const authService = require('../services/auth.service')
+const config = require('../utils/config')
+const {adminAuth} = require('../utils/middlewares')
 // const sendEmail = require('../utils/email/sendEmail')
 
 /**
  * Fetch all users from database
  */
 userRouter.get('/', async (request, response) => {
-    console.log("getting")
     const users = await User.find({})
-    console.log(users)
     response.status(200).json(users)
 })
 
@@ -27,7 +27,7 @@ userRouter.get('/:id', async (request, response) => {
 /**
  * Delete all users in database
  */
-userRouter.delete('/', async (request, response) => {
+userRouter.delete('/', adminAuth, async (request, response) => {
     await User.deleteMany({})
     response.status(204).send("All users deleted").end()
 })
@@ -55,7 +55,7 @@ userRouter.post('/', async (request, response) => {
 /**
  * Delete user by id
  */
-userRouter.delete('/:id', async(request, response) => {
+userRouter.delete('/:id', adminAuth, async(request, response) => {
     const userId = request.params.id
     const user = await User.findById(userId)
     await User.findByIdAndDelete(userId)
@@ -81,6 +81,39 @@ userRouter.put('/:id', async( request, response) => {
     const updateUser = await User.findByIdAndUpdate(userId, fixingUser, {new: true})
 
     response.json(updateUser)
+})
+
+/**
+ * Create admin user
+ */
+userRouter.post('/admin', async (request, response) => {
+    const body = request.body
+    const adminKey = request.headers['x-admin-key']
+
+    // Check for admin key
+    if (!adminKey || adminKey !== config.ADMIN_SECRET_KEY) {
+        return response.status(403).json({ error: 'unauthorized: invalid admin key' })
+    }
+
+    // Check if user already exists
+    let user = await User.findOne({email: body.email})
+    if(user) {
+        return response.status(400).json({error: "User already exists"})
+    }
+
+    const salt = await bcrypt.genSalt(saltRounds)
+    const hashPassword = await bcrypt.hash(body.password, salt)
+
+    const newUser = new User({
+        name: body.name,
+        email: body.email,
+        passwordHash: hashPassword,
+        isAdmin: true,
+        reviews: []
+    })
+
+    const savedUser = await newUser.save()
+    response.status(201).json(savedUser)
 })
 
 module.exports = userRouter

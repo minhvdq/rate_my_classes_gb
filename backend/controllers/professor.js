@@ -3,6 +3,7 @@ const Professor = require('../models/Professor')
 const mongoose = require('mongoose')
 const axios = require('axios')
 const config = require('../utils/config')
+const {adminAuth} = require('../utils/middlewares')
 
 professorRouter.get( '/', async(req, res) => {
     const classes = await Professor.find({})
@@ -21,7 +22,7 @@ professorRouter.get('/byDepartment/:department', async(req, res) => {
     res.status(200).json(professors)
 })
 
-professorRouter.put('/:id', async( req, res) => {
+professorRouter.put('/:id', adminAuth, async( req, res) => {
     const id = req.params.id
     const body = req.body
     const curProfessor = await Professor.findById(id)
@@ -35,7 +36,7 @@ professorRouter.put('/:id', async( req, res) => {
     res.status(201).json(updateProfessor)
 })
 
-professorRouter.post( '/', async( req, res) => { 
+professorRouter.post( '/', adminAuth, async( req, res) => { 
     const body = req.body
 
     const newProfessor = new Professor({
@@ -48,12 +49,12 @@ professorRouter.post( '/', async( req, res) => {
     res.status(201).json(savedProfessor)
 })
 
-professorRouter.delete('/', async(request,response) => {
+professorRouter.delete('/', adminAuth, async(request,response) => {
     await Professor.deleteMany({})
     response.status(204).send("all professors deleted")
 })
 
-professorRouter.delete('/:id', async (request, response) => {
+professorRouter.delete('/:id', adminAuth, async (request, response) => {
     await Professor.findByIdAndDelete(request.params.id)
     response.status(204).end()
 })

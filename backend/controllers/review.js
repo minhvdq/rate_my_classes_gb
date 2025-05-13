@@ -7,7 +7,7 @@ const axios = require('axios')
 const config = require('../utils/config')
 const jwt = require('jsonwebtoken')
 const Professor = require('../models/Professor')
-
+const {adminAuth} = require('../utils/middlewares')
 reviewRouter.get( '/', async(req, res) => {
     const reviews = await Review.find({})
     res.status(200).json(reviews)
@@ -88,7 +88,7 @@ reviewRouter.post( '/', async( req, res) => {
     res.status(200).json(savedReview)
 })
 
-reviewRouter.delete('/', async(request,response) => {
+reviewRouter.delete('/', adminAuth, async(request,response) => {
     await Review.deleteMany({})
     response.status(204).send("all reviews deleted")
 })

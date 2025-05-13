@@ -1,4 +1,7 @@
 const logger = require('./logger')
+const jwt = require('jsonwebtoken')
+const config = require('./config')
+const User = require('../models/User')
 
 const requestLogger = (request, response, next) => {
   logger.infor('Method:', request.method)
@@ -43,9 +46,32 @@ const tokenExtractor = async ( request, response, next) => {
 
 }
 
+const adminAuth = async (request, response, next) => {
+  const autho = request.get('authorization')
+  if (!autho || !autho.startsWith('Bearer ')) {
+    return response.status(401).json({ error: 'token missing or invalid' })
+  }
+
+  const token = autho.replace('Bearer ', '')
+  try {
+    const decodedToken = jwt.verify(token, config.SECRET)
+    const user = await User.findById(decodedToken.id)
+    
+    if (!user || !user.isAdmin) {
+      return response.status(403).json({ error: 'admin access required' })
+    }
+    
+    request.user = user
+    next()
+  } catch (error) {
+    return response.status(401).json({ error: 'token invalid' })
+  }
+}
+
 module.exports = {
   requestLogger,
   unknownEndpoint,
   errorHandler,
   tokenExtractor,
+  adminAuth
 }
