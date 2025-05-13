@@ -1,7 +1,7 @@
 const newUserRouter = require('express').Router()
 const NewUserToken = require('../models/NewUserToken')
 const User = require('../models/User')
-
+const { frontendBase } = require('../utils/homeUrl')
 newUserRouter.get('/:id', async (req, res) => {
     const id = req.params.id
 
@@ -19,8 +19,7 @@ newUserRouter.get('/:id', async (req, res) => {
     })
 
     const savedUser = await newUser.save()
-
-    res.status(201).json(savedUser)
+    res.redirect(`${frontendBase}/authen`)
 })
 
 module.exports = newUserRouter

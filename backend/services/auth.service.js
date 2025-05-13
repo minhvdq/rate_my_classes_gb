@@ -66,7 +66,7 @@ const requestPasswordReset = async (email) => {
       name: user.name,
       link: link,
     },
-    "./templates/requestResetPassword.handlebars"
+    "/templates/requestResetPassword.handlebars"
   );
   return { link };
 };

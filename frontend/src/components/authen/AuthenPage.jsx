@@ -3,6 +3,7 @@ import LoginPage from './LoginPage'
 import SignupPage from './SignupPage'
 import {frontendBase} from '../../utils/homeUrl'
 import rmcillutration from '/rmcillustration.svg'
+import { Navigate } from 'react-router-dom'
 
 
 export default function AuthenPage({curUser, setCurUser}) {
@@ -14,7 +15,6 @@ export default function AuthenPage({curUser, setCurUser}) {
     }
 
     if (curUser) {
-        
         return <Navigate to={frontendBase} replace />;
     }
 

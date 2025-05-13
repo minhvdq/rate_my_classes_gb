@@ -128,11 +128,13 @@ export default function ReviewPage({ curUser, setCurUser, classes }) {
       setPresentReviews([...reviews]);
       let totalD = 0;
       let totalW = 0;
+      let totalA = 0;
       for (let review of reviews) {
         totalD += review.difficulty;
         totalW += review.workload;
+        if (review.attendance) totalA++;
       }
-
+      setAttendance(totalA > (reviews.length / 2));
       setTotalDifficulty(totalD);
       setTotalWorkload(totalW);
     } else {
@@ -145,11 +147,13 @@ export default function ReviewPage({ curUser, setCurUser, classes }) {
 
       let totalD = 0;
       let totalW = 0;
+      let totalA = 0;     
       for (let review of sortedReviews) {
         totalD += review.difficulty;
         totalW += review.workload;
+        if (review.attendance) totalA++;
       }
-
+      setAttendance(totalA > (sortedReviews.length / 2));
       setTotalDifficulty(totalD);
       setTotalWorkload(totalW);
     }

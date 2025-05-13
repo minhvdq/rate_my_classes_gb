@@ -26,9 +26,11 @@
             </form>
             <script>
                 // Define base URLs directly
-                const frontendBase = 'http://localhost:5173';
-                const backendBase = 'http://localhost:3000';
-
+                {{/* const frontendBase = 'http://localhost:5173';
+                const backendBase = 'http://localhost:3000'; */}}
+                const frontendBase = window.location.origin
+                const backendBase = window.location.origin
+                
                 $(document).ready(function() {
                 var resetForm = document.getElementById('reset-form')
                 var resetButton = document.getElementById('submit-button')

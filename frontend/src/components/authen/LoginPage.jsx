@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import loginService from '../../services/login'
 import customStorage from '../../services/customStorage'
-import { frontendBase } from '../../utils/homeUrl'
+import { frontendBase, backendBase } from '../../utils/homeUrl'
+
 
 export default function LoginPage({ togglePage, setCurUser }) {
   const [email, setEmail] = useState("")
@@ -95,7 +96,7 @@ export default function LoginPage({ togglePage, setCurUser }) {
                 type="button" 
                 onClick={(e) => {
                   e.preventDefault(); 
-                  window.location.href = "http://localhost:3000/PasswordResetRequest/ui_assets/request.html"
+                  window.location.href = `${backendBase}/PasswordResetRequest/ui_assets/request.html`
                 }} 
                 className="btn btn-link p-0 text-decoration-none" 
                 style={{fontSize: "0.9rem", color: "#6c63ff"}}
