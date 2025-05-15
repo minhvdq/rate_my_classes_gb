@@ -8,6 +8,7 @@ export default function SignupPage({ togglePage }) {
   const [password, setPassword] = useState('')
   const [repPassword, setRepPassword] = useState('')
   const [error, setError] = useState('')
+  const [announce, setAnnounce] = useState('')
   const [loading, setLoading] = useState(false)
 
   const handleName = (event) => {
@@ -46,18 +47,24 @@ export default function SignupPage({ togglePage }) {
     }
 
     try {
-      await userService.signup(submitUser)
+      const response = await userService.signup(submitUser)
+      console.log("response", response)
+
       
-      window.alert("Verification email sent")
-      
+
+      // Set announce to show a message that the verification email has been sent
+      setAnnounce(`Verification email sent to ${email}`)
       setName('')
       setEmail('')
       setPassword('')
       setRepPassword('')
-      togglePage()
-      window.location.href = `${frontendBase}/authen`
+      setTimeout(() => {
+        setAnnounce(null)
+      }, 5000)
+      // window.location.href = `${frontendBase}`
     } catch (e) {
       setError('Email already exists!')
+      console.log("error", e)
       setTimeout(() => {
         setError(null)
       }, 5000)
@@ -81,6 +88,13 @@ export default function SignupPage({ togglePage }) {
             <i className="bi bi-exclamation-triangle-fill me-2"></i>
             {error}
             <button type="button" className="btn-close" onClick={() => setError(null)}></button>
+          </div>
+        )}
+        {announce && (
+          <div className="alert alert-success alert-dismissible fade show" role="alert">
+            <i className="bi bi-check-circle-fill me-2"></i>
+            {announce}
+            <button type="button" className="btn-close" onClick={() => setAnnounce(null)}></button>
           </div>
         )}
 

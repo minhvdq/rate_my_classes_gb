@@ -38,7 +38,6 @@ const requestNewUser = async ({name, email, hashPassword}) => {
         "./templates/requestNewUser.handlebars"
       );
       return { link };
-
 }
 
 const requestPasswordReset = async (email) => {

@@ -2,6 +2,8 @@ const newUserRouter = require('express').Router()
 const NewUserToken = require('../models/NewUserToken')
 const User = require('../models/User')
 const { frontendBase } = require('../utils/homeUrl')
+const mailService = require('../utils/email/sendEmail')
+
 newUserRouter.get('/:id', async (req, res) => {
     const id = req.params.id
 
@@ -19,6 +21,15 @@ newUserRouter.get('/:id', async (req, res) => {
     })
 
     const savedUser = await newUser.save()
+    mailService.sendEmail(
+        token.email,
+        "Welcome to RMCGB",
+        {
+            name: token.name,
+        },
+        "./templates/welcome.handlebars"
+    )
+
     res.redirect(`${frontendBase}/authen`)
 })
 
