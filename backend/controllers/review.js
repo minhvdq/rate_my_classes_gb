@@ -9,13 +9,13 @@ const jwt = require('jsonwebtoken')
 const Professor = require('../models/Professor')
 const {adminAuth} = require('../utils/middlewares')
 reviewRouter.get( '/', async(req, res) => {
-    const reviews = await Review.find({})
+    const reviews = await Review.find({}).select('-user')
     res.status(200).json(reviews)
 })
 
 reviewRouter.get( '/:id', async(req, res) => {
     const id = req.params.id
-    const review = await Review.findById(id)
+    const review = await Review.findById(id).select('-user')
     res.status(200).json(review)
 })
 

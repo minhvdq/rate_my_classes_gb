@@ -11,15 +11,15 @@ const {adminAuth} = require('../utils/middlewares')
 /**
  * Fetch all users from database
  */
-userRouter.get('/', async (request, response) => {
-    const users = await User.find({})
+userRouter.get('/', adminAuth, async (request, response) => {
+    let users = await User.find({})
     response.status(200).json(users)
 })
 
 /**
  * Fetch user by ID
  */
-userRouter.get('/:id', async (request, response) => {
+userRouter.get('/:id', adminAuth, async (request, response) => {
     const user = await User.findById(request.params.id)
     response.status(200).json(user)
 })

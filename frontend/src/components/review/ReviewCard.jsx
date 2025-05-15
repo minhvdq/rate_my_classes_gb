@@ -2,7 +2,7 @@ import { Tag, Avatar, Card, Row, Col, Button } from 'antd';
 import { UserOutlined, CalendarOutlined, DeleteOutlined } from '@ant-design/icons';
 
 export default function ReviewCard({ review, curUser, deleteReview, getRatingColor, professors }) {
-  const check = (curUser?.id === review.user);
+  const check = (curUser?.reviews.includes(review.id));
 
   return (
     <Card 
