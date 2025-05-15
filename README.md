@@ -94,9 +94,9 @@ ADMIN_SECRET_KEY=your_admin_key  # A secret key for creating admin users
                                 # Generate one using: node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
 
 # Optional: Email Configuration (if you implement email features)
-EMAIL_SERVICE=gmail          # Email service provider (gmail, outlook, etc.)
+EMAIL_HOST=smtp.gmail.com          # Email service provider (gmail, outlook, etc.)
 EMAIL_USER=your_email        # Your email address
-EMAIL_PASS=your_password     # Your email password or app-specific password
+EMAIL_PASSWORD=your_password     # Your email password or app-specific password
 ```
 
 Important notes:

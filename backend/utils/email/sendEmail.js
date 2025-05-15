@@ -2,10 +2,10 @@ const nodemailer = require("nodemailer");
 const handlebars = require("handlebars");
 const fs = require("fs");
 const path = require("path");
-const { EMAIL_PASSWORD } = require('../config')
+const { EMAIL_PASSWORD, EMAIL_USER, EMAIL_HOST } = require('../config')
 const sendEmail = async (email, subject, payload, template) => {
-  let emailHost = "smtp.gmail.com"
-  let emailUsername = "forcalendarproject@gmail.com"
+  let emailHost = EMAIL_HOST
+  let emailUsername = EMAIL_USER
   let emailPassword = EMAIL_PASSWORD
 
 
