@@ -2,6 +2,10 @@
 
 A web application that allows Gettysburg College students to rate and review their classes, helping future students make informed decisions about their course selections.
 
+## 🌐 Live Demo
+
+The application is deployed and available at: [https://rate-my-classes-gb.fly.dev](https://rate-my-classes-gb.fly.dev)
+
 ## 🌟 Features
 
 - Course ratings and reviews
