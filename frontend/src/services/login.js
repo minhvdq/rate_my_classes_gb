@@ -1,5 +1,5 @@
 import axios from 'axios'
-import {backendBase, frontendBase} from '../utils/homeUrl'
+import {backendBase} from '../utils/homeUrl'
 
 const baseUrl = `${backendBase}/api/login`
 const login = async (logInfo) => {

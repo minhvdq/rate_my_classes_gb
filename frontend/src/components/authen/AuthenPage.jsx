@@ -2,7 +2,6 @@ import {useState} from 'react'
 import LoginPage from './LoginPage'
 import SignupPage from './SignupPage'
 import {frontendBase} from '../../utils/homeUrl'
-import rmcillutration from '/rmcillustration.svg'
 import { Navigate } from 'react-router-dom'
 
 
