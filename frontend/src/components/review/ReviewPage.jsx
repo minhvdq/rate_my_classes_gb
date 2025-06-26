@@ -11,6 +11,7 @@ import ReviewCard from './ReviewCard'
 import Footer from '../items/Footer'
 import './Review.css';
 import { frontendBase } from '../../utils/homeUrl';
+import customStorage from '../../services/customStorage';
 
 export default function ReviewPage({ curUser, setCurUser, classes }) {
   const [curClass, setCurClass] = useState(null);
@@ -95,9 +96,43 @@ export default function ReviewPage({ curUser, setCurUser, classes }) {
     }
   };
 
+  // Add new review to the state
+  const addNewReview = async (newReview) => {
+    try {
+      setReviews(prevReviews => {
+        const updatedReviews = [newReview, ...prevReviews];
+        return updatedReviews.sort((a, b) => new Date(b.postBy) - new Date(a.postBy));
+      });
+      
+      setPresentReviews(prevReviews => {
+        const updatedReviews = [newReview, ...prevReviews];
+        return updatedReviews.sort((a, b) => new Date(b.postBy) - new Date(a.postBy));
+      });
+
+      // Update statistics
+      setTotalDifficulty(prev => prev + newReview.difficulty);
+      setTotalWorkload(prev => prev + newReview.workload);
+      setAttendance(prev => {
+        const newTotal = prev ? totalDifficulty + 1 : totalDifficulty;
+        return newTotal > ((reviews.length + 1) / 2);
+      });
+    } catch (error) {
+      console.error("Error adding new review:", error);
+    }
+  };
+
   useEffect(() => {
     fetchData();
   }, []);
+
+  useEffect(() => {
+    const totalDiff = presentReviews.reduce((sum, review) => sum + review.difficulty, 0);
+    const totalWork = presentReviews.reduce((sum, review) => sum + review.workload, 0);
+    const totalAttendance = presentReviews.filter(review => review.attendance).length;
+    setAttendance(totalAttendance > (presentReviews.length / 2));
+    setTotalDifficulty(totalDiff);
+    setTotalWorkload(totalWork);
+  }, [presentReviews])
 
   const togglePage = () => {
     setInComment(!inComment);
@@ -126,17 +161,17 @@ export default function ReviewPage({ curUser, setCurUser, classes }) {
     
     if (value === "All") {
       setPresentReviews([...reviews]);
-      let totalD = 0;
-      let totalW = 0;
-      let totalA = 0;
-      for (let review of reviews) {
-        totalD += review.difficulty;
-        totalW += review.workload;
-        if (review.attendance) totalA++;
-      }
-      setAttendance(totalA > (reviews.length / 2));
-      setTotalDifficulty(totalD);
-      setTotalWorkload(totalW);
+      // let totalD = 0;
+      // let totalW = 0;
+      // let totalA = 0;
+      // for (let review of reviews) {
+      //   totalD += review.difficulty;
+      //   totalW += review.workload;
+      //   if (review.attendance) totalA++;
+      // }
+      // setAttendance(totalA > (reviews.length / 2));
+      // setTotalDifficulty(totalD);
+      // setTotalWorkload(totalW);
     } else {
       console.log('Selected professor value:', value);
       const sortedReviews = [...reviews].filter(review => {
@@ -145,17 +180,17 @@ export default function ReviewPage({ curUser, setCurUser, classes }) {
       });
       setPresentReviews(sortedReviews);
 
-      let totalD = 0;
-      let totalW = 0;
-      let totalA = 0;     
-      for (let review of sortedReviews) {
-        totalD += review.difficulty;
-        totalW += review.workload;
-        if (review.attendance) totalA++;
-      }
-      setAttendance(totalA > (sortedReviews.length / 2));
-      setTotalDifficulty(totalD);
-      setTotalWorkload(totalW);
+      // let totalD = 0;
+      // let totalW = 0;
+      // let totalA = 0;     
+      // for (let review of sortedReviews) {
+      //   totalD += review.difficulty;
+      //   totalW += review.workload;
+      //   if (review.attendance) totalA++;
+      // }
+      // setAttendance(totalA > (sortedReviews.length / 2));
+      // setTotalDifficulty(totalD);
+      // setTotalWorkload(totalW);
     }
   };
 
@@ -169,28 +204,23 @@ export default function ReviewPage({ curUser, setCurUser, classes }) {
   const deleteReview = async (id) => {
     if (window.confirm(`Remove this review ?`)) {
       try {
+        setLoading(true);
         reviewService.setToken(curUser.token);
         await reviewService.remove(id);
-  
-        // Filter out the deleted review
-        const updatedReviews = reviews.filter(review => review.id !== id);
-        const updatedPresentReviews = presentReviews.filter(review => review.id !== id);
-  
-        // Recalculate total difficulty and workload
-        const newTotalDifficulty = updatedPresentReviews.reduce((sum, review) => sum + review.difficulty, 0);
-        const newTotalWorkload = updatedPresentReviews.reduce((sum, review) => sum + review.workload, 0);
-  
-        // Recalculate attendance
-        const newAttendance = updatedPresentReviews.filter(r => r.attendance).length > (updatedPresentReviews.length / 2);
-  
-        setReviews(updatedReviews);
-        setPresentReviews(updatedPresentReviews);
-        setTotalDifficulty(newTotalDifficulty);
-        setTotalWorkload(newTotalWorkload);
-        setAttendance(newAttendance);
-  
+
+        const updatedUser = {
+          ...curUser,
+          reviews: curUser.reviews.filter(review => review.id !== id)
+        };
+        setCurUser(updatedUser);
+        customStorage.setItem("localUser", JSON.stringify(updatedUser));
+
+        setReviews(prevReviews => prevReviews.filter(review => review.id !== id));
+        setPresentReviews(prevReviews => prevReviews.filter(review => review.id !== id));
       } catch (error) {
         console.error("Failed to delete review:", error);
+      }finally{
+        setLoading(false);
       }
     }
   };
@@ -311,7 +341,7 @@ export default function ReviewPage({ curUser, setCurUser, classes }) {
             
             {presentReviews.length > 0 ? (
               presentReviews.map(review => (
-                <ReviewCard key={review.id} professors={professors} review={review} curUser={curUser} deleteReview={() => deleteReview(review.id)} getRatingColor={getRatingColor}/>
+                <ReviewCard key={review.id} loading={loading} professors={professors} review={review} curUser={curUser} deleteReview={() => deleteReview(review.id)} getRatingColor={getRatingColor}/>
               ))
             ) : (
               <Empty
@@ -335,7 +365,18 @@ export default function ReviewPage({ curUser, setCurUser, classes }) {
 
   return (
     <>
-      {inComment ? <CommentPage curUser={curUser} curClass={curClass} togglePage={togglePage} professors={professors} /> : <MainReviewPage />}
+      {inComment ? (
+        <CommentPage 
+          setCurUser={setCurUser} 
+          curUser={curUser} 
+          curClass={curClass} 
+          togglePage={togglePage} 
+          professors={professors}
+          addNewReview={addNewReview}
+        />
+      ) : (
+        <MainReviewPage />
+      )}
     </>
   );
 }

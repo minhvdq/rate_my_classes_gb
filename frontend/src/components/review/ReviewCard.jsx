@@ -1,8 +1,15 @@
 import { Tag, Avatar, Card, Row, Col, Button } from 'antd';
 import { UserOutlined, CalendarOutlined, DeleteOutlined } from '@ant-design/icons';
+import { useState, useEffect } from 'react';
 
-export default function ReviewCard({ review, curUser, deleteReview, getRatingColor, professors }) {
-  const check = (curUser?.reviews.includes(review.id));
+export default function ReviewCard({ loading, review, curUser, deleteReview, getRatingColor, professors }) {
+  const [check, setCheck] = useState(false)
+  
+  useEffect(() => {
+    setCheck(curUser?.reviews.includes(review.id))
+  }, [curUser])
+  
+  console.log("for " + review.id + " " + curUser?.reviews)
 
   return (
     <Card 
@@ -92,6 +99,7 @@ export default function ReviewCard({ review, curUser, deleteReview, getRatingCol
             danger 
             icon={<DeleteOutlined />} 
             onClick={() => deleteReview(review.id)}
+            loading={loading}
           >
             Delete
           </Button>

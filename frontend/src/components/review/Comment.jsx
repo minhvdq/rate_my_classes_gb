@@ -5,11 +5,12 @@ import { UserOutlined, FormOutlined, FieldTimeOutlined, StarFilled, TrophyOutlin
 // import * as Icons from '@ant-design/icons';
 import reviewService from '../../services/review';
 import { frontendBase } from '../../utils/homeUrl';
+import customStorage from '../../services/customStorage';
 
 const { TextArea } = Input;
 const { Option } = Select;
 
-export default function Comment({ curUser, curClass, togglePage, professors }) {
+export default function Comment({ curUser, setCurUser, curClass, togglePage, professors, addNewReview }) {
   const [form] = Form.useForm();
   const [loading, setLoading] = useState(false);
   
@@ -25,9 +26,9 @@ export default function Comment({ curUser, curClass, togglePage, professors }) {
       window.location.href = `${frontendBase}/authen`;
       return;
     }
-
+  
     setLoading(true);
-    
+  
     const requestBody = {
       class: curClass.id,
       user: curUser.id,
@@ -38,19 +39,39 @@ export default function Comment({ curUser, curClass, togglePage, professors }) {
       attendance: values.attendance,
       grade: values.grade,
       term: values.term,
-      year: values.year
+      year: values.year,
     };
-
+  
     try {
-      reviewService.setToken(curUser.token)
-      await reviewService.submitReview(requestBody);
+      reviewService.setToken(curUser.token);
+      console.log("Submitting review...");
+      const response = await reviewService.submitReview(requestBody);
+      const review = response.data;
+  
+      const updatedUser = {
+        ...curUser, 
+        reviews: [...(curUser.reviews || []), review.id]
+      };
+  
+      setCurUser(updatedUser);
+      customStorage.setItem("localUser", JSON.stringify(updatedUser));
+  
+      console.log("Review submitted and user updated:", updatedUser);
       message.success("Review submitted successfully!");
-      window.location.href = `${frontendBase}/review/${curClass.id}`;
+      
+      // Add the new review to the state with the complete review data
+      await addNewReview(review);
+      
+      // Toggle page after successful submission
+      togglePage();
     } catch (error) {
+      console.error("Review submission failed:", error);
       message.error("Failed to submit review. Please check all required fields.");
+    } finally {
       setLoading(false);
     }
   };
+  
 
   return (
     <div className="container py-4">

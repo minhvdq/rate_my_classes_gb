@@ -18,6 +18,7 @@ const professorRouter = require('./controllers/professor')
 mongoose.set('strictQuery', false)
 
 logger.infor(`connecting to MongoDB`)
+logger.infor(config.MONGODB_URI)
 
 mongoose.connect(config.MONGODB_URI).then(result => {
     logger.infor(`connected to MongoDB`,config.MONGODB_URI)
