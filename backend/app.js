@@ -1,95 +1,99 @@
-const express = require('express')
-require('express-async-errors')
-const app = express()
-const cors = require('cors')
-const logger = require('./utils/logger')
-const config = require('./utils/config')
-const middlewares = require('./utils/middlewares')
-const classRouter = require('./controllers/class')
-const userRouter = require('./controllers/user')
-const reviewRouter = require('./controllers/review')
-const loginRouter = require('./controllers/login')
-const authRouter = require('./controllers/auth.router')
-const newUserRouter = require('./controllers/newuser')
-const mongoose = require('mongoose')
-const path = require('path')
-const professorRouter = require('./controllers/professor')
+const express = require('express');
+require('express-async-errors');
+const app = express();
+const cors = require('cors');
+const logger = require('./utils/logger');
+const config = require('./utils/config');
+const middlewares = require('./utils/middlewares');
+const classRouter = require('./controllers/class');
+const userRouter = require('./controllers/user');
+const reviewRouter = require('./controllers/review');
+const loginRouter = require('./controllers/login');
+const authRouter = require('./controllers/auth.router');
+const newUserRouter = require('./controllers/newuser');
+const professorRouter = require('./controllers/professor');
+const mongoose = require('mongoose');
+const path = require('path');
 
-mongoose.set('strictQuery', false)
+mongoose.set('strictQuery', false);
 
-logger.infor(`connecting to MongoDB`)
-logger.infor(config.MONGODB_URI)
+logger.infor('connecting to MongoDB');
+logger.infor(config.MONGODB_URI);
 
-mongoose.connect(config.MONGODB_URI).then(result => {
-    logger.infor(`connected to MongoDB`,config.MONGODB_URI)
-}).catch(error => logger.infor(error.message))
+mongoose
+  .connect(config.MONGODB_URI)
+  .then(() => {
+    logger.infor('connected to MongoDB', config.MONGODB_URI);
+  })
+  .catch((error) => logger.infor(error.message));
 
-const allowedOrigins = [
-    'http://localhost:5173',   // Vite dev server
-    'http://127.0.0.1:5173',   // Vite dev server alternative
-    'http://localhost:3000',   // Production
-    'http://127.0.0.1:3000',   // Production alternative
-    'https://rate-my-classes-gb.fly.dev', // Production domain
-    'ratemyclassesgb.study'
+// Accept full Origin (with scheme) and both domains
+const allowedOriginPatterns = [
+  /^https?:\/\/localhost:\d+$/,
+  /^https?:\/\/127\.0\.0\.1:\d+$/,
+  /^https?:\/\/rate-my-classes-gb\.fly\.dev$/,
+  /^https?:\/\/ratemyclassesgb\.study$/,
+  /^https?:\/\/www\.ratemyclassesgb\.study$/,
 ];
 
 const corsOptions = {
-    origin: function (origin, callback) {
-        if (!origin || allowedOrigins.includes(origin)) {
-            callback(null, true);
-        } else {
-            callback(new Error('Not allowed by CORS'));
-        }
-    },
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    credentials: true,
-    optionsSuccessStatus: 204
+  origin(origin, callback) {
+    if (!origin) return callback(null, true); // same-origin / curl
+    const ok = allowedOriginPatterns.some((rx) => rx.test(origin));
+    return ok ? callback(null, true) : callback(new Error('Not allowed by CORS'));
+  },
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  credentials: true,
+  optionsSuccessStatus: 204,
 };
 
-// Apply CORS with options
 app.use(cors(corsOptions));
-
-// Middleware
-app.use(express.json())
-app.use(middlewares.requestLogger)
-app.use(middlewares.tokenExtractor)
+app.use(express.json());
+app.use(middlewares.requestLogger);
+app.use(middlewares.tokenExtractor);
 
 // API Routes
-app.use('/api/user', userRouter)
-app.use('/api/review', reviewRouter)
-app.use('/api/class', classRouter)
-app.use('/api/login', loginRouter)
-app.use('/api/newUser', newUserRouter)
-app.use('/api/auth', authRouter)
-app.use('/api/professor', professorRouter)
+app.use('/api/user', userRouter);
+app.use('/api/review', reviewRouter);
+app.use('/api/class', classRouter);
+app.use('/api/login', loginRouter);
+app.use('/api/newUser', newUserRouter);
+app.use('/api/auth', authRouter);
+app.use('/api/professor', professorRouter);
 
-// Special routes
-app.use('/PasswordReset', (req, res) => {
-    res.sendFile(path.join(__dirname, '/ui_assets/index.html'))
-})
-
-app.use('/PasswordResetRequest', (req, res) => {
-    res.sendFile(path.join(__dirname, '/ui_assets/request.html'))
-})
-
-// Serve static files from the dist directory
-app.use(express.static(path.join(__dirname, 'dist'), {
-    setHeaders: (res, path) => {
-        if (path.endsWith('.js')) {
-            res.setHeader('Content-Type', 'application/javascript');
-        } else if (path.endsWith('.css')) {
-            res.setHeader('Content-Type', 'text/css');
-        }
-    }
-}));
-
-// Serve index.html for all other routes
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+// Special routes (serve specific HTML)
+app.get('/PasswordReset', (req, res) => {
+  res.sendFile(path.join(__dirname, '/ui_assets/index.html'));
 });
 
-// Error handling middleware should be last
-app.use(middlewares.unknownEndpoint)
-app.use(middlewares.errorHandler)
+app.get('/PasswordResetRequest', (req, res) => {
+  res.sendFile(path.join(__dirname, '/ui_assets/request.html'));
+});
 
-module.exports = app
+// ---- Static assets BEFORE SPA fallback ----
+
+// Serve versioned assets with long cache; Express sets proper MIME automatically
+app.use(
+  '/assets',
+  express.static(path.join(__dirname, 'dist', 'assets'), {
+    immutable: true,
+    maxAge: '1y',
+  })
+);
+
+// Serve other static files (index.html, images, etc.)
+app.use(express.static(path.join(__dirname, 'dist')));
+
+// Unknown API endpoints (404) — must be before SPA fallback
+// (If your unknownEndpoint expects only /api, you can do: app.use('/api', middlewares.unknownEndpoint))
+app.use('/api', middlewares.unknownEndpoint);
+
+// ---- SPA fallback LAST (exclude /assets and /api) ----
+app.get(/^(?!\/(assets|api)\/).*/, (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+});
+
+// Error handler last
+app.use(middlewares.errorHandler);
+
+module.exports = app;
