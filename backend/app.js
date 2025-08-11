@@ -29,7 +29,8 @@ const allowedOrigins = [
     'http://127.0.0.1:5173',   // Vite dev server alternative
     'http://localhost:3000',   // Production
     'http://127.0.0.1:3000',   // Production alternative
-    'https://rate-my-classes-gb.fly.dev' // Production domain
+    'https://rate-my-classes-gb.fly.dev', // Production domain
+    'ratemyclassesgb.study'
 ];
 
 const corsOptions = {
