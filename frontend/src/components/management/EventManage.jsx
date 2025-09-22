@@ -17,7 +17,7 @@ export default function EventManage() {
     
                 const data = await reviewService.getByID(rvId)
                 const foundReview = data.data
-                console.log('review found is ' + JSON.stringify(foundReview))
+                // console.log('review found is ' + JSON.stringify(foundReview))
     
                 return foundReview
             })
@@ -26,7 +26,7 @@ export default function EventManage() {
 
             setReviews(fetchedReviews)
         }catch(e){
-            console.error("Error fetching data:", error)
+            console.error("Error fetching data:", e)
         }
     }
     useEffect(() => {
@@ -36,7 +36,7 @@ export default function EventManage() {
         }
         const lUser = JSON.parse(loggedUser)
 
-        console.log('cur user is ' + JSON.stringify(lUser) )
+        // console.log('cur user is ' + JSON.stringify(lUser) )
         setUser(lUser)
         fetchData(lUser)
     }, [])

@@ -14,7 +14,7 @@ function App() {
   useEffect(() => {
     classService.getAll().then(fetchedClasses => {
         const data = fetchedClasses.data
-        console.log('classes in database: ' + data[0].name)
+        // console.log('classes in database: ' + data[0].name)
         setClasses(data)
     })
 
@@ -22,7 +22,7 @@ function App() {
     if(loggedUser){
       const lUser = JSON.parse(loggedUser)
 
-      console.log('cur user is ' + lUser)
+      // console.log('cur user is ' + lUser)
       setCurUser(lUser)
     }
   }, [])

@@ -1,51 +1,53 @@
-import Logo from '../Logo'
-import SearchBar from '../SearchBar'
-// import '../Home.css'
+import Logo from "../Logo";
+import SearchBar from "../SearchBar";
+import "./ReviewHeader.css";
 
-export default function ReviewHeader({classes, curUser, setCurUser}) {
-    const handleLogout = (event) => {
-        event.preventDefault()
-        window.localStorage.clear()
-        setCurUser(null)
-    }
- 
-    const LoginCombo = () => {
-        return (
-            <div className='authBtn'>
-                <button 
-                    onClick={(e) =>{ 
-                        e.preventDefault();
-                        window.localStorage.setItem('loginDirect', window.location.href)
-                        window.location.href='/authen'
-                    }} 
-                    className='btn btn-light'
-                
-                ><b>Sign in</b></button>
-                {/* <button className= 'btn btn-dark'><b>Sign up</b></button> */}
-            </div>
-        )
-    }
+export default function ReviewHeader({ classes, curUser, setCurUser }) {
+  const handleLogout = (event) => {
+    event.preventDefault();
+    window.localStorage.clear();
+    setCurUser(null);
+  };
 
-    const LogoutCombo = () => {
-        return( 
-            <div className="authBtn">
-                <button onClick={handleLogout} className='btn btn-danger'><b>Sign out</b></button>
-            </div>
-        )
-    }
-    return (
-        <div className="container">
-            <div className="row d-flex justify-content-between align-items-center">
-                <div className="col-auto">
-                    <Logo />
-                </div>
-                <div className="col-auto">
-                    {curUser ? <LogoutCombo /> : <LoginCombo />}
-                </div>
-            </div>
-            <div className="row text-center" style={{justifyContent: "center"}}>
-                    <SearchBar classes={classes} top="17vh" width="clamp(4rem, 45vw, 100rem)" />                
-            </div>
+  const LoginCombo = () => (
+    <div className="authBtn">
+      <button
+        onClick={(e) => {
+          e.preventDefault();
+          window.localStorage.setItem("loginDirect", window.location.href);
+          window.location.href = "/authen";
+        }}
+        className="btn btn-light"
+      >
+        <b>Sign in</b>
+      </button>
+    </div>
+  );
+
+  const LogoutCombo = () => (
+    <div className="authBtn">
+      <button onClick={handleLogout} className="btn btn-danger">
+        <b>Sign out</b>
+      </button>
+    </div>
+  );
+
+  return (
+    <header className="review-header">
+      <div className="review-header-inner">
+        <div className="header-left">
+          <Logo />
         </div>
-    )
+
+        {/* Centered search for review pages */}
+        <div className="header-center">
+          <SearchBar classes={classes} width="min(800px, 70vw)" />
+        </div>
+
+        <div className="header-right">
+          {curUser ? <LogoutCombo /> : <LoginCombo />}
+        </div>
+      </div>
+    </header>
+  );
 }

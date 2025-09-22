@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { Select, Tag, Divider, Card, Statistic, Row, Col, Button, Empty } from 'antd';
+import { Select, Tag, Card, Statistic, Row, Col, Button, Empty } from 'antd';
 import { UserOutlined, CommentOutlined } from '@ant-design/icons';
 import ReviewHeader from './ReviewHeader';
 import CommentPage from './Comment';
@@ -50,12 +50,12 @@ export default function ReviewPage({ curUser, setCurUser, classes }) {
         throw new Error("NO PROFESSORS FOUND");
       }
 
-      console.log('Professors data:', professors);
+      // console.log('Professors data:', professors);
       setProfessors(professors);
 
       // Set the hook state of professors - for the options
       const arr = professors.map(prof => {
-        console.log('Professor data:', prof);
+        // console.log('Professor data:', prof);
         return { value: prof._id || prof.id, label: prof.name };
       });
       arr.unshift({ value: "All", label: "All Professors" });
@@ -65,14 +65,14 @@ export default function ReviewPage({ curUser, setCurUser, classes }) {
       const reviewPromises = foundClass.reviews.map(async rvId => {
         const data = await reviewService.getByID(rvId);
         const foundReview = data.data;
-        console.log('Review data:', foundReview);
+        // console.log('Review data:', foundReview);
         return foundReview;
       });
 
       let fetchedReviews = await Promise.all(reviewPromises);
 
       fetchedReviews = fetchedReviews.sort((a, b) => new Date(b.postBy) - new Date(a.postBy));  
-      console.log('Fetched reviews:', fetchedReviews);
+      // console.log('Fetched reviews:', fetchedReviews);
 
       // Update state after all reviews are fetched
       setReviews(fetchedReviews);
@@ -173,9 +173,9 @@ export default function ReviewPage({ curUser, setCurUser, classes }) {
       // setTotalDifficulty(totalD);
       // setTotalWorkload(totalW);
     } else {
-      console.log('Selected professor value:', value);
+      // console.log('Selected professor value:', value);
       const sortedReviews = [...reviews].filter(review => {
-        console.log('Comparing:', review.professor, value);
+        // console.log('Comparing:', review.professor, value);
         return review.professor === value;
       });
       setPresentReviews(sortedReviews);
@@ -253,111 +253,111 @@ export default function ReviewPage({ curUser, setCurUser, classes }) {
 
     return (
       <div className="review-page-container">
-        {/* Fixed header that stays on top with 20vh height */}
-        <div className="fixed-header" style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          right: 0,
-          height: '20vh',
-          zIndex: 1000,
-          backgroundColor: 'white',
-          // boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
-        }}>
-          <ReviewHeader classes={classes} curUser={curUser} setCurUser={setCurUser} />
-        </div>
+        <ReviewHeader classes={classes} curUser={curUser} setCurUser={setCurUser} />
         
-        <div className="container py-5 pb-0" style={{ 
-          marginTop: '20vh', 
-          paddingTop: '2rem' 
-        }}>
-          {/* Class Header Card */}
-          <Card 
-            className="shadow border-0 mb-4" 
-            loading={loading}
-          >
-            <Row gutter={24} align="middle">
-              <Col xs={24} md={14}>
-                <div>
-                  <h1 className="mb-1">{curClass?.name || ""}</h1>
-                  <h5 className="text-muted mb-3">{curClass?.department || ""}</h5>
+        {/* Main Content with proper spacing */}
+        <div className="review-main-content">
+          <div className="container">
+            {/* Class Header Section */}
+            <div className="class-header-section">
+              <Card className="class-header-card" loading={loading}>
+                <Row gutter={[24, 24]} align="middle">
+                  <Col xs={24} lg={16}>
+                    <div className="class-info">
+                      <h1 className="class-title">{curClass?.name || ""}</h1>
+                      <h5 className="class-department">{curClass?.department || ""}</h5>
+                      
+                      <div className="instructor-selector">
+                        <span className="selector-label">Instructor:</span>
+                        <Select
+                          value={selectedValue}
+                          style={{ width: 250 }}
+                          onChange={handleChange}
+                          options={profOptions}
+                          placeholder="Select Professor"
+                          suffixIcon={<UserOutlined />}
+                          size="large"
+                        />
+                      </div>
+                    </div>
+                  </Col>
                   
-                  <div className="d-flex align-items-center mt-3">
-                    <span className="me-2 fw-bold">Instructor:</span>
-                    <Select
-                      value={selectedValue}
-                      style={{ width: 200 }}
-                      onChange={handleChange}
-                      options={profOptions}
-                      placeholder="Select Professor"
-                      className="mb-2"
-                      suffixIcon={<UserOutlined />}
-                    />
-                  </div>
-                </div>
-              </Col>
+                  <Col xs={24} lg={8}>
+                    <div className="class-stats">
+                      <Row gutter={[16, 16]}>
+                        <Col span={8}>
+                          <ScoreBox score={avgDifficulty} label="Difficulty" />
+                        </Col>
+                        <Col span={8}>
+                          <ScoreBox score={avgWorkload} label="Workload" />
+                        </Col>
+                        <Col span={8}>
+                          <Statistic
+                            title="Attendance"
+                            value={attendance ? "Required" : "Optional"}
+                            valueStyle={{ color: attendance ? '#cf1322' : '#3f8600' }}
+                          />
+                        </Col>
+                      </Row>
+                    </div>
+                  </Col>
+                </Row>
+              </Card>
+            </div>
+
+            {/* Action Section */}
+            <div className="action-section">
+              <Button 
+                type="primary" 
+                size="large" 
+                icon={<CommentOutlined />} 
+                onClick={handleComment}
+                className="add-review-btn"
+              >
+                Add Your Review
+              </Button>
+            </div>
+
+            {/* Reviews Section */}
+            <div className="reviews-section">
+              <div className="reviews-header">
+                <h2 className="reviews-title">
+                  <span>Student Reviews</span>
+                  <Tag color="blue" className="review-count">{presentReviews.length}</Tag>
+                </h2>
+              </div>
               
-              <Col xs={24} md={10}>
-                <Card className="border-0 bg-light">
-                  <Row gutter={16}>
-                    <Col span={8}>
-                      <ScoreBox score={avgDifficulty} label="Difficulty" />
-                    </Col>
-                    <Col span={8}>
-                      <ScoreBox score={avgWorkload} label="Workload" />
-                    </Col>
-                    <Col span={8}>
-                      <Statistic
-                        title="Attendance"
-                        value={attendance ? "Required" : "Optional"}
-                        valueStyle={{ color: attendance ? '#cf1322' : '#3f8600' }}
-                      />
-                    </Col>
-                  </Row>
-                </Card>
-              </Col>
-            </Row>
-          </Card>
+              <div className="reviews-list">
+                {presentReviews.length > 0 ? (
+                  presentReviews.map(review => (
+                    <ReviewCard 
+                      key={review.id} 
+                      loading={loading} 
+                      professors={professors} 
+                      review={review} 
+                      curUser={curUser} 
+                      deleteReview={() => deleteReview(review.id)} 
+                      getRatingColor={getRatingColor}
+                    />
+                  ))
+                ) : (
+                  <Empty
+                    description={
+                      <span>
+                        No reviews for {selectedValue !== "All" ? professors.find(prof => prof.id === selectedValue)?.name : "this class"} yet.
+                        Be the first to add one!
+                      </span>
+                    }
+                  />
+                )}
+              </div>
+            </div>
 
-          {/* Add Review Button */}
-          <div className="d-flex justify-content-end mb-4">
-            <Button 
-              type="primary" 
-              size="large" 
-              icon={<CommentOutlined />} 
-              onClick={handleComment}
-              className="shadow"
-            >
-              Add Your Review
-            </Button>
+            {/* Footer */}
+            <div className="review-footer">
+              <Footer />
+            </div>
           </div>
-
-          {/* Reviews */}
-          <div className="reviews-container">
-            <h2 className="mb-4">
-              <span className="me-2">Student Reviews</span>
-              <Tag color="blue">{presentReviews.length}</Tag>
-            </h2>
-            
-            {presentReviews.length > 0 ? (
-              presentReviews.map(review => (
-                <ReviewCard key={review.id} loading={loading} professors={professors} review={review} curUser={curUser} deleteReview={() => deleteReview(review.id)} getRatingColor={getRatingColor}/>
-              ))
-            ) : (
-              <Empty
-                description={
-                  <span>
-                    No reviews for {selectedValue !== "All" ? professors.find(prof => prof.id === selectedValue).name : "this class"} yet.
-                    Be the first to add one!
-                  </span>
-                }
-              />
-            )}
-          </div>
-
-          <Divider />
-
-          <Footer />
         </div>
       </div>
     );

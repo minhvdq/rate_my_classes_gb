@@ -44,7 +44,7 @@ export default function Comment({ curUser, setCurUser, curClass, togglePage, pro
   
     try {
       reviewService.setToken(curUser.token);
-      console.log("Submitting review...");
+      // console.log("Submitting review...");
       const response = await reviewService.submitReview(requestBody);
       const review = response.data;
   
@@ -56,7 +56,7 @@ export default function Comment({ curUser, setCurUser, curClass, togglePage, pro
       setCurUser(updatedUser);
       customStorage.setItem("localUser", JSON.stringify(updatedUser));
   
-      console.log("Review submitted and user updated:", updatedUser);
+      // console.log("Review submitted and user updated:", updatedUser);
       message.success("Review submitted successfully!");
       
       // Add the new review to the state with the complete review data

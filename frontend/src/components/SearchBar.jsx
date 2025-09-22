@@ -1,67 +1,135 @@
-import { useState } from 'react';
-import './Home.css';
-import { frontendBase } from '../utils/homeUrl';
+import { useEffect, useMemo, useRef, useState } from "react";
+import "./Home.css";
+import { frontendBase } from "../utils/homeUrl";
 
 const reviewURL = `${frontendBase}/review`;
 
-export default function SearchBar({ classes, top, marginLeft, width }) {
+export default function SearchBar({ classes, width }) {
   const [displayClasses, setDisplayClasses] = useState([]);
   const [focusedIndex, setFocusedIndex] = useState(-1);
+  const [value, setValue] = useState("");
+  const listRef = useRef(null);
+  const inputRef = useRef(null);
+
+  const normalized = (s) => s.replace(/\s/g, "").toLowerCase();
+
+  const results = useMemo(() => {
+    if (!value) return [];
+    const q = normalized(value);
+    return classes
+      .filter((cl) => normalized(cl.name).includes(q))
+      .slice(0, 6);
+  }, [classes, value]);
+
+  useEffect(() => {
+    setDisplayClasses(results);
+    setFocusedIndex(-1);
+  }, [results]);
 
   const handleOnInput = (e) => {
-    const txt = e.target.value;
-    if (txt === '') {
-      setDisplayClasses([]);
-      setFocusedIndex(-1);
-    } else {
-      let filteredClasses = classes.filter(cl =>
-        cl.name.replace(/\s/g, '').toLowerCase().includes(txt.replace(/\s/g, '').toLowerCase())
-      );
-      filteredClasses = filteredClasses.slice(0, 5);
-      setDisplayClasses(filteredClasses);
-      setFocusedIndex(-1);
-    }
+    setValue(e.target.value);
+  };
+
+  const goTo = (id) => {
+    window.location.href = `${reviewURL}/${id}`;
   };
 
   const handleKeyDown = (e) => {
-    if (displayClasses.length === 0) return;
+    if (!displayClasses.length) return;
 
-    if (e.key === 'ArrowDown') {
+    if (e.key === "ArrowDown") {
       e.preventDefault();
-      setFocusedIndex(prev => Math.min(prev + 1, displayClasses.length - 1));
-    } else if (e.key === 'ArrowUp') {
+      setFocusedIndex((prev) => Math.min(prev + 1, displayClasses.length - 1));
+    } else if (e.key === "ArrowUp") {
       e.preventDefault();
-      setFocusedIndex(prev => Math.max(prev - 1, 0));
-    } else if (e.key === 'Enter') {
+      setFocusedIndex((prev) => Math.max(prev - 1, 0));
+    } else if (e.key === "Enter") {
       e.preventDefault();
-      if (focusedIndex >= 0) {
-        window.location.href = `${reviewURL}/${displayClasses[focusedIndex].id}`;
-      }
+      const idx = focusedIndex >= 0 ? focusedIndex : 0;
+      if (displayClasses[idx]) goTo(displayClasses[idx].id);
+    } else if (e.key === "Escape") {
+      setDisplayClasses([]);
+      setFocusedIndex(-1);
     }
   };
 
+  const highlightMatch = (text, query) => {
+    if (!query) return text;
+    const i = text.toLowerCase().indexOf(query.toLowerCase());
+    if (i === -1) return text;
+    return (
+      <>
+        {text.slice(0, i)}
+        <mark className="match">{text.slice(i, i + query.length)}</mark>
+        {text.slice(i + query.length)}
+      </>
+    );
+  };
+
   return (
-    <div className="search" style={{ top, marginLeft, width }}>
-      <input
-        onInput={handleOnInput}
-        onKeyDown={handleKeyDown}
-        className="form-control"
-        placeholder="Type in a class (i.e: CS 216)"
-      />
-      <div className="border rounded shadow-sm" style={{ maxHeight: '300px', overflowY: 'auto' }}>
-        {displayClasses.map((element, idx) => (
-          <div
-            key={element.id}
-            onClick={() => window.location.href = `${reviewURL}/${element.id}`}
-            className={`search-item border-bottom py-2 px-2 rounded hover-bg-light ${
-              idx === focusedIndex ? 'bg-light' : ''
-            }`}
-            style={{ cursor: 'pointer' }}
+    <div className="search-wrap" style={{ width }}>
+      <div className="search-input">
+        <span className="search-icon" aria-hidden="true">🔎</span>
+        <input
+          ref={inputRef}
+          type="text"
+          className="form-control form-control-lg search-field"
+          placeholder="Type a class (e.g., CS 216)"
+          autoComplete="off"
+          value={value}
+          onInput={handleOnInput}
+          onKeyDown={handleKeyDown}
+          role="combobox"
+          aria-expanded={displayClasses.length > 0}
+          aria-controls="class-suggestions"
+          aria-autocomplete="list"
+        />
+        {value && (
+          <button
+            type="button"
+            className="btn btn-link clear-btn"
+            onClick={() => {
+              setValue("");
+              setDisplayClasses([]);
+              setFocusedIndex(-1);
+              inputRef.current?.focus();
+            }}
+            aria-label="Clear search"
           >
-            <h5>{element.name}</h5>
-            <p className="text-muted mb-0">{element.department}</p>
+            ✕
+          </button>
+        )}
+      </div>
+
+      <div
+        id="class-suggestions"
+        ref={listRef}
+        className={`suggestions border rounded-3 ${displayClasses.length ? "show" : ""}`}
+        role="listbox"
+        aria-label="Class suggestions"
+      >
+        {displayClasses.map((el, idx) => (
+          <div
+            key={el.id}
+            role="option"
+            aria-selected={idx === focusedIndex}
+            onMouseEnter={() => setFocusedIndex(idx)}
+            onMouseLeave={() => setFocusedIndex(-1)}
+            onClick={() => goTo(el.id)}
+            className={`suggestion-item ${idx === focusedIndex ? "active" : ""}`}
+          >
+            <div className="d-flex flex-column">
+              <h6 className="mb-0 fw-semibold">
+                {highlightMatch(el.name, value)}
+              </h6>
+              <small className="text-muted">{el.department}</small>
+            </div>
           </div>
         ))}
+
+        {value && displayClasses.length === 0 && (
+          <div className="suggestion-empty text-muted">No classes found. Try another keyword.</div>
+        )}
       </div>
     </div>
   );

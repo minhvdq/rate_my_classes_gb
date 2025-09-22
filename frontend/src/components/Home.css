@@ -1,60 +1,333 @@
+/* ---------- Page background & overlay ---------- */
 .mainPage {
+  position: relative;
   background-image: url('/GlatHall.webp');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
-  height: 100vh; /* Ensure the div takes up the full viewport */
+  background-position: center 20%;
+  min-height: 100vh;
 }
 
-/* The Logo design */
-.logo{
-    position: absolute;
-    left: 3vw;
-    top: 4vh; 
+.bg-overlay {
+  position: absolute;
+  inset: 0;
+  /* soft dark gradient for readability like RMP hero */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.55) 0%,
+    rgba(0, 0, 0, 0.45) 40%,
+    rgba(0, 0, 0, 0.35) 100%
+  );
+  pointer-events: none;
 }
 
-.logoText{
-    text-align: center;
+/* ---------- Hero Section ---------- */
+.hero {
+  position: relative;
+  z-index: 1;
+  min-height: 88vh;
+  padding: 8vh 2rem 4rem 2rem;
+  color: #fff;
 }
 
-.gc{
-    color: #3555A5;
-    font-size: clamp(1.5rem, 2vw, 2rem);
-    font-family: "Georgia", serif;
+.brand-badge {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  backdrop-filter: blur(6px);
+  display: inline-block;
+}
+.gc {
+  color: #cfd9ff;
+  font-size: clamp(0.95rem, 1.4vw, 1.05rem);
+  font-family: "Georgia", serif;
+}
+.rmc {
+  color: #ffd29a;
+  font-size: clamp(0.95rem, 1.4vw, 1.05rem);
+  font-family: "Georgia", serif;
 }
 
-.rmc{
-    color: #D78930;
-    font-size: clamp(1rem, 1.5vw, 1.7rem);
-    font-family: "Georgia", serif;
+.hero-title {
+  font-weight: 700;
+  font-size: clamp(1.8rem, 4.6vw, 3rem);
+  letter-spacing: 0.2px;
+}
+.hero-subtitle {
+  color: #e9edf8;
+  font-size: clamp(0.95rem, 2.4vw, 1.15rem);
+  opacity: 0.95;
 }
 
-/* Search Section  */
-.search{
-    position: absolute;
+/* ---------- Search ---------- */
+.search-wrap {
+  position: relative;
 }
 
+.search-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 14px;
+  padding: 0.25rem 0.5rem 0.25rem 2.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Remove shadow in header context */
+.header-center .search-input,
+.header-left .search-input,
+.header-right .search-input {
+  box-shadow: none;
+}
+
+.search-field {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding-left: 0;
+  padding-right: 2rem;
+}
+
+.search-field::placeholder {
+  color: #6c757d;
+}
+
+.search-icon {
+  position: absolute;
+  left: 0.9rem;
+  font-size: 1.25rem;
+  opacity: 0.7;
+}
+
+.clear-btn {
+  position: absolute;
+  right: 0.4rem;
+  text-decoration: none;
+  font-size: 1.25rem;
+  line-height: 1;
+  color: #6c757d;
+  padding: 0.25rem;
+}
+
+.clear-btn:hover {
+  color: #333;
+}
+
+/* Suggestions dropdown */
+.suggestions {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  max-height: 320px;
+  overflow-y: auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  display: none;
+}
+
+.suggestions.show { display: block; }
+
+.suggestion-item {
+  padding: 0.75rem 0.9rem;
+  border-bottom: 1px solid #f1f1f1;
+  cursor: pointer;
+  transition: background-color 120ms ease;
+  color: #333;
+}
+
+.suggestion-item:last-child { border-bottom: none; }
+
+.suggestion-item:hover,
+.suggestion-item.active {
+  background: #f8f9fa;
+}
+
+.suggestion-item h6 {
+  color: #333 !important;
+}
+
+.suggestion-item small {
+  color: #666 !important;
+}
+
+.suggestion-empty {
+  padding: 0.9rem;
+  color: #666;
+}
+
+/* highlight */
+mark.match {
+  background: #ffedb5;
+  padding: 0 2px;
+  border-radius: 3px;
+}
+
+/* Quick tags under search */
+.quick-tags .btn {
+  border-color: rgba(255,255,255,0.6);
+  color: #fff;
+}
+.quick-tags .btn:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+/* ---------- Header Layout ---------- */
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border-bottom: none;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+/* ---------- Logo Component ---------- */
+.logo {
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  background: transparent;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  transform: translateY(-2px);
+}
+
+.logoText {
+  text-align: left;
+  line-height: 1.2;
+}
+
+.logoText h1 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #cfd9ff;
+}
+
+.logoText h2 {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #ffd29a;
+}
+
+/* Old search classes kept in case other pages rely on them */
+.search { position: static; } 
 .search-item {
-    background-color: white;
-    border-bottom: 2px solid;
-    margin-top: 2px;
-    padding-top: 6px;
-    padding-left: 5px
+  background-color: white;
+  border-bottom: 2px solid;
+  margin-top: 2px;
+  padding-top: 6px;
+  padding-left: 5px;
 }
-.search-item h1 {
-    font-size: 20px;
-}
+.search-item h1 { font-size: 20px; }
 
-/* Authentication button */
-
-.authBtn{
-    position: absolute;
-    right: 40px;
-    top: 40px;
+/* Auth button (header) */
+.authBtn {
+  display: flex;
+  align-items: center;
 }
 
-.authBtn button{
-    margin: 5px;
-    width: 100px;
-    font-family: 'Inter';
+.authBtn button {
+  margin: 0 0.25rem;
+  padding: 0.6rem 1.2rem;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.authBtn button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 1);
+}
+
+.authBtn .btn-danger {
+  background: rgba(220, 53, 69, 0.9);
+  border-color: rgba(220, 53, 69, 0.3);
+  color: white;
+}
+
+.authBtn .btn-danger:hover {
+  background: rgba(220, 53, 69, 1);
+  color: white;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .header-inner {
+    padding: 0.75rem 1rem;
+  }
+  
+  .logoText h1 {
+    font-size: 1rem;
+  }
+  
+  .logoText h2 {
+    font-size: 0.8rem;
+  }
+  
+  .authBtn button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero { padding-top: 12vh; }
+  .search-input { padding-left: 2.5rem; }
+  .search-icon { left: 0.7rem; }
+  
+  .header-inner {
+    padding: 0.5rem 0.75rem;
+  }
+  
+  .logoText h1 {
+    font-size: 0.9rem;
+  }
+  
+  .logoText h2 {
+    font-size: 0.75rem;
+  }
+  
+  .authBtn button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
 }
