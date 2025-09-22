@@ -15,6 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem 2rem;
@@ -125,13 +126,22 @@
     gap: 0.5rem;
   }
   
+  /* Keep search visible on mobile; move to its own row */
   .header-center {
-    display: none;
+    display: flex;
+    order: 3;
+    width: 100%;
+    margin: 0.25rem 0 0;
+    max-width: none;
+    justify-content: center;
   }
   
   .header-left {
     flex: 1;
+    order: 1;
   }
+
+  .header-right { order: 2; }
   
   .logoText h1 {
     font-size: 0.9rem;

@@ -16,9 +16,17 @@ export default function SearchBar({ classes, width }) {
   const results = useMemo(() => {
     if (!value) return [];
     const q = normalized(value);
-    return classes
-      .filter((cl) => normalized(cl.name).includes(q))
-      .slice(0, 6);
+    const scored = [];
+    for (const cl of classes) {
+      const nameNorm = normalized(cl.name);
+      const idx = nameNorm.indexOf(q);
+      if (idx === -1) continue;
+      // Lower scores are better: prefix first, then earlier index, then shorter name
+      const score = (idx === 0 ? 0 : 1) * 1_000_000 + idx * 1_000 + nameNorm.length;
+      scored.push({ item: cl, score });
+    }
+    scored.sort((a, b) => a.score - b.score);
+    return scored.slice(0, 6).map((s) => s.item);
   }, [classes, value]);
 
   useEffect(() => {
@@ -35,8 +43,6 @@ export default function SearchBar({ classes, width }) {
   };
 
   const handleKeyDown = (e) => {
-    if (!displayClasses.length) return;
-
     if (e.key === "ArrowDown") {
       e.preventDefault();
       setFocusedIndex((prev) => Math.min(prev + 1, displayClasses.length - 1));
@@ -44,7 +50,9 @@ export default function SearchBar({ classes, width }) {
       e.preventDefault();
       setFocusedIndex((prev) => Math.max(prev - 1, 0));
     } else if (e.key === "Enter") {
+      // Always prevent form submit; only navigate when a suggestion exists
       e.preventDefault();
+      if (displayClasses.length === 0) return;
       const idx = focusedIndex >= 0 ? focusedIndex : 0;
       if (displayClasses[idx]) goTo(displayClasses[idx].id);
     } else if (e.key === "Escape") {
